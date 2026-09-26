@@ -49,12 +49,7 @@ python3 scrape_incubators.py --resume
 
 ### How long will the full run take?
 
-20 organizations x 117 months x 2 pages = up to 4,680 lookups. The script
-waits ~1 second between requests to stay within polite/free usage of
-archive.org's public API, so a full run is roughly **2-3 hours**, possibly
-longer if archive.org is slow or a page's history is sparse (more retries).
-It logs progress to the console line by line and writes to `manifest.csv` as
-it goes, so it's safe to `Ctrl+C` and use `--resume` later — nothing is lost.
+It has been running for 12 hrs still only 13 incubators have been fetched. So, it will approximately take 18-19 hrs for completion.
 
 **Recommended approach:** run it in the background with output logged to a
 file, e.g.:
