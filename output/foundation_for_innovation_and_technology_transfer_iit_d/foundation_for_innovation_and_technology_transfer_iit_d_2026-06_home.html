@@ -1,0 +1,1864 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> » FITT</title>
+    
+    <!-- Google tag (gtag.js) --> 
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-2H5SC147RM"></script> 
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2H5SC147RM'); </script>
+    -->
+    
+   <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2H5SC147RM"></script> 
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2H5SC147RM'); </script>
+        
+    <!-- Favicons -->
+      <link href="assets/images/favicon.png" rel="icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/theme-style.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <style>
+        #popupmodal h5
+          {
+              font-weight: normal;
+                font-size: 16px;
+          }
+        .programlist a
+        {
+            color: #212529;
+        }
+        .portfolio-wrap
+        {
+            margin-bottom:2%;
+        }
+        .portfolio li
+        {
+            padding: 1%!important;
+            list-style: none;
+            width: auto;
+            margin-right: 0%!important;
+            box-shadow: 0 6px 15px rgb(0 0 0 / 15%);
+            border-radius: 5px;
+            background: #2e7bbe;
+        }
+        .portfolio #portfolio-flters li.filter-active
+        {
+            background: #2e7bbe;
+            color: white;
+        }
+        a.social.facebook {
+            background: #1877f2;
+            color: #fff;
+        }
+        .incubated_company a {
+            font-weight: 700;
+            padding: 10px 13px;
+            border-radius: 3px;
+        }
+        .incubated_company.startup_community a
+        {
+            padding: 0;
+        }
+        .incubated_company.startup_community .btn-own
+        {
+            padding: 10px 13px;
+        }
+        a.social.twitter {
+            background: #00acee;
+            color: #fff;
+        }
+        a.social.linkedin {
+            background: #0e76a8;
+            color: #fff;
+        }
+        .incubated_company h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #02417c;
+        }
+        .image-holder {
+            height: 180px;
+            line-height: 150px;
+            margin-top: 20px;
+            background: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 5px 10px 29px 0 rgb(68 88 144 / 20%);
+            border-radius: 15px;
+        }
+        .image-holder img {
+            width: 50%;
+            line-height: 100%;
+            margin: auto;
+        }
+        .incubated_company {
+            background-color: #fbfbfb54;
+            padding: 1rem 1.5rem;
+            height: 100%;
+            padding-bottom: 30px;
+            min-height: 565px;
+            box-shadow: 0 6px 15px rgb(0 0 0 / 15%);
+        }
+        #events .incubated_company {
+            background-color: #fff;
+            padding: 0rem 0rem;
+            height: 100%;
+            padding-bottom: 30px;
+            min-height:435px;
+            box-shadow:0 6px 15px rgb(0 0 0 / 15%);
+        }
+        #events .portfolio-wrap {
+            margin-bottom: 2%;
+            padding-right: calc(var(--bs-gutter-x) * .8);
+        }
+        #events .image-holder {
+            position: relative;
+            padding: 0px;
+            line-height: 37px;
+        }
+        #events .incubated_company a {
+            font-weight: 700;
+            padding: 10px 0px;
+            border-radius: 3px;
+        }
+        #events .image-holder img {
+            width: 100%;
+            height: 200px;
+            margin: auto;
+            object-fit: cover;
+        }
+        #events .image-holder .datetime {
+            position: absolute;
+            bottom: -11%;
+            width: 100%;
+            background: #4c4a4ad9;
+            color: white;
+            font-size: 26px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        #events .incubated_company h5
+        {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #02417c;
+            height: 20px;
+            margin-top: 3%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .inner-event
+        {
+            padding:3%;
+        }
+        .green
+        {
+            color:green;
+        }
+        .blue
+        {
+            color:#16829c;
+        }
+        .knowmore
+        {
+            display: block;
+            padding: 0;
+            background: none;
+            border: none;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            height: 21px;
+            line-height: 21px;
+            color: #f75d34;
+        }
+        .knowmore:hover
+        {
+            color: #f75d34;
+        }
+        .knowmore img
+        {
+            margin-left: 3px;
+            float: right;
+            position: relative;
+            top: 2px;
+        }
+        svg
+        {
+            margin-left:2%;
+        }
+        .incubationprogram h3
+        {
+            font-size: 23px;
+            font-weight: 900;
+            margin-bottom: 2%;
+        }
+        .btn.btn-own {
+            background-color: #03417c;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 7px;
+            margin-right: 10px;
+            padding: 8px 10px;
+        }
+        
+        /* Side Menu */
+        .relative {
+            position: relative;
+        }
+        .sticky-left-nav {
+            position: fixed;
+            width: 120px;
+            display: block;
+            background-color: transparent;
+            z-index: 1;
+        }
+        .top-menu {
+            top: 32%!important;
+        }
+        .stick-left-nav-ul {
+            /*padding-left: 20px;
+            width: 95px;*/
+            padding-left: 15px;
+            width: 107px;
+        }
+        .sticky-left-nav ul li {
+            list-style: none;
+            height: 65px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        .sticky-left-nav ul li a, .sticky-left-nav ul li a:focus, .sticky-left-nav ul li a:hover
+        {
+                text-decoration: none;
+                color:#007cc3;
+        }
+        .side-menu .sticky-left-nav ul li.nav-active-menu a::before, .sticky-left-nav ul li a::before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 1px;
+            opacity: 1;
+            background-color: #000000;
+            transition: all .3s ease-in-out;
+        }
+        .sticky-left-nav ul li a span {
+            display: block;
+            color: #000;
+            opacity: 0;
+            transition: opacity .3s ease-out;
+            padding-top: 0px;
+            font-size: 13px;
+        }
+        .contact-details
+        {
+                padding: 1%;
+        }
+        .sticky-left-nav ul li a.current span
+        {
+            opacity:1;
+        }
+        .sticky-left-nav.blackbg li a::before
+        {
+                background-color: #fff;
+        }
+        .sticky-left-nav.blackbg ul li a span
+        {
+                color: #fff;
+        }
+        .sticky-left-nav.footerfixleftnav
+        {
+            top:auto!important;
+        }
+        .sticky-left-nav ul li a.openspan span
+        {
+            opacity:1;
+        }
+        .sticky-left-nav ul li.unselected a span
+        {
+            opacity:0;
+        }
+        .sticky-left-nav ul li a.openspan::before,.sticky-left-nav ul li a.current::before
+        {
+            width: 70px!important;
+               height: 3px!important;
+        }
+        .carousel-item
+        {
+            height: 530px;
+        }
+        .carousel-item.popup-items
+        {
+            height:auto;
+        }
+        /*.home-banner-slider .carousel-control-next-icon, .home-banner-slider .carousel-control-prev-icon
+        {
+            width: 2rem;
+            height: 2rem;
+        }
+        .carousel-control-prev {
+            left: 41%;
+        }
+        .carousel-control-next {
+            right: 40%;
+        }
+        .carousel-control-next, .carousel-control-prev
+        {
+            top:78%;
+        }*/
+        .carousel-indicators [data-bs-target]
+        {
+            width: 21px;
+            background-clip: inherit;
+            border-radius: 50%;
+            background-color: #3d3b3b;
+        }
+        .research-park {
+            padding: 70px 0px;
+            background-color: #963596;
+        }
+        .research-park .research-park-row .item-content h2, .research-park .research-park-row .item-content p
+        {
+            color: #fff;
+        }
+        .research-park .research-park-row .item-content .btn-explore
+        {
+            background-color: #fff;
+        }
+        .carousel-control-prev-icon,.carousel-control-next-icon
+        {
+            background-color: #040404;
+        }
+        #popupmodal h5
+        {
+            font-weight: bold;
+        }
+        #popupmodal h5 span
+        {
+            font-weight: bold;
+            color: crimson;
+        }
+        #popupmodal .popup-items h5
+        {
+            padding: 2%;
+            text-align: center;
+            font-weight: bold;
+            color: crimson;
+        }
+    </style>
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo-sction">
+            <div class="container">
+                <div class="logo-row">
+                    <div class="item">
+                        <a href="home"><img src="assets/images/logo.webp" class="img-fluid logo" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="search-login-row">
+                            <div class="item-search">
+                                <div class="input-group border rounded-pill">
+                                    <input type="search" placeholder="Find Anything" aria-describedby="button-addon3" id="fittsearch" class="form-control bg-none border-0">
+                                    <div class="input-group-append border-0">
+                                        <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="bi bi-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-login">
+                                <button onclick="window.location.href='../ERP/login'" class="btn-login">Project Login</button>
+                                <!--<a href="status-check" class="statuscheck btn-login">Register</a>-->
+                                
+                                <!--https://fitt.accubate.app/ -->
+                                <a href="https://accubate.fitt-iitd.in/" target="_blank" class="statuscheck btn-login">Startup Login</a>
+                            </div>
+                        </div>
+                        <!--<div class="top-navigation-links">
+                            <ul>
+                                <li><a href="media">Media</a></li>
+                                <li><a href="career">Career</a></li>
+                                <li><a href="csr">CSR</a></li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="container">
+                <div id="cssmenu">
+                    <ul>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="javascript:void(0)">About FITT</a>
+                            <ul>
+                                <li><a href="aboutus">About Us</a></li>
+                                <li><a href="governance">Governance</a></li>
+                                <li><a href="fittteam">FITT Team</a></li>
+                                <!--<li><a href="history">History & Mission</a></li>-->
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">R & D Partnership</a>
+                            <ul>
+                                <li><a href="contract-r-d">Contract R & D</a></li>
+                                <!--<li><a href="consultancy">Consultancy & Services</a></li>-->
+                                <li><a href="partners">R&D Partners</a></li>
+                                <li><a href="membership">Corporate Membership</a></li>
+                                <!--<li><a href="javascript:void(0)">Corporate Membership</a>
+                                    <ul>
+                                        <li><a href="membership">Register for Membership</a></li>
+                                        <li><a href="membership-fees">Membership Fees</a></li>
+                                    </ul>
+                                </li>-->
+                                <li><a href="javascript:void(0)">Professional Development</a>
+                                    <ul>
+                                        <li><a href="PCR">Courses/Trainings</a></li>
+                                        <!--<li><a href="#">Professional Skill Enhancement</a></li>-->
+                                        <li><a href="workshop">Workshop | Conferences</a></li>
+                                        <li><a href="capacity">Capacity Development</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">IP & Technology Transfer</a>
+                            <ul>
+                                <li><a href="management-ip">Intellectual Property Management</a></li>
+                                <li><a href="licensing">Technology Transfer & Licensing</a></li>
+                                <li><a target="_blank" href="document/licensing/IPRPolicy-IITD.pdf">IPR Policy IIT Delhi</a></li>
+                                <li><a href="latest-filed-ip">Latest Filed IP</a></li>
+                                <!--<li><a href="openip">Open IP</a></li>-->
+                                <li><a href="compendium">Compendium Of Technologies</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sciencepark">Research Park</a></li>
+                        <li><a href="javascript:void(0)">Innovation & Entrepreneurship</a>
+                            <ul>
+                                <!--<li><a href="entrepreneurship">Entrepreneurship</a></li>
+                                <li><a href="innovation-platform">Innovation Platform</a></li>
+                                <li><a href="tbiu">TBIU</a></li>
+                                <li><a href="bbif">BBIF</a></li>
+                                <li><a href="nidhi-coe">NIDHI-CoE</a></li>
+                                <li><a href="atal-incubation-centre">Atal Incubation Centre (AIC)</a></li>
+                                <li><a href="startups-innovators">Startups & Innovators</a></li>
+                                <li><a href="mentors">Mentors</a></li>-->
+                                <li><a href="incubation">Incubation</a></li>
+                                <li><a href="javascript:void(0)">Offerings</a>
+                                    <ul>
+                                        <li><a href="mentors">Mentoring</a></li>
+                                        <li><a href="coworkspace">Co-working space & Idea Lounge</a></li>
+                                        <li><a href="auditorium">Conference Rooms & Suites</a></li>
+                                        <!--<li><a href="laboratories">Laboratories</a></li>-->
+                                        <li><a href="jobboard">Startup Job Board</a></li>
+                                        <li><a href="serviceprovider">Third-party service providers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0)">Startup Community</a>
+                                    <ul>
+                                        <li><a href="current-startups">Current Startups</a></li>
+                                        <li><a href="graduated-startups">Graduated Startups</a></li>
+                                        <li><a href="success-stories">Success Stories</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="stakeholders">Stakeholders</a></li>
+                                <!--<li><a href="programs">Our Programs</a></li>-->
+                                <li><a href="programs">Programs</a>
+                                    <ul>
+                                        <li><a href="fitt-program">FITT</a></li>
+                                        <li><a href="government-program">Government</a></li>
+                                        <li><a href="corporate-program">Corporate</a></li>
+                                        
+                                          </ul>
+                                </li>
+                                <li><a href="nidhicoe">Infrastructure</a>
+                                    <ul>
+                                        <li><a href="nidhicoe">NIDHI CoE</a></li>
+                                        <li><a href="bionest">BioNEST</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="financial-support">Funding</a></li>
+                                <li><a href="javascript:void(0)">Schemes/Initiatives</a>
+                                    <ul>
+                                        <li><a href="atal-incubation-centre">Atal Incubation Centre (AIC)</a></li>
+                                       <!-- <li><a href="innovation-technolgy">ITTO</a></li>-->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="events">Events</a></li>
+                        <li><a href="career">Careers</a></li>
+                        <li><a href="enquiry">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="expand-search" style="display:none">
+            <div class="expand-search-container">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-3"><img src="assets/images/logo.webp"></div>
+                    <div class="col-lg-1"><i class="bi bi-search"></i></div>
+                    <div class="col-lg-6" style="position:relative">
+                        <input type="search" placeholder="Find Anything" aria-describedby="button-addon3" id="fittexpandsearch" class="form-control bg-none hide-clear">
+                        <div class="searchslist searchopenid" id="newevserchid">
+        				<ul class="fittservicelist pl-1">
+        					<li onclick="window.location.href='aboutus';">About FITT</li>
+        					<li onclick="window.location.href='governance';">Governance</li>
+        					<li onclick="window.location.href='fittteam';">FITT Team</li>
+        					<li onclick="window.location.href='partners';">Partners</li>
+        					<li onclick="window.location.href='media';">Media</li>
+        					<li onclick="window.location.href='media';">Technologies & Publications</li>
+        					<li onclick="window.location.href='career';">Careers</li>
+        					<li onclick="window.location.href='csr';">CSR</li>
+        					<li onclick="window.location.href='enquiry';">Contact</li>
+        					<li onclick="window.location.href='enquiry';">Enquiry</li>
+        					<li onclick="window.location.href='contract-r-d';">Contract R & D</li>
+        					<li onclick="window.location.href='membership';">Register for Membership</li>
+        					<li onclick="window.location.href='membership';">Membership</li>
+        					<li onclick="window.location.href='membership';">Membership Fees</li>
+        					<li onclick="window.location.href='PCR';">PCR/Trainings</li>
+        					<li onclick="window.location.href='PCR';">Trainings</li>
+        					<li onclick="window.location.href='workshop';">Workshop | Conferences</li>
+        					<li onclick="window.location.href='workshop';">Conferences</li>
+        					<li onclick="window.location.href='capacity';">Capacity Development</li>
+        					<li onclick="window.location.href='compendium';">Compendium Of Technologies</li>
+        					<li onclick="window.location.href='licensing';">Licensing</li>
+        					<li onclick="window.location.href='licensing';">Technology Transfer & Licensing</li>
+        					<li onclick="window.location.href='licensing';">Technology Transfer</li>
+        					<li onclick="window.location.href='latest-filed-ip';">Latest Filed IP</li>
+        					<li onclick="window.location.href='sciencepark';">Research and Innovation Park</li>
+        					<li onclick="window.location.href='sciencepark';">Science Park</li>
+        					<li onclick="window.location.href='infrastructure';">Infrastructure</li>
+        					<li onclick="window.location.href='atal-incubation-centre';">Atal Incubation Centre (AIC)</li>
+        					<li onclick="window.location.href='mentors';">Mentors</li>
+        					<li onclick="window.location.href='innovation-technolgy';">Innovation Technology Transfer Office</li>
+        					<li onclick="window.location.href='tides20.php';">TIDE 2.0</li>
+        					<li onclick="window.location.href='birac.php';">BIRAC Big</li>
+        					<li onclick="window.location.href='birac.php';">Biotechnology Ignition Grant</li>
+        					<li onclick="window.location.href='sparsh.php';">SPARSH</li>
+        					<li onclick="window.location.href='sparsh.php';">Social Innovation Program for Products</li>
+        					<li onclick="window.location.href='sonacomstar.php';">SCIDIP</li>
+        					<li onclick="window.location.href='sonacomstar.php';">SONA-COMSTAR</li>
+        					<li onclick="window.location.href='sonacomstar.php';">INNOVATION PROGRAM</li>
+        					<li onclick="window.location.href='government-program';">Government Program</li>
+        					<li onclick="window.location.href='corporate-program';">Corporate Program</li>
+        					<li onclick="window.location.href='current-startups';">Current Startups</li>
+        					<li onclick="window.location.href='graduated-startups';">Graduated Startups</li>
+        					<li onclick="window.location.href='financial-support';">Funding</li>
+        					<li onclick="window.location.href='events.php';">Events</li>
+        					<li onclick="window.location.href='career';">Careers</li>
+        					<li onclick="window.location.href='stakeholders';">Stakeholders</li>
+        				</ul>
+        			</div>
+        			    <i class="bi bi-x closesearchbar"></i>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="javascript:void(0)" class="btn btn-purple fittsearchbtn">Search</a>
+                    </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <section class="scroll-news">
+        <div class="container">
+            <div class="scroll-news-row">
+                <marquee scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();">
+                    <b>LATEST NEWS &amp; ANNOUNCEMENTS -*- </b>
+                                        </marquee>
+            </div>
+        </div>
+    </section>
+    </header>    <main id="main">
+    <section class="home-banner-slider" id="homeslider">     
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/banner/slide111.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-desc">
+                    <h1>Foundation<br>for Innovation<br>and Technology<br>Transfer</h1>
+                    <p>FITT is an industry Academia interface organization, established by IIT Delhi to facilitate Research Translation, Technology Development, IPR Management, Technology Transfer & Commercialisation, R&D Collaboration, Start-up Incubation and Mentoring.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/slide222.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-desc">
+                    <h1>Innovation &<br>Entrepreneurship</h1>
+                    <p>FITT has adopted several programs to enrich the entrepreneurial eco-system and technology commercialization efforts at the Institute. FITT manages the incubator program at IIT Delhi.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/rdpartner.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-desc-right">
+                    <h1>R&D Partnership</h1>
+                    <p>Projects addressing technologies at the core and aims at the development of proprietary knowledge in a process, product, software, designs, specific/generic algorithm etc.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/maps.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-desc">
+                    <h1>IP & Technology Transfer</h1>
+                    <p>FITT manages the Intellectual Property and also facilitates the commercialization of IP assets and Know-how of IIT Delhi through technology transfer and licensing.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/rdpark.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-desc-right">
+                    <h1>Research Park</h1>
+                    <p>FITT, IIT Delhi's Research and Innovation Park is planned to be a managed facility with focus on innovation and product development where IIT Delhi, industry, entrepreneurs and government agencies interact and enable creation of advanced technological solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    
+    <section class="counter-section">
+        <div class="container">
+            <div class="couter-row" id="counter">
+                <div class="item">
+                    <h3><span class="counter">2100</span>+</h3>
+                    Industry Collaborations
+                </div>
+                <div class="item">
+                    <h3><span class="counter">1618</span>+</h3>
+                    IPR Filed <br>(<span>1300+ Patents</span>)
+                </div>
+                <div class="item">
+                    <h3><span class="counter">500</span>+</h3>
+                    Training Programs
+                </div>
+                <div class="item">
+                    <h3><span class="counter">185</span>+</h3>
+                    Technology Transfer
+                </div>
+                <div class="item">
+                    <h3><span class="counter">150</span>+</h3>
+                    Start-up Incubated
+                </div>
+                <div class="item">
+                    <h3><span class="counter">600</span>+</h3>
+                    Development Projects
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="rdpartnership-section" id="rdyellow-slide">
+        <div class="rd-partnership-row">
+            <div class="item-img">
+                <img src="assets/images/partnership.webp" class="img-fluid" alt="">
+            </div>
+            <div class="item-content">
+                <h2 data-aos="fade-up" data-aos-duration="1000">R&D Partnership</h2>
+                <p data-aos="fade-up" data-aos-duration="1200">Projects addressing technologies at the core and aims at the development of proprietary knowledge in a process, product, software, designs, specific/generic algorithm etc.</p>
+                <div class="mt-5"  data-aos="fade-up" data-aos-duration="1300"> <a href="rd-partnership" class="btn-explore">EXPLORE</a></div>
+
+                <!--<div class="partnership-list">
+                    <div class="item"  data-aos="fade-up" data-aos-duration="1400"><a href="contract-r-d">Contract R & D</a></div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1500"><a href="partners">Partners</a></div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1600"><a href="membership-fees">Membership Fees</a></div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1700"><a href="workshop">Workshop & Conferences</a></div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1800"><a href="PCR">PCR/Training</a></div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1900"><a href="consultancy">Consultancy & Services</a></div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="2000"><a href="membership">Register for Membership</a></div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="2100"><a href="capacity">Capacity Development</a></div>
+                </div>-->
+
+            </div>
+        </div>
+    </section>
+    <section class="ip-licensing-section" id="purple-slide">
+        <div class="container">
+            <div class="licensing-row">
+                <div class="item-content">
+                    <h2 data-aos="fade-right" data-aos-duration="1000">IP & Technology Transfer</h2>
+                    <p data-aos="fade-right" data-aos-duration="1100">FITT manages the Intellectual Property and also facilitates the commercialization of IP assets and Know-how of IIT Delhi through technology transfer and licensing.</p>
+                    <div class="mt-5" data-aos="fade-right" data-aos-duration="1200"> <a href="ip-licensing" class="btn-explore">EXPLORE</a></div>
+                    <!--<div class="licensing-list">
+                        <div class="item" data-aos="fade-right" data-aos-duration="1300" data-aos-easing="ease-in-sine"><a href="management-ip" >Intellectual Property Management</a></div>
+                        <div class="item" data-aos="fade-right" data-aos-duration="1400" data-aos-easing="ease-in-sine"><a href="licensing">Technology Transfer & Licensing</a></div>
+                        <div class="item" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine"><a href="document/licensing/IPRPolicy-IITD.pdf">IPR Policy IIT Delhi</a></div>
+                        <div class="item" data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-sine"><a href="latest-filed-ip">Latest Filed IP</a></div>
+                        <div class="item" data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-sine"><a href="openip">Open IP</a></div>
+                        <div class="item" data-aos="fade-right" data-aos-duration="1700" data-aos-easing="ease-in-sine"><a href="compendium">Compendium Of Technologies</a></div>
+                    </div>-->
+                </div>
+                <div class="item-img">
+                    <img src="assets/images/map.webp" class="img-fluid" alt="" data-aos="zoom-in"  data-aos-duration="1300">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="research-park" id="yellow-slide">
+        <div class="container">
+            <div class="research-park-row">
+                <div class="item-img">
+                    <div class="item">
+                        <img src="assets/images/research1.webp" alt="" class="img-fluid" data-aos="fade-up" data-aos-duration="1000">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/research2.webp" alt="" class="img-fluid" data-aos="fade-up" data-aos-duration="1100">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/research3.webp" alt="" class="img-fluid" data-aos="fade-up" data-aos-duration="1200">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/research4.webp" alt="" class="img-fluid" data-aos="fade-up" data-aos-duration="1300">
+                    </div>
+                </div>
+                <div class="item-content">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Research Park</h2>
+                    <p data-aos="fade-up" data-aos-duration="1100">FITT, IIT Delhi's Research and Innovation Park is planned to be a managed facility with focus on innovation and product development where IIT Delhi, industry, entrepreneurs and government agencies interact and enable creation of advanced technological solutions.</p>
+                    <div class="mt-5" > <a href="sciencepark" class="btn-explore" data-aos="fade-up" data-aos-duration="1200">EXPLORE</a></div>
+
+                    <!--<div class="amenities-box">
+                        <h5>Amenities:</h5>
+                        <div class="amenities-list">
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Auditorium</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Hospital</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Service Desk</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Travel Desk</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Food Court</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Stationary</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Advanced Fiberoptic Network</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Wi-Fi</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="javascript:void(0)">Car Parking</a>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-duration="1200"> 
+                                <a href="javascript:void(0)">Security with CCTV</a>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="innovation-entrepreneurship-section" id="pink-slide">
+        <div class="innovation-entrepreneurship-section-row">
+            <div class="item-content">
+                <h2 data-aos="fade-up" data-aos-duration="1000">Innovation & Entrepreneurship</h2>
+                <p data-aos="fade-up" data-aos-duration="1100">FITT has adopted several programs to enrich the entrepreneurial eco-system and technology commercialization efforts at the Institute. FITT manages the incubator program at IIT Delhi.</p>
+                <div class="mt-5" data-aos="fade-up" data-aos-duration="1200"><a href="incubation" class="btn-explore" >EXPLORE</a></div>
+                 <!--<div class="incubators-list">
+                    <h5 data-aos="fade-up" data-aos-duration="1300">The following incubators are administered by us:</h5>
+                   <ul>
+                        <li data-aos="fade-up" data-aos-duration="1400"><a href="incubation">Technology Business Incubation Unit (TBIU)</a></li>
+                        <li data-aos="fade-up" data-aos-duration="1500"><a href="government-program">Government Program</a></li>
+                        <li data-aos="fade-up" data-aos-duration="1500"><a href="corporate-program">Corporate Program</a></li>
+                        <li data-aos="fade-up" data-aos-duration="1600"><a href="innovation-technolgy">Technology Business Incubator, Chandra Shekhar Bhawan, ITO</a></li>
+                        <li data-aos="fade-up" data-aos-duration="1700"><a href="atal-incubation-centre">Atal Incubation Centre, Sonipat</a></li>
+                    </ul>
+                </div>-->
+            </div>
+            <div class="item-image">
+                <img src="assets/images/ie-img.webp" class="img-fluid" alt="" data-aos="fade-up-left" data-aos-duration="1400">
+            </div>
+        </div>
+    </section>
+    <section class="itt-section" id="ittopurple-slide">
+        <div class="container">
+            <div class="iit-content">
+                <h2 data-aos="fade-up" data-aos-duration="1000">Innovation
+                    Technology
+                    Transfer Office</h2>
+                <p data-aos="fade-up" data-aos-duration="1100">Innovation Technology Transfer Office (i-TTO)
+                    which will provide requisite services to incubation
+                    centers, innovators, entrepreneurs, start-ups,
+                    industries and academia.</p>
+                <p data-aos="fade-up" data-aos-duration="1200">Vision of Innovation Technology
+                    Transfer Office (i-TTO)
+                    “Strengthen the Innovation and Technology
+                    Commercialization ecosystem in the country.”</p>
+                <div class="mt-5" data-aos="fade-up" data-aos-duration="1300"><a href="innovation-technolgy" class="btn-explore">EXPLORE</a></div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="announcement" class="announcement">
+        <div class="container">
+		<div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 icon-boxes d-flex flex-column align-items-stretch partners px-lg-3">
+				<!--<h5>News Board</h5>-->
+				
+				
+				<h5>
+    <a href="news-board-archive" target="_blank" style="text-decoration:none; color:inherit;">
+        News Board
+    </a>
+</h5>
+				
+				
+				<div class="newsannounce">
+					<marquee direction="up" class="latest-announcement" onmouseover="stop()" onmouseout="start()">
+					    					    </marquee>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-4 icon-boxes d-flex flex-column align-items-stretch partners px-lg-3">
+                <div class="publication-announce">
+                    <h5 style="font-size:20px;float:left">PUBLICATIONS @ FITT</h5>
+                    <a class='btn btn-danger' style="float: right;margin-top: 1%;margin-bottom: 1%;" href='media'>Know More</a>
+                                        
+			        <a target='_blank' href="document/Forum/FITT Forum_July 2023.pdf"><img alt="FITT Publication" src="document/Forum/forum_img_178602024-06-1114-35-30.png"></a>
+			        <!--<p style='color:white'>To know more about Tech & Publications </p>-->
+                    <!--<div class="row">
+                                                <div class="col-lg-6 pl-0 pr-0"><a target="_blank" href="../document/news/news_773542026-04-2811-11-43.pdf"><img src="assets/images/banner/esg-report-2022-home (1).webp"><p>NIQ-AKTA avant 25 & Accessories</p></a></div>
+                                                <div class="col-lg-6 pl-0 pr-0"><a target="_blank" href="../document/news/news_573172026-04-0617-09-30.pdf"><img src="assets/images/banner/quarterly-results-q3fy23-thumb-1.png"><p>Cancellation of Tender Notice No. RFP/FITT/SecurityServices/R&IPARK/2025/01 at Research & Innovation Park, IIT Delhi</p></a></div>
+                                                <div class="col-lg-6 pl-0 pr-0"><a target="_blank" href="../document/news/news_224562026-04-0617-07-45.pdf"><img src="assets/images/banner/future-work-report.webp"><p>Cancellation of Tender No. RFP/FITT/Technicalmanpower/R&IPARK/2025/01/ at Research & Innovation Park, IIT Delhi</p></a></div>
+                                                <div class="col-lg-6 pl-0 pr-0"><a target="_blank" href="../document/news/news_804152026-04-0617-04-56.pdf"><img src="assets/images/banner/cloud-applications-research.webp"><p>Cancellation of Tender Notice No. RFP/FITT/HousekeepingServices/R&IPARK/2025/01 at Research & Innovation Park, IIT Delhi</p></a></div>
+                                            </div>-->
+                    
+                    <!--<div class="videos-box">
+                        <div class="videos-boxinfo">
+                              <iframe class="venobox play-btn" width="100%" height="380" src="https://drive.google.com/file/d/1fY04fj6F8dtVSXTocUwAsiUZw2a9PRFd/preview" frameborder="0" allowfullscreen="" __idm_id__="678924289"></iframe>
+                        </div>
+                    </div>-->
+			    </div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<!--<section class="course-section" id="lemon-slide">
+        <div class="container">
+            <div class="course-row">
+                <div class="item-content">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Courses</h2>
+                    <p data-aos="fade-up" data-aos-duration="1100">FITT owned by IIT Delhi stands for Foundation for
+                        Innovation and Technology Transfer in association
+                        with ISOLS Group & WeeFoundation brings to you
+                        some of the best Technology and Digital Courses
+                        to give a boost to your career.</p>
+                    <div class="mt-5" data-aos="fade-up" data-aos-duration="1200">
+                        <a href="courses" class="btn-explore">EXPLORE</a>
+                    </div>
+                <div class="glimpse-course-list">
+                        <h5 data-aos="fade-up" data-aos-duration="1300">Glimpse of Courses:</h5>
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="1400">Digital Marketing Mastermind Course</li>
+                            <li data-aos="fade-up" data-aos-duration="1400">StartUp Growth Integrated Digital Marketing Course</li>
+                            <li data-aos="fade-up" data-aos-duration="1400">Young Learners Coding Course</li>
+                            <li data-aos="fade-up" data-aos-duration="1400">Website Development Launch Formula Course</li>
+                            <li data-aos="fade-up" data-aos-duration="1400">Crypto Blockchain Fundamental Course</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item-img">
+                    <img src="assets/images/course.webp" alt="" class="img-fluid" data-aos="fade-up" data-aos-duration="1400">
+                </div>
+            </div>
+        </div>
+    </section>-->
+	
+	
+<!--	<section id="programs" class="programs">
+        <div class="container mt-3">
+            <div class="section-title">
+                <h2>Accelerator & Funding Programs</h2>
+            </div>
+            <div class="subtitle"><p>Explore the Funding landscape with FITT and tap into some of the models most relevant for your startup to grow</p></div>
+		<div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-5 pl-0 pr-0 bigscheme-announce">
+				<img src="assets/images/tideimg.webp">
+				<a href="tides20">
+				<div class="bigscheme">
+				<h3>Technology Incubation and Development of Entrepreneurs (TIDE 2.0)</h3>
+				<p>Technology Innovation & Development of Entrepreneurship Supports (TIDES) 2.0 of the Ministry of Electronics and Information Technology (MEITY) promotes tech entrepreneurship through financial and technical support to incubators engaged in supporting ICT startups primarily engaged in using emerging technologies.</p>
+				</div>
+				</a>
+				<div class="bottom-gradient-do_more"></div>
+			</div>
+			<div class="col-xl-7 col-lg-7 col-md-7 icon-boxes d-flex flex-column align-items-stretch justify-content-center partners px-lg-3">
+                <div class="program-announce">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 pl-0 pr-0"><img src="assets/images/banner/programs/pfizer.webp"><a href="pfizer"><div class="programscheme"><h3>Pfizer INDovation Program</h3><p>Pfizer is committed to nurture and support ideas that can prepare the healthcare systems to be future ready. The Pfizer INDovation Program will help accelerate the journey of six start-ups into the market through customized support and by fostering relevant cross-industry collaborations.</p></div></a><div class="bottom-gradient-do_more"></div></div>
+                        <div class="col-lg-6 col-md-6 col-md-6 pl-0 pr-0"><img src="assets/images/banner/programs/download.webp"><a href="dioidex"><div class="programscheme"><h3>iDEX-Innovations for Defence Excellence</h3><p>An ecosystem to foster innovation & technology development in Defence and Aerospace by engaging innovators & entrepreneurs to deliver technologically advanced solutions for modernizing Indian Military.</p></div></a><div class="bottom-gradient-do_more"></div></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 pl-0 pr-0"><img src="assets/images/banner/programs/infographics0.webp"><a href="sona-comstar-iit-delhi-innovation-program-scidip"><div class="programscheme"><h3>SONA-COMSTAR-IIT DELHI INNOVATION PROGRAM (SCIDIP)</h3><p>Smart, safe and clean mobility solutions are of paramount importance specially in the urban regions which are grappling with challenges.</p></div></a><div class="bottom-gradient-do_more"></div></div>
+                        <div class="col-lg-6 col-md-6 pl-0 pr-0"><img src="assets/images/banner/programs/samsung-solve.webp" style="object-fit: contain;"><a href="samsung"><div class="programscheme"><h3>SAMSUNG – SOLVE FOR TOMORROW PROGRAM</h3><p>Samsung Solve for Tomorrow Program is a global STEM (Science, Technology, Engineering and Math) and Design Thinking based competition created to foster problem-solving skills.</p></div></a><div class="bottom-gradient-do_more"></div></div>
+                    </div>
+			    </div>
+			</div>
+		</div>
+		</div>
+	</section>-->
+    
+    
+    
+    <!-- ======= Career Section ======= -->
+    <section id="career" class="about pt-5">
+      <div class="container">
+         <div class="section-title">
+          <h2>Careers</h2>
+          <div class="subtitle"><p>Wide Variety of Careers Opportunities at FITT</p></div>
+        </div>
+        <div class="row fittlife">
+           <img src="assets/images/Careers.webp">
+           <p>Life at FITT</p>
+        </div>
+        <div class="row fittcareer">
+            <h3>Find Opportunities right for you</h3>
+            <a href="career" class="btn btn-career">EXPLORE CAREERS</a>
+        </div>
+      </div>
+    </section><!-- End Career Section -->
+    
+    <section id="startups" class="counter-section pt-5">
+      <div class="container">
+         <div class="section-title">
+          <h2>Startup Community</h2>
+        </div>
+        <div class="subtitle"><p>Bringing together the entire Indian and Global Startup community through virtual connects, mentorship and showcase opportunities.</p></div>
+        <div class="couter-row mb-3" id="counter">
+                <div class="item">
+                    <h3><span class="counter">170</span>+</h3>
+                    Startups
+                </div>
+                <div class="item">
+                    <h3><span class="counter">44</span>%</h3>
+                    Bio-Tech Startups
+                </div>
+                <div class="item">
+                    <h3><span class="counter">44</span>%</h3>
+                    Health-Tech Startups
+                </div>
+                <div class="item">
+                    <h3><span class="counter">36</span>%</h3>
+                    Electronics and Telecommunications
+                </div>
+                <div class="item">
+                    <h3><span class="counter">20</span>%</h3>
+                    Engineering and Design Domains
+                </div>
+                <div class="item">
+                    <h3><span class="counter">36</span>%</h3>
+                    Software/PowerSystems
+                </div>
+            </div>
+        <div class="row portfolio-container">
+                                <div class="col-lg-4 col-md-6 portfolio-wrap filter-subcat_id4">
+                        <div class="incubated_company startup_community">
+                            <h5>Compiler AI</h5>
+                            <section id="about" class="bg-primaryy">
+                                
+                                                                        <div class="image-holder"><a href="https://bsorav.wixsite.com/website" target="_blank"><img class="img-fluid" src="document/Startup/startup_logo_798282023-04-0811-33-29.jpeg"></a> </div>
+                                                                       
+                            <p>Compiler AI specialises in software verification tools that automatically generate proofs and/or counterexample traces to validate software code. These tools are based on sophisticated AI-based algorithms within a compiler. The compiler generates correctness proofs for the binary executable code, and not just the source code.</p>
+                            </section>
+                            <!--<span class="tags">CAWACH</span>-->
+                            <br>
+                                                        <a class="btn btn-own" href="https://bsorav.wixsite.com/website" target="_blank">View More</a>
+                                                                                                                            			</div>
+            		</div>
+                                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-subcat_id4">
+                        <div class="incubated_company startup_community">
+                            <h5>Dweepi InnovationsPrivate Limited</h5>
+                            <section id="about" class="bg-primaryy">
+                                
+                                                                        <div class="image-holder"><a href="https://www.dweepi.com/" target="_blank"><img class="img-fluid" src="document/Startup/startup_logo_762072023-04-1015-02-57.jpg"></a> </div>
+                                                                       
+                            <p>Dweepi Innovations have cross-skill development of Circuits, Embedded software, Sensor integration, IC communication, Microcontroller programming, Application programming, Web integration, App development</p>
+                            </section>
+                            <!--<span class="tags">CAWACH</span>-->
+                            <br>
+                                                        <a class="btn btn-own" href="https://www.dweepi.com/" target="_blank">View More</a>
+                                                                                                                            			</div>
+            		</div>
+                                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-subcat_id4">
+                        <div class="incubated_company startup_community">
+                            <h5>Mobisec Technologies Private Limited</h5>
+                            <section id="about" class="bg-primaryy">
+                                
+                                                                        <div class="image-holder"><a href="https://www.mobisec.in/" target="_blank"><img class="img-fluid" src="document/Startup/startup_logo_124382023-04-1015-03-39.jpg"></a> </div>
+                                                                       
+                            <p>Mobisec is a deep technology-driven startup in the cybersecurity domain with a focus on mobile app & device (smartphone/ tablet) security.</p>
+                            </section>
+                            <!--<span class="tags">CAWACH</span>-->
+                            <br>
+                                                        <a class="btn btn-own" href="https://www.mobisec.in/" target="_blank">View More</a>
+                                                                                                                            			</div>
+            		</div>
+                        </div>
+      </div>
+      <center><a href="current-startups" class="btn btn-orange">View More</a></center>
+    </section>
+    
+    
+    <section id="events" class="about pt-5">
+      <div class="container">
+         <div class="section-title">
+          <h2>Events</h2>
+        </div>
+        <div class="subtitle"><p>Programs On Platter</p></div>
+        <div class="row">
+                                <div class="col-lg-4 col-md-12 portfolio-wrap">
+                        <div class="incubated_company">
+                            <section id="about" class="bg-primaryy">
+                                <div class="image-holder">
+                                <a href="event-overview?id=evt_id106">
+                                <img class="img-fluid" src="document/Events/event_logo_349302024-07-0315-43-11.jpg">
+                                </a>
+                                <p class="datetime">26 Apr | 11:00 AM</p>
+                                </div>
+                                <div class="inner-event">
+                                <h5>Symposium on Women Mean Business...</h5>
+                                <p><b>Knowledge Exchange&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class='blue'>Offline</span></b></p>
+                                <p>FICCI, in collaboration with FICCLI FLO and FITT IIT Delhi...</p>
+                                <a href="event-overview?id=evt_id106" class="knowmore hover false" id="ucrVDP-ucButton">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#F75D34"/><path d="M6.25 11.75L9.75 8.25L6.25 4.75" stroke="white" stroke-width="2"/></svg></a>
+                                </div>
+                            </section>
+            			</div>
+            		</div>
+                                    <div class="col-lg-4 col-md-12 portfolio-wrap">
+                        <div class="incubated_company">
+                            <section id="about" class="bg-primaryy">
+                                <div class="image-holder">
+                                <a href="event-overview?id=evt_id103">
+                                <img class="img-fluid" src="document/Events/event_logo_881022024-07-0315-00-23.jpg">
+                                </a>
+                                <p class="datetime">16 Apr | 11:00 AM</p>
+                                </div>
+                                <div class="inner-event">
+                                <h5>Delhi Innovation Summit 2024...</h5>
+                                <p><b>Networking events&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class='blue'>Offline</span></b></p>
+                                <p>The Delhi Innovation Summit (DIS) 24 was an extraordinary triumph, bringing together innovators, ent...</p>
+                                <a href="event-overview?id=evt_id103" class="knowmore hover false" id="ucrVDP-ucButton">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#F75D34"/><path d="M6.25 11.75L9.75 8.25L6.25 4.75" stroke="white" stroke-width="2"/></svg></a>
+                                </div>
+                            </section>
+            			</div>
+            		</div>
+                                    <div class="col-lg-4 col-md-12 portfolio-wrap">
+                        <div class="incubated_company">
+                            <section id="about" class="bg-primaryy">
+                                <div class="image-holder">
+                                <a href="event-overview?id=evt_id102">
+                                <img class="img-fluid" src="document/Events/event_logo_103212024-07-0314-33-50.jpg">
+                                </a>
+                                <p class="datetime">15 Apr | 11:00 AM</p>
+                                </div>
+                                <div class="inner-event">
+                                <h5>BIRAC-Biotechnology Ignition Grant Schem...</h5>
+                                <p><b>Outreach and Awareness&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class='blue'>Offline</span></b></p>
+                                <p>FITT has invited applications from the BIRAC-Biotechnology Ignition Grant Scheme 24th Call. Program ...</p>
+                                <a href="event-overview?id=evt_id102" class="knowmore hover false" id="ucrVDP-ucButton">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#F75D34"/><path d="M6.25 11.75L9.75 8.25L6.25 4.75" stroke="white" stroke-width="2"/></svg></a>
+                                </div>
+                            </section>
+            			</div>
+            		</div>
+                        </div>
+      </div>
+      <center><a href="events" class="btn btn-orange">View More</a></center>
+    </section>
+    
+    <section id="stackholders" class="about pt-5">
+      <div class="container">
+         <div class="section-title">
+          <h2>Stakeholders</h2>
+        </div>
+        <div class="subtitle"><p>We handhold startups by offering Technological Support, Mentoring Support, Network Support, and Financial Support</p></div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="eventlist">
+                <img src="assets/images/banner/stackholders/stack1.png">
+                <h4>Ministry of Electronics and Information Technology (MeitY)</h4>
+                <p>The Ministry of Electronics and Information Technology (MeitY) is an executive agency of the union government of the Republic of India.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="eventlist">
+                <img src="assets/images/banner/stackholders/stack2.jpg">
+                <h4>Department of Science and Technology (DST)</h4>
+                <p>The Department of Science and Technology (DST) was founded in May 1971 with the goal of promoting new areas of science and technology, with a focus on emerging fields like research and development.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="eventlist">
+                <img src="assets/images/banner/stackholders/stack3.png">
+                <h4>Biotechnology Industry Research Assistance Council (BIRAC)</h4>
+                <p>The Department of Biotechnology (DBT), Government of India, established BIRAC as an industry-academia interface. BIRAC carries out its mandate through a wide range of impact initiatives, including providing access to risk capital through targeted funding, technology transfer, IP management, and handholding programs that help biotech firms achieve innovation excellence and become globally competitive.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <center><a href="stakeholders" class="btn btn-orange">View More</a></center>
+    </section>
+    
+    <section id="mentors" class="about pt-5">
+      <div class="container">
+         <div class="section-title">
+          <h2>Our Partners</h2>
+        </div>
+        <div class="owl-carousel owl-theme">
+        <div class="item">
+            <h4><img src="assets/images/banner/BIRAC.png" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="assets/images/banner/programs/pfizer.webp" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="assets/images/partners/borealis.png" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="assets/images/partners/IKANOS.jpg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="assets/images/partners/Macmillan-Education.jpg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="assets/images/partners/BHEL.png" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="assets/images/partners/GSK.png" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="assets/images/partners/DST.png" alt="image" /></h4>
+        </div>
+    </div>
+      </div>
+    </section>
+    
+    <section id="incubationprogram" class="about pt-5">
+      <div class="container">
+         <div class="section-title">
+          <h2>Incubation Programs</h2>
+        </div>
+        <div class="subtitle"><p>Programs help to create and grow young businesses by providing them with the necessary support and financial and technical services</p></div>
+        <h3>Government Programs</h3>
+        <div class="row">
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                <a href="sparsh">
+                    <img src="assets/images/banner/SPARSH.png">
+                    <h4>SPARSH</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="msma">
+                <img src="assets/images/programs/MSME_Logo.png">
+                <h4>MSME</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="tides20">
+                <img src="assets/images/banner/tide2-0.png">
+                <h4>TIDE-II – MEITY</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="nidhisss">
+                <img src="assets/images/banner/nidhisss.png">
+                <h4>NIDHI-SSS</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="sisfs">
+                <img src="assets/images/programs/SISFS.jpg">
+                <h4>SISFS</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="samridh">
+                <img src="assets/images/banner/SAMRIDH.png">
+                <h4>SAMRIDH</h4>
+                </a>
+                </div>
+            </div>
+        </div>
+        <center><a href="government-program" class="btn btn-orange mb-3">View More</a></center>
+        <h3>Corporate Programs</h3>
+        <div class="row">
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="sona-comstar-iit-delhi-innovation-program-scidip">
+                <img src="assets/images/programs/Sona-Comstar.png">
+                <h4>Sona Comstar</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="build">
+                <img src="assets/images/banner/BOEING.jpg">
+                <h4>BOEING</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                     <a href="samsung">
+                <img src="assets/images/banner/startups/Samsung-SFT.jpg">
+                <h4>SAMSUNG SFT</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="engsui">
+                <img src="assets/images/banner/ENGSUI.jpg">
+                <h4>ENGSUI – EIL</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="pfizer">
+                <img src="assets/images/banner/Pfizer_program.png">
+                <h4>Pfizer</h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6">
+                <div class="programlist">
+                    <a href="meta">
+                <img src="assets/images/banner/meta-program.png">
+                <h4>Meta</h4>
+                </a>
+                </div>
+            </div>
+        </div>
+        <center><a href="corporate-program" class="btn btn-orange mb-3">View More</a></center>
+      </div>
+      
+    </section>
+    
+    
+    
+    <!--<section id="incubation" class="incubationcls">
+      <div class="container-fluid">
+          <div class="joinincubation">
+            <h6 class="left-line pl-75 pr-75">Join Now</h6>
+            <h2>Incubate with us</h2>
+            <a class="theme_btn theme_btn_bg" target="_blank" href="incubation" data-animation="fadeInLeft" data-delay=".7s">explore more <i class="far fa-arrow-right"></i></a>
+            </div>
+      </div>
+    </section>
+   <section class="enquirycls pb-0 pt-0 mt-0">
+        <div class="container-fluid pl-0 pr-0">
+        <div class="container p-3">
+        <div class="row">
+            <div class="col-lg-9"><h2 class="mb-0">Convert Your Ideas Into Reality</h2></div>
+            <div class="col-lg-3">
+                <a class="theme_btn theme_btn2 theme_btn_bg_02" target="_blank" href="enquiry">Know More<i class="far fa-arrow-right"></i></a>
+            </div>
+        </div>
+        </div></div>
+    </section>-->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container-fluid ps-0 pe-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7009.60084076983!2d77.192768!3d28.545718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81c10b266b1ea3c0!2sIndian%20Institute%20of%20Technology%20Delhi!5e0!3m2!1sen!2sin!4v1659609172462!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+      
+      
+      
+    </section><!-- End Contact Section -->
+        
+    <div class="modal fade" id="niqModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    
+  </div>
+</div>
+    
+    <div class="modal fade" id="fittniqModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    
+  </div>
+</div>
+    
+    </main>
+    <div class="left-navigation relative">
+    <nav class="sticky-left-nav top-menu"> 
+      <ul class="stick-left-nav-ul"><li class="opensidenav first-childli"> 
+            <a href="#homeslider" class="current activeclass">
+               <span>Overview</span></a></li><li class="opensidenav mb50"> 
+            <a href="#rdyellow-slide" class="activeclass">
+               <span>R & D Partnership</span></a></li><li class="opensidenav"> 
+            <a href="#purple-slide" class="activeclass">
+               <span>IP & Technology Transfer</span></a></li><li class="opensidenav"> 
+            <a href="#yellow-slide" class="activeclass">
+               <span>Research<br> Park</span></a></li><li class="opensidenav"> 
+            <a href="#pink-slide" class="activeclass">
+               <span>Innovation & Entrepreneurship</span></a><li class="opensidenav"> 
+            <a href="#ittopurple-slide" class="activeclass">
+               <span>i-TTO</span></a></li><li class="opensidenav"> 
+            <a href="#announcement" class="activeclass">
+               <span>News Board</span></a></li>
+              <!-- <li class="opensidenav"> 
+            <a href="#announcement" class="activeclass">
+               <span>News</span></a></li><li class="opensidenav"> 
+            <a href="#career" class="activeclass">
+               <span>Career</span></a></li><li class="opensidenav"> 
+            <a href="#startups" class="activeclass">
+               <span>Startup Community</span></a></li><li class="opensidenav"> 
+            <a href="#events" class="activeclass">
+               <span>Events</span></a></li><li class="opensidenav"> 
+            <a href="#stackholders" class="activeclass">
+               <span>Stakeholders</span></a></li>-->
+               
+               </ul> 
+    </nav>
+  </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-item">
+                    <fieldset>
+                        <legend>
+                            <h4>Contact Us</h4>
+                        </legend>
+                        <p><img style="width:100px" src="assets/images/Transparent-FITT-Logo-2-1-297x300.png" alt=""></p>
+                        <p>
+                            <h6>Foundation for Innovation and Technology Transfer (FITT)</h6>
+                            Indian Institute of Technology, Delhi, Hauz Khas,
+                            New Delhi - 110 016, India
+                        </p>
+                        <div class="contact-list">
+                            <ul>
+                                <li><span><i class="bi bi-telephone-outbound"></i></span></li>
+                                <li>+91 11 2685 7762, 2659 7167, 2659 7164,
+                                    2659 7289, 2659 7153, 2658 1013</li>
+                                <li><span><i class="bi bi-printer"></i></span></li>
+                                <li>+91 11 2685 1169</li>
+                                <li><span><i class="bi bi-envelope"></i></span></li>
+                                <li><a href="mailto:mdfitt@gmail.com">mdfitt@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="footer-item">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://home.iitd.ac.in/">IIT Delhi</a></li>
+                        <li><a href="innovation-technolgy">Innovation Technology Transfer Office (i-TTO)</a></li>
+                        <li><a href="atal-incubation-centre">Atal Incubation Centre</a></li>
+                        <li><a href="startupindia">Startup India</a></li>
+                        <li><a target="_blank" href="https://www.iitdalumni.com/">IIT Delhi Alumni</a></li>
+                        <li><a href="download">Downloads</a></li>
+                        <li><a href="niq-archive">Tender Archive</a></li>
+                        <li><a href="privacy">Privacy Policy</a></li>
+                        <li><a href="paymentpolicy">Payment Cancellation Policy</a></li>
+                        <li><a href="terms-conditions">Terms & Conditions</a></li>
+                        <li><a href="nidhicoe">NIDHI-CoE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="aboutus">About Us</a></li>
+                        <li><a href="media">Technologies & Publications</a></li>
+                        <li><a href="career">Careers</a></li>
+                        <li><a href="partners">Partners</a></li>
+                        <li><a href="csr">CSR</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="../ERP/login">Project Login</a></li>
+                        <li><a target="_blank" href="https://fitt.accubate.app/">Startup Login</a></li>
+                        <li><a target="_blank" href="https://www.fieldcloud.in/Ticketing/SuperAdmin_login.php">Tech Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://www.facebook.com/tbiu.fitt"><i class="bi bi-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/fitt_iitd"><i class="bi bi-twitter"></i></a></li>
+                        <!--<li><a target="_blank" href="http://bitly.ws/BT6N"><i class="bi bi-linkedin"></i></a></li>-->
+                        <li><a target="_blank" href="https://www.linkedin.com/company/fittiitdelhi/mycompany/"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">© 2022 Foundation For Innovation And Technology Transfer - IIT DELHI. All Rights
+            Reserved by FITT. Enabled By <a target='_blank' class="company-cls" href="https://b2llab.in/website/">B2L</a>. </div>
+    </footer>
+
+        
+    <div class="chat-box">
+        
+         <a href="https://next.xlscout.ai/" target="_blank" class="btn-send-message"> <!--<i class="bi bi-envelope-paper"></i> -->
+         <i class="bi bi-arrow-up-right-circle"></i>
+         <span class="send-msg-cls">XL Scout Searching Tool</span> </a>
+   
+   
+        <a href="https://accubate.fitt-iitd.in/ext/form/3403/1/apply" target="_blank" class="btn-send-message"> <i class="bi bi-envelope-paper"></i> <span class="send-msg-cls">Apply for Incubation</span> </a>
+   
+   
+    </div>
+    
+
+    <script src="assets/vendor/jquery/jquery-3.6.3.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/menu-script.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.countup.js"></script>
+    <script src="assets/js/custome-script.js"></script>
+    <script>
+        $('#fittsearch').click(function () {
+        	/*$(".searchslist").addClass("show");
+        	var valThis = this.value.toLowerCase(),
+        		lenght  = this.value.length;
+        
+        	$('.fittservicelist > li').each(function () {		
+        		var text  = $(this).text(),
+        			textL = text.toLowerCase(),
+        			htmlR = '<b>' + text.substr(0, lenght) + '</b>' + text.substr(lenght);
+        		(textL.indexOf(valThis) == 0) ? $(this).html(htmlR).show() : $(this).hide();
+        	});*/
+        	$(".expand-search").show();
+        });
+        
+        $('#fittexpandsearch').keyup(function () {
+        	$(".searchslist").addClass("show");
+        	var valThis = this.value.toLowerCase(),
+        		lenght  = this.value.length;
+        
+        	$('.fittservicelist > li').each(function () {		
+        		var text  = $(this).text(),
+        			textL = text.toLowerCase(),
+        			htmlR = '<b>' + text.substr(0, lenght) + '</b>' + text.substr(lenght);
+        		(textL.indexOf(valThis) == 0) ? $(this).html(htmlR).show() : $(this).hide();
+        	});
+        });
+        
+        
+        document.getElementById("fittsearch").addEventListener("search", function(event) {
+              $(".searchopenid").removeClass("show");  
+            });
+        document.getElementById("fittexpandsearch").addEventListener("search", function(event) {
+              $(".searchopenid").removeClass("show");  
+            });
+            
+            
+            $("body").click(function(event) {
+        		var sPath = window.location.pathname;
+        		var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+        			if ($(event.target).attr('id') != 'fittsearch' || $(event.target).attr('id') != 'newevserchid')
+        			{
+        				$(".searchopenid").removeClass("show");
+        			}
+        			else
+        			{
+        				$(".searchopenid").addClass("show");
+        			}	
+	        });
+	        
+	       /* $(".opendropdown").hover(function(){
+	            
+	            if($(this).hasClass( "rdpartnership" ))
+	            {
+	                $(".mega-dropdown-rdpartnership-menu").show();
+	            }
+	            else
+	            {
+	                $(".mega-dropdown-rdpartnership-menu").hide();
+	            }
+	            
+	        });*/
+	        
+	        $(".opendropdown").mouseenter(function(){
+                if($(this).hasClass( "rdpartnership" ))
+	            {
+	                $(".mega-dropdown-rdpartnership-menu").show();
+	                $(".rdpartnership .bi-chevron-right").addClass("bi-chevron-down");
+	                $(".rdpartnership .bi-chevron-right").removeClass("bi-chevron-right");
+	            }
+	            else
+	            {
+	                $(".mega-dropdown-rdpartnership-menu").hide();
+	            }
+             });
+            
+              $(".mega-dropdown-rdpartnership-menu").mouseleave(function(){
+                    $(".mega-dropdown-rdpartnership-menu").hide();
+                    $(".rdpartnership .bi-chevron-down").addClass("bi-chevron-right");
+	                $(".rdpartnership .bi-chevron-down").removeClass("bi-chevron-down");
+              });
+              
+              $('.closesearchbar').click(function () {
+                 $(".expand-search").hide(); 
+              });
+             
+             
+             $('.fittsearchbtn').click(function () {
+                 var parameter=$("#fittexpandsearch").val();
+                 if(parameter!="")
+                 {
+                     window.location.href="search.php?k="+parameter;
+                 }
+             });
+    </script>
+    
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <script>
+        $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        var objectSelect = $(".ip-licensing-section .licensing-row");
+        var aboutobjectSelect = $("#programs");
+        var objectPosition = objectSelect.offset().top;
+        if (scroll > objectPosition) {
+            $(".mobile-menu").addClass("blackbg");
+            $(".sticky-left-nav").addClass("blackbg");
+        } else {
+            $(".mobile-menu").removeClass("blackbg");
+            $(".sticky-left-nav").removeClass("blackbg");
+        }
+        
+        /*var aboutobjectPosition = aboutobjectSelect.offset().top;
+        if (scroll > aboutobjectPosition) {
+            $(".mobile-menu").removeClass("blackbg");
+            $(".sticky-left-nav").removeClass("blackbg");
+        }*/
+        
+        
+        
+      let mainNavLinks = document.querySelectorAll(".sticky-left-nav ul li a");
+        let mainSections = document.querySelectorAll("main section");
+        
+        let lastId;
+        let cur = [];
+        window.addEventListener("scroll", event => {
+          let fromTop = window.scrollY;
+          mainNavLinks.forEach(link => {
+            let section = document.querySelector(link.hash);
+            fromTop=fromTop+50;
+            if (
+              section.offsetTop <= fromTop &&
+              section.offsetTop + section.offsetHeight > fromTop
+            ) {
+              link.classList.add("current");
+            } 
+            else if(fromTop==100)
+            {
+                $(".stick-left-nav-ul .first-childli a").addClass("current");
+            }
+            else {
+              link.classList.remove("current");
+            }
+          });
+        });
+        
+        
+        /* Stop from footer */
+        var footer_top = $("#lemon-slide").offset().top;
+		var div_top = $('#main').offset().top;
+		var div_height = $(".sticky-left-nav").height();
+		
+		if (scroll + div_height > footer_top)
+		{
+			$('.sticky-left-nav').removeClass('fixleftnav');
+			$('.sticky-left-nav').addClass('footerfixleftnav');
+		}
+		else if (scroll > div_top)
+		{
+			$('.sticky-left-nav').addClass('fixleftnav');
+			$('.sticky-left-nav').removeClass('footerfixleftnav');
+		}
+		else
+		{
+			$('.sticky-left-nav').removeClass('fixleftnav');
+			$('.sticky-left-nav').removeClass('footerfixleftnav');
+		}
+		
+    });
+    </script>
+    <script>
+    $(document).on('click', '.opensidenav', function(){
+    	   	var selector = '.stick-left-nav-ul li a';
+    	   	$(selector).removeClass('current');
+    	   	$(this).children("a").addClass("current");
+    	   	
+    	   	/*var element = '.stick-left-nav-ul li';
+    	   	$(element).removeClass('unselected');
+    	    $(this).prev('li').addClass('unselected');*/
+    
+    });
+    
+    $(".activeclass").hover(function(){
+            $(this).addClass("openspan");
+    }, function(){
+           $(this).removeClass("openspan");
+    });
+    
+    $( document ).ready(function() {
+            $("#popupmodal").modal("show");
+    });
+   
+    </script>
+    <script>
+        function openniqform(id)
+        {
+            //alert("11");
+            $.ajax({
+				type: "POST",
+				url: "getniqrequest.php",
+				data: {id:id},
+				async: false,
+				success: function(response)
+				{
+				    //alert(response);
+					$("#niqModal").modal("show");
+					$("#niqModal .modal-dialog").html(response);
+				}
+			});
+        }
+        function openfittniqform(id)
+        {
+            //alert("11");
+            $.ajax({
+				type: "POST",
+				url: "getfittniqrequest.php",
+				data: {id:id},
+				async: false,
+				success: function(response)
+				{
+				    //alert(response);
+					$("#fittniqModal").modal("show");
+					$("#fittniqModal .modal-dialog").html(response);
+				}
+			});
+        }
+        
+        function openriniqform(id)
+        {
+            $.ajax({
+				type: "POST",
+				url: "getriniqrequest.php",
+				data: {id:id},
+				async: false,
+				success: function(response)
+				{
+				    //alert(response);
+					$("#riniqModal").modal("show");
+					$("#riniqModal .modal-dialog").html(response);
+				}
+			});
+        }
+        
+        function opendiv(res)
+        {
+            if(res=="Yes")
+            {
+                //$(".vendor-cls").show();
+                $(".gstnumbercls").show();
+            }
+            else
+            {
+                //$(".vendor-cls").hide();
+                $("#gstno").val("");
+                $(".gstnumbercls").hide();
+            }
+        }
+        function niqresponse()
+        {
+            var name=$("#companyname").val();
+            var mobile=$("#mobile").val();
+            var email=$("#email").val();
+            var address=$("#address").val();
+            var gstno=$("#gstno").val();
+            if(gstno=="")
+            {
+                gstno="NA";
+            }
+            var niqid=$("#niqid").val();
+            
+            $.ajax({
+				type: "POST",
+				url: "addniqresponse.php",
+				data: {id:niqid,name:name,mobile:mobile,email:email,address:address,gstno:gstno},
+				async: false,
+				success: function(response)
+				{
+				    //alert(response);
+					if(response=="11")
+					{
+					    alert("Successfully Submited");
+					    window.location.href=window.location.href;
+					}
+					else if(response=="22")
+					{
+					    alert("Already Exist");
+					    return false;
+					}
+					else
+					{
+					    alert("Not Submited");
+					    return false;
+					}
+				}
+			});
+            return false;
+        }
+        
+        function fittniqresponse()
+        {
+            var name=$("#companyname").val();
+            var mobile=$("#mobile").val();
+            var email=$("#email").val();
+            var address=$("#address").val();
+            var gstno=$("#gstno").val();
+            if(gstno=="")
+            {
+                gstno="NA";
+            }
+            var niqid=$("#niqid").val();
+            
+            $.ajax({
+				type: "POST",
+				url: "addfittniqresponse.php",
+				data: {id:niqid,name:name,mobile:mobile,email:email,address:address,gstno:gstno},
+				async: false,
+				success: function(response)
+				{
+				    //alert(response);
+					if(response=="11")
+					{
+					    alert("Successfully Submited");
+					    window.location.href=window.location.href;
+					}
+					else if(response=="22")
+					{
+					    alert("Already Exist");
+					    return false;
+					}
+					else
+					{
+					    alert("Not Submited");
+					    return false;
+					}
+				}
+			});
+            return false;
+        }
+        
+        function riniqresponse()
+        {
+            var riname=$("#ricompanyname").val();
+            var rimobile=$("#rimobile").val();
+            var riemail=$("#riemail").val();
+            var riaddress=$("#riaddress").val();
+            var rigstno=$("#rigstno").val();
+            var riniqid=$("#riniqid").val();
+            
+            
+            $.ajax({
+				type: "POST",
+				url: "addriniqresponse.php",
+				data: {id:riniqid,name:riname,mobile:rimobile,email:riemail,address:riaddress,gstno:rigstno},
+				async: false,
+				success: function(response)
+				{
+				    //alert(response);
+					if(response=="11")
+					{
+					    alert("Successfully Submited");
+					    window.location.href=window.location.href;
+					}
+					else if(response=="22")
+					{
+					    alert("Already Exist");
+					    return false;
+					}
+					else
+					{
+					    alert("Not Submited");
+					    return false;
+					}
+				}
+			});
+            return false;
+        }
+    </script>
+</body>
+
+</html>

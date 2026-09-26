@@ -1,0 +1,2441 @@
+ 
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('html') -->
+<!-- FILE NAME SUGGESTIONS:
+   * html--front.tpl.php
+   * html--node--1012.tpl.php
+   * html--node--%.tpl.php
+   * html--node.tpl.php
+   x html.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/html.tpl.php' -->
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="http://nasscom.in/sites/all/themes/nasscom/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>NASSCOM | NASSCOM</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+
+  <style>
+@import url("http://nasscom.in/modules/system/system.base.css?osauhf");
+</style>
+<style>
+@import url("http://nasscom.in/sites/all/libraries/slick/slick/slick.css?osauhf");
+</style>
+<style>
+@import url("http://nasscom.in/sites/all/modules/simplenews/simplenews.css?osauhf");
+@import url("http://nasscom.in/modules/aggregator/aggregator.css?osauhf");
+@import url("http://nasscom.in/modules/comment/comment.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/commerce_popup_cart/css/cart-popup.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/date/date_api/date.css?osauhf");
+@import url("http://nasscom.in/modules/field/theme/field.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/footer_sitemap/footer_sitemap.css?osauhf");
+@import url("http://nasscom.in/modules/node/node.css?osauhf");
+@import url("http://nasscom.in/modules/search/search.css?osauhf");
+@import url("http://nasscom.in/modules/user/user.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/webform_confirm_email/webform_confirm_email.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/youtube/css/youtube.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/views/css/views.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/ckeditor/css/ckeditor.css?osauhf");
+</style>
+<style>
+@import url("http://nasscom.in/sites/all/libraries/colorbox/example3/colorbox.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/ctools/css/ctools.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/panels/css/panels.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/tagclouds/tagclouds.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/user_dashboard/user_dashboard.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/nice_menus/css/nice_menus.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/nice_menus/css/nice_menus_default.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/flexslider/assets/css/flexslider_img.css?osauhf");
+@import url("http://nasscom.in/sites/all/libraries/flexslider/flexslider.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/improved_multi_select/improved_multi_select.css?osauhf");
+@import url("http://nasscom.in/sites/all/modules/quicktabs/css/quicktabs.css?osauhf");
+</style>
+<style>
+@import url("http://nasscom.in/sites/all/themes/nasscom/css/styles.css?osauhf");
+@import url("http://nasscom.in/sites/all/themes/nasscom/css/styles_new.css?osauhf");
+@import url("http://nasscom.in/sites/all/themes/nasscom/css/custom-responsive.css?osauhf");
+</style>
+  <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")</script>
+<script src="http://nasscom.in/misc/jquery.once.js?v=1.2"></script>
+<script src="http://nasscom.in/misc/drupal.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/libraries/slick/slick/slick.min.js?v=1.x"></script>
+<script src="http://nasscom.in/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script src="http://nasscom.in/sites/all/modules/jquery_update/replace/misc/jquery.form.min.js?v=2.69"></script>
+<script src="http://nasscom.in/misc/ajax.js?v=7.43"></script>
+<script src="http://nasscom.in/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script src="http://nasscom.in/sites/all/modules/commerce_popup_cart/js/cart-popup.js?osauhf"></script>
+<script src="http://nasscom.in/misc/progress.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/libraries/colorbox/jquery.colorbox-min.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/colorbox/js/colorbox.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/colorbox/js/colorbox_load.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/commerce_popup_cart/js/jquery.hoverIntent.minified.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/captcha/captcha.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/clientside_validation/jquery-validate/jquery.validate.min.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/libraries/flexslider/jquery.flexslider.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/slick/js/slick.load.min.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/views_load_more/views_load_more.js?osauhf"></script>
+<script>var switchTo5x = true;</script>
+<script src="http://w.sharethis.com/button/buttons.js"></script>
+<script>if (stLight !== undefined) { stLight.options({"publisher":"dr-190a9ce-d97b-d509-ae8e-50e2f61bc8","version":"5x"}); }</script>
+<script src="http://nasscom.in/sites/all/modules/views/js/base.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/views/js/ajax_view.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/google_analytics/googleanalytics.js?osauhf"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-757351-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="http://nasscom.in/sites/all/modules/improved_multi_select/improved_multi_select.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/quicktabs/js/quicktabs.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/themes/nasscom/js/script.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/themes/nasscom/js/jquery.mCustomScrollbar.js?osauhf"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"nasscom","theme_token":"-WHFGgs7WHUpfAvY2YPlkfyn9PO-FAPb1Go3gNzASAw","jquery_version":"1.8","js":{"0":1,"1":1,"2":1,"sites\/all\/modules\/flexslider\/assets\/js\/flexslider.load.js":1,"sites\/all\/modules\/clientside_validation\/clientside_validation.ie8.js":1,"sites\/all\/modules\/clientside_validation\/clientside_validation_html5\/clientside_validation_html5.js":1,"sites\/all\/modules\/clientside_validation\/clientside_validation.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"3":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/slick\/slick\/slick.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/commerce_popup_cart\/js\/cart-popup.js":1,"misc\/progress.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/commerce_popup_cart\/js\/jquery.hoverIntent.minified.js":1,"sites\/all\/modules\/captcha\/captcha.js":1,"sites\/all\/modules\/clientside_validation\/jquery-validate\/jquery.validate.min.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider.js":1,"sites\/all\/modules\/slick\/js\/slick.load.min.js":1,"sites\/all\/modules\/views_load_more\/views_load_more.js":1,"4":1,"http:\/\/w.sharethis.com\/button\/buttons.js":1,"5":1,"sites\/all\/modules\/views\/js\/base.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"6":1,"sites\/all\/modules\/improved_multi_select\/improved_multi_select.js":1,"sites\/all\/modules\/quicktabs\/js\/quicktabs.js":1,"sites\/all\/themes\/nasscom\/js\/script.js":1,"sites\/all\/themes\/nasscom\/js\/jquery.mCustomScrollbar.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/slick\/slick\/slick.css":1,"sites\/all\/modules\/simplenews\/simplenews.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/commerce_popup_cart\/css\/cart-popup.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/footer_sitemap\/footer_sitemap.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/webform_confirm_email\/webform_confirm_email.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/libraries\/colorbox\/example3\/colorbox.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/tagclouds\/tagclouds.css":1,"sites\/all\/modules\/user_dashboard\/user_dashboard.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/modules\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/modules\/improved_multi_select\/improved_multi_select.css":1,"sites\/all\/modules\/quicktabs\/css\/quicktabs.css":1,"sites\/all\/themes\/nasscom\/system.menus.css":1,"sites\/all\/themes\/nasscom\/system.messages.css":1,"sites\/all\/themes\/nasscom\/system.theme.css":1,"sites\/all\/themes\/nasscom\/css\/styles.css":1,"sites\/all\/themes\/nasscom\/css\/styles_new.css":1,"sites\/all\/themes\/nasscom\/css\/custom-responsive.css":1}},"colorbox":{"transition":"fade","speed":"350","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"","next":"","close":"Close","overlayClose":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":false,"mobiledetect":true,"mobiledevicewidth":"280px"},"urlIsAjaxTrusted":{"\/":true,"\/nasscom-0?destination=node\/1012":true,"\/quicktabs\/ajax\/events_home_page\/0\/block\/views_delta_jcarousel_events-block_1\/1":true,"\/quicktabs\/ajax\/events_home_page\/1\/block\/views_delta_jcarousel_events-block_2\/1":true,"\/quicktabs\/ajax\/events_home_page\/2\/block\/views_delta_jcarousel_events-block_3\/1":true,"\/quicktabs\/ajax\/_none_\/0\/block\/homepage_socialfeed_delta_home_page_feed_twi\/1":true,"\/quicktabs\/ajax\/_none_\/1\/block\/homepage_socialfeed_delta_home_page_feed_yout\/1":true,"\/quicktabs\/ajax\/_none_\/2\/block\/block_delta_5\/1":true},"flexslider":{"optionsets":{"banner":{"namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"slide","slideshow":true,"slideshowSpeed":"7000","directionNav":false,"controlNav":true,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""},"default":{"namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":7000,"directionNav":true,"controlNav":true,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""}},"instances":{"flexslider-1":"banner","flexslider-2":"default","flexslider-3":"default"}},"better_exposed_filters":{"views":{"home_page_banner":{"displays":{"block":{"filters":[]}}},"latest_in_nasscom":{"displays":{"block":{"filters":[]}}},"our_initiatives":{"displays":{"block":{"filters":[]}}},"home_page_video":{"displays":{"block":{"filters":[]}}},"latest_publications":{"displays":{"block":{"filters":[]}}},"face_to_face":{"displays":{"block":{"filters":[]}}},"our_blogs":{"displays":{"block":{"filters":[]}}},"show_advertisement":{"displays":{"block":{"filters":[]},"block_1":{"filters":[]}}},"jcarousel_events":{"displays":{"block_1":{"filters":[]}}},"press_release_listing":{"displays":{"block_1":{"filters":[]}}}}},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"autoplaySpeed":3000,"pauseOnHover":true,"pauseOnDotsHover":false,"arrows":true,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.35,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","useTransform":false,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true,"mousewheel":false},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:f99d8ec7631eb3a37b90d7d02cff8ad4":{"view_name":"press_release_listing","view_display_id":"block_1","view_args":"","view_path":"node\/1012","view_base_path":null,"view_dom_id":"f99d8ec7631eb3a37b90d7d02cff8ad4","pager_element":0}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"improved_multi_select":{"selectors":["select[multiple]"]},"ajax":{"quicktabs-tab-events_home_page-0":{"progress":{"message":"","type":"throbber"},"event":"click","url":"\/quicktabs\/ajax\/events_home_page\/0\/block\/views_delta_jcarousel_events-block_1\/1"},"quicktabs-tab-events_home_page-1":{"progress":{"message":"","type":"throbber"},"event":"click","url":"\/quicktabs\/ajax\/events_home_page\/1\/block\/views_delta_jcarousel_events-block_2\/1"},"quicktabs-tab-events_home_page-2":{"progress":{"message":"","type":"throbber"},"event":"click","url":"\/quicktabs\/ajax\/events_home_page\/2\/block\/views_delta_jcarousel_events-block_3\/1"},"quicktabs-tab-_none_-0":{"progress":{"message":"","type":"throbber"},"event":"click","url":"\/quicktabs\/ajax\/_none_\/0\/block\/homepage_socialfeed_delta_home_page_feed_twi\/1"},"quicktabs-tab-_none_-1":{"progress":{"message":"","type":"throbber"},"event":"click","url":"\/quicktabs\/ajax\/_none_\/1\/block\/homepage_socialfeed_delta_home_page_feed_yout\/1"},"quicktabs-tab-_none_-2":{"progress":{"message":"","type":"throbber"},"event":"click","url":"\/quicktabs\/ajax\/_none_\/2\/block\/block_delta_5\/1"}},"quicktabs":{"qt_events_home_page":{"name":"events_home_page","tabs":[{"bid":"views_delta_jcarousel_events-block_1","hide_title":1},{"bid":"views_delta_jcarousel_events-block_2","hide_title":1},{"bid":"views_delta_jcarousel_events-block_3","hide_title":1}],"better_exposed_filters":{"views":{"show_advertisement":{"displays":{"block":{"filters":[]}}}}}},"qt__none_":{"name":"_none_","tabs":[{"bid":"homepage_socialfeed_delta_home_page_feed_twi","hide_title":1},{"bid":"homepage_socialfeed_delta_home_page_feed_yout","hide_title":1},{"bid":"block_delta_5","hide_title":1}],"better_exposed_filters":{"views":{"press_release_listing":{"displays":{"block_1":{"filters":[]}}}}}}},"clientsideValidation":{"forms":{"search-block-form":{"errorPlacement":1,"general":{"errorClass":"error","wrapper":"li","validateTabs":"","scrollTo":1,"scrollSpeed":1000,"disableHtml5Validation":1,"validateOnBlur":1,"validateOnBlurAlways":0,"validateOnKeyUp":1,"validateBeforeAjax":0,"validateOnSubmit":1,"showMessages":0,"errorElement":"label"},"rules":{"search_block_form":{"maxlength":128,"messages":{"maxlength":"Search field has to have maximum 128 values."}}}},"member-form":{"errorPlacement":"5","general":{"errorClass":"error","wrapper":"li","validateTabs":"","scrollTo":1,"scrollSpeed":"1000","disableHtml5Validation":"1","validateOnBlur":"1","validateOnBlurAlways":"0","validateOnKeyUp":"1","validateBeforeAjax":"0","validateOnSubmit":"1","showMessages":"0","errorElement":"label"},"rules":{"mail":{"required":true,"messages":{"required":"EMAIL ADDRESS field is required.","maxlength":"EMAIL ADDRESS field has to have maximum 128 values."},"maxlength":128},"field_fname":{"required":true,"messages":{"required":"FIRST NAME field is required.","maxlength":"FIRST NAME field has to have maximum 128 values."},"maxlength":128},"field_lname":{"required":true,"messages":{"required":"LAST NAME field is required.","maxlength":"LAST NAME field has to have maximum 128 values."},"maxlength":128},"field_cname":{"required":true,"messages":{"required":"COMPANY NAME field is required.","maxlength":"COMPANY NAME field has to have maximum 128 values."},"maxlength":128},"busines":{"required":true,"messages":{"required":"business focus field is required.","blacklist":"business focus field is required."},"blacklist":{"values":["_none"],"negate":false}},"captcha_response":{"captcha":"captcha_validate_case_insensitive_ignore_spaces","messages":{"captcha":"Wrong answer for What code is in the image?","required":"What code is in the image? field is required.","maxlength":"What code is in the image? field has to have maximum 128 values."},"required":true,"maxlength":128}}},"user-login-form":{"errorPlacement":"5","general":{"errorClass":"error","wrapper":"li","validateTabs":"","scrollTo":1,"scrollSpeed":"1000","disableHtml5Validation":"1","validateOnBlur":"1","validateOnBlurAlways":"0","validateOnKeyUp":"1","validateBeforeAjax":"0","validateOnSubmit":"1","showMessages":"0","errorElement":"label"},"rules":{"name":{"required":true,"messages":{"required":"Username field is required.","maxlength":"Username field has to have maximum 60 values."},"maxlength":60},"pass":{"required":true,"messages":{"required":"Password field is required.","maxlength":"Password field has to have maximum 128 values."},"maxlength":128}}}},"general":{"usexregxp":0,"months":{"January":1,"Jan":1,"February":2,"Feb":2,"March":3,"Mar":3,"April":4,"Apr":4,"May":5,"June":6,"Jun":6,"July":7,"Jul":7,"August":8,"Aug":8,"September":9,"Sep":9,"October":10,"Oct":10,"November":11,"Nov":11,"December":12,"Dec":12}},"groups":{"search-block-form":{},"member-form":{},"user-login-form":{}}}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-1012 node-type-landing-page" >
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('page') -->
+<!-- FILE NAME SUGGESTIONS:
+   x page--front.tpl.php
+   * page--node--1012.tpl.php
+   * page--node--%.tpl.php
+   * page--node.tpl.php
+   * page.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/page--front.tpl.php' -->
+ <header class="header" id="header" role="banner">
+   <div class="header-top">   
+     <div class="container clearfix">
+                  <a href="/" title="Home" rel="home" class="header__logo" id="logo"><img src="http://nasscom.in/sites/all/themes/nasscom/logo.png" alt="Home" class="header__logo-image" /></a>
+                <div class="header-upper">  
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--header-upper.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-header-upper">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu--menu-home-page-upper-menu.tpl.php
+   * block--menu.tpl.php
+   * block--header-upper.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-menu-menu-home-page-upper-menu" class="block block-menu first odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/" title="" class="menu__link active">Home</a></li>
+<li class="menu__item is-leaf leaf"><a href="/about-us/career" class="menu__link">Careers</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/about-us/contact-us" class="menu__link">Contact Us</a></li>
+</ul>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--search--form.tpl.php
+   * block--search.tpl.php
+   * block--header-upper.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-search-form" class="block block-search even" role="search">
+
+      
+  <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('search_block_form') -->
+<!-- BEGIN OUTPUT from 'modules/search/search-block-form.tpl.php' -->
+<div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-b-Af-s5awsk9W3riPDPgG7SR0aixxMLxsRxw8MAAeCE" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+
+<!-- END OUTPUT from 'modules/search/search-block-form.tpl.php' -->
+
+</div></form>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--7.tpl.php
+   * block--block.tpl.php
+   * block--header-upper.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-block-7" class="block block-block last odd">
+
+      
+  <p><a href="http://nasscom.in/advanced-search">Advanced Search</a></p>
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+        </div>
+      </div>  
+    </div>
+    
+  <div class="header-main">
+    <div class="menu-icon">
+           <span></span>
+           <span></span>
+           <span></span>
+         </div>   
+    <div class="container clearfix">
+     <div id="navigation" class="nav">
+
+   <!--        <nav id="main-menu" role="navigation"    tabindex="-1">-->
+                  <!--</nav>-->
+      
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--navigation.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-navigation">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--nice-menus--1.tpl.php
+   * block--nice-menus.tpl.php
+   * block--navigation.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-nice-menus-1" class="block block-nice-menus first last odd">
+
+      
+  <ul class="nice-menu nice-menu-down nice-menu-menu-main-menu" id="nice-menu-1"><li class="menu__item menu-1812 menuparent  menu-path-node-933 first odd "><a href="/about-us" class="menu__link">About Us</a><ul><li class="menu__item menu-1813 menu-path-node-931 first odd "><a href="/who-we-are" class="menu__link">Who We Are</a></li>
+<li class="menu__item menu-1814 menuparent  menu-path-node-298  even "><a href="/about-us/what-we-do" class="menu__link">What We Do</a><ul><li class="menu__item menu-1819 menuparent  menu-path-nolink first odd "><span class="menu__link nolink">Industry Development</span><ul><li class="menu__item menu-1820 menu-path-node-592 first odd "><a href="/about-us/what-we-do/industry-development/it-services-council" class="menu__link">IT services</a></li>
+<li class="menu__item menu-1821 menu-path-node-594  even "><a href="/about-us/what-we-do/industry-development/bpm-council" class="menu__link">BPM</a></li>
+<li class="menu__item menu-1822 menu-path-node-337  odd "><a href="/about-us/what-we-do/industry-development/engineering-council" class="menu__link">Engineering R&amp;D</a></li>
+<li class="menu__item menu-1823 menu-path-node-664  even "><a href="/about-us/what-we-do/industry-development/global-inhouse-centre" class="menu__link">Global Inhouse Centre</a></li>
+<li class="menu__item menu-1824 menu-path-node-606  odd "><a href="/about-us/what-we-do/industry-development/domestic-it" class="menu__link">Domestic Market</a></li>
+<li class="menu__item menu-1825 menu-path-node-308  even "><a href="/about-us/what-we-do/industry-development/product-connect" class="menu__link">Products</a></li>
+<li class="menu__item menu-1826 menu-path-node-619  odd last"><a href="/about-us/what-we-do/industry-development/internet-ecommerce-council" class="menu__link">Internet and Mobility</a></li>
+</ul></li>
+<li class="menu__item menu-1827 menu-path-node-306  even "><a href="/about-us/what-we-do/global-trade-development" class="menu__link">Global Trade Development</a></li>
+<li class="menu__item menu-1828 menu-path-10000startupscom--  odd "><a href="http://10000startups.com/ " target="_blank" class="menu__link">Start Ups</a></li>
+<li class="menu__item menu-1829 menu-path-node-662  even "><a href="/about-us/what-we-do/diversity-and-inclusion" class="menu__link">Diversity and Inclusion</a></li>
+<li class="menu__item menu-1830 menu-path-sscnasscomcom-  odd "><a href="http://www.sscnasscom.com/" target="_blank" class="menu__link">Skills</a></li>
+<li class="menu__item menu-1831 menu-path-nasscomfoundationorg-  even "><a href="http://nasscomfoundation.org/" target="_blank" class="menu__link">Social Development</a></li>
+<li class="menu__item menu-1832 menu-path-sdsciin-  odd "><a href="https://www.dsci.in/" target="_blank" class="menu__link">Security</a></li>
+<li class="menu__item menu-1833 menu-path-node-278  even "><a href="/knowledge-centre" class="menu__link">Research</a></li>
+<li class="menu__item menu-1834 menu-path-node-605  odd "><a href="/about-us/what-we-do/policy-advocacy" class="menu__link">Policy Advocacy</a></li>
+<li class="menu__item menu-1835 menu-path-coe-iotin-  even last"><a href="http://coe-iot.in/" target="_blank" class="menu__link">Centre of Excellence For IOT</a></li>
+</ul></li>
+<li class="menu__item menu-1815 menuparent  menu-path-node-903  odd "><a href="/about-us/Our-People" class="menu__link">Our People</a><ul><li class="menu__item menu-1836 menu-path-node-688 first odd last"><a href="/about-us/Our-People/former-presidents" class="menu__link">Former Presidents</a></li>
+</ul></li>
+<li class="menu__item menu-1816 menuparent  menu-path-node-933  even "><a href="/about-us#block-views-our-councils-views-block" class="menu__link">Our Council</a><ul><li class="menu__item menu-1837 menu-path-node-699 first odd "><a href="/our-councils/executive-council" class="menu__link">Executive Council</a></li>
+<li class="menu__item menu-1838 menu-path-node-347  even "><a href="/past-chairman-council" class="menu__link">Past Chairmen Council</a></li>
+<li class="menu__item menu-1839 menu-path-node-933  odd "><a href="/about-us#block-views-our-councils-views-block" class="menu__link">Industry Council</a></li>
+<li class="menu__item menu-1840 menuparent  menu-path-node-933  even last"><a href="/about-us#block-views-our-councils-views-block" class="menu__link">Regional Council</a><ul><li class="menu__item menu-1841 menu-path-node-924 first odd "><a href="/about-us/northern-region" class="menu__link">NCR</a></li>
+<li class="menu__item menu-1842 menu-path-node-463  even "><a href="/regional-council-kolkata" class="menu__link">Eastern Region</a></li>
+<li class="menu__item menu-1843 menu-path-node-455  odd "><a href="/regional-council-western" class="menu__link">Western Region</a></li>
+<li class="menu__item menu-2228 menu-path-node-1149  even last"><a href="/regional-council-south" class="menu__link">Southern Region</a></li>
+</ul></li>
+</ul></li>
+<li class="menu__item menu-1817 menu-path-node-613  odd "><a href="/about-us/career" class="menu__link">Careers @ NASSCOM</a></li>
+<li class="menu__item menu-1818 menu-path-node-549  even last"><a href="/about-us/contact-us" class="menu__link">Contact Us</a></li>
+</ul></li>
+<li class="menu__item menu-605 menuparent  menu-path-node-301  even "><a href="/membership-landing" class="menu__link">Membership</a><ul><li class="menu__item menu-606 menuparent  menu-path-nasscom-membership first odd last"><a href="/nasscom-membership" class="menu__link">Become a member</a><ul><li class="menu__item menu-1690 menu-path-node-301 first odd "><a href="/membership-landing#content-second" class="menu__link">Membership Benefits</a></li>
+<li class="menu__item menu-1691 menu-path-node-301  even "><a href="/membership-landing#content-third" class="menu__link">Eligibility Criteria</a></li>
+<li class="menu__item menu-1692 menu-path-node-301  odd "><a href="/membership-landing#content-fourth" class="menu__link">Membership Fee</a></li>
+<li class="menu__item menu-1693 menu-path-node-301  even last"><a href="/membership-landing#content-fifth" class="menu__link">Membership Enrollment</a></li>
+</ul></li>
+</ul></li>
+<li class="menu__item menu-613 menuparent  menu-path-node-278  odd "><a href="/knowledge-centre" class="menu__link">Knowledge Center</a><ul><li class="menu__item menu-614 menu-path-node-413 first odd "><a href="/knowledge-centre/publications" title="" class="menu__link">Publications </a></li>
+<li class="menu__item menu-615 menu-path-node-334  even "><a href="/knowledge-centre/show-cases" class="menu__link">Showcase</a></li>
+<li class="menu__item menu-616 menu-path-node-546  odd "><a href="/knowledge-centre/facts-figures" class="menu__link">Facts and Figures</a></li>
+<li class="menu__item menu-617 menu-path-blogsnasscomin-  even "><a href="http://blogs.nasscom.in/" target="_blank" class="menu__link">Blogs</a></li>
+<li class="menu__item menu-618 menu-path-node-390  odd "><a href="/knowledge-centre/interviews" class="menu__link">  Interviews</a></li>
+<li class="menu__item menu-619 menu-path-node-572  even last"><a href="/knowledge-centre/newsline" class="menu__link">Newsline</a></li>
+</ul></li>
+<li class="menu__item menu-620 menuparent  menu-path-node-591  even "><a href="/media" class="menu__link">Media Centre</a><ul><li class="menu__item menu-622 menu-path-node-591 first odd "><a href="/media#block-views-nasscom-in-news-block" class="menu__link">Nasscom in News</a></li>
+<li class="menu__item menu-621 menu-path-node-591  even "><a href="/media#block-views-press-release-listing-block" class="menu__link">Press Releases</a></li>
+<li class="menu__item menu-624 menu-path-node-591  odd "><a href="/media#block-views-nasscom-leadership-block" class="menu__link">Media Kit</a></li>
+<li class="menu__item menu-625 menu-path-node-591  even last"><a href="/media#block-block-65" class="menu__link">Media Contacts</a></li>
+</ul></li>
+<li class="menu__item menu-608 menu-path-node-423  odd "><a href="/events" class="menu__link">Events</a></li>
+<li class="menu__item menu-1797 menu-path-mailtowebmasternasscomin  even last footer-display"><a href="mailto:webmaster@nasscom.in" class="menu__link">Advertise With Us</a></li>
+</ul>
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+
+    </div>
+     
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--header.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="header__region region region-header">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--what-we-do--member.tpl.php
+   * block--what-we-do.tpl.php
+   * block--header.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-what-we-do-member" class="block block-what-we-do registration-app first odd">
+
+      
+  <form action="/" method="post" id="member-form" accept-charset="UTF-8"><div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('member_form') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/custom/member/templates/member.tpl.php' -->
+
+<div class="userlogin-link">
+    <a href="javascript:;"> New User </a>
+    <div class="userlogin-popup">
+        <h4> New User / Registration </h4>
+<input type="hidden" name="form_id" value="member_form" />
+<div class="form-item form-type-textfield form-item-field-fname">
+  <label for="edit-field-fname">FIRST NAME <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-field-fname" name="field_fname" value="" size="60" maxlength="128" class="form-text required" />
+</div>
+<div class="form-item form-type-textfield form-item-field-lname">
+  <label for="edit-field-lname">LAST NAME <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-field-lname" name="field_lname" value="" size="60" maxlength="128" class="form-text required" />
+</div>
+<div class="form-item form-type-textfield form-item-mail">
+  <label for="edit-mail">EMAIL ADDRESS <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="128" class="form-text required" />
+<div class="description"> </div>
+</div>
+<div class="message"></div><div class="form-item form-type-textfield form-item-field-cname">
+  <label for="edit-field-cname">COMPANY NAME <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-field-cname" name="field_cname" value="" size="60" maxlength="128" class="form-text required" />
+</div>
+<div class="form-item form-type-select form-item-busines">
+  <label for="edit-busines">business focus <span class="form-required" title="This field is required.">*</span></label>
+ <select id="edit-busines" name="busines" class="form-select required"><option value="" selected="selected">- Select -</option><option value="0">business</option><option value="1">analytics</option><option value="2">sales</option></select>
+</div>
+<fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="1542490" />
+<input type="hidden" name="captcha_token" value="fc8f190d76ae1dff60c6cfdaafec4b0d" />
+<img typeof="foaf:Image" src="/image_captcha?sid=1542490&amp;amp;ts=1498898456" width="180" height="60" alt="Image CAPTCHA" title="Image CAPTCHA" /><div class="form-item form-type-textfield form-item-captcha-response">
+  <label for="edit-captcha-response">What code is in the image? <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-captcha-response" name="captcha_response" value="" size="15" maxlength="128" class="form-text required" />
+<div class="description">Enter the characters shown in the image.</div>
+</div>
+</div></fieldset>
+<input type="submit" id="edit-submit--2" name="op" value="REGISTER" class="form-submit" /><input type="hidden" name="form_build_id" value="form-4sAmYEaITpKiaEjlZGhgEVCbGX_S5JcOgUu-JHmZoMI" />
+ 
+</div></div>
+
+
+<!-- END OUTPUT from 'sites/all/modules/custom/member/templates/member.tpl.php' -->
+
+</div></form>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--user--login.tpl.php
+   * block--user.tpl.php
+   * block--header.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-user-login" class="block block-user login-app last even" role="form">
+
+        <h2 class="block__title block-title">User login</h2>
+    
+  <form action="/nasscom-0?destination=node/1012" method="post" id="user-login-form" accept-charset="UTF-8"><div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('user_login_block') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/user-login.tpl.php' -->
+<div class="userlogin-login">
+    <a href="javascript:;"> <i class="icons-login"></i> Login</a>
+    <div class="userlogin-login-popup">
+        <h4> Login </h4>
+<div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+ <input tabindex="1" type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input tabindex="1" type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<input tabindex="1" type="submit" id="edit-submit--3" name="op" value="Log in" class="form-submit" /><div class="form-item form-type-checkbox form-item-remember-me">
+ <input tabindex="1" type="checkbox" id="edit-remember-me" name="remember_me" value="1" checked="checked" class="form-checkbox" />  <label class="option" for="edit-remember-me">Remember me </label>
+
+</div>
+<a href="/forgot-password" class="forgot-password">Forgot Password?</a><div class="form-actions form-wrapper" id="edit-actions--2"></div><input type="hidden" name="form_build_id" value="form-uZIWIT3oHifw0VRgIJCyVHlLZTPd9bWFxx8Wq0Sv8gU" />
+<input type="hidden" name="form_id" value="user_login_block" />
+</div></div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/user-login.tpl.php' -->
+
+</div></form>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+    </div>
+   </div>  
+
+
+   
+  </header>
+
+  <div id="main">
+
+    <div id="content" class="column" role="main">
+            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--highlighted.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-highlighted">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--3.tpl.php
+   * block--block.tpl.php
+   * block--highlighted.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-block-3" class="block block-block first odd">
+
+      
+  <div class="social-block">
+<span class="fb"><a href="http://www.facebook.com/NASSCOMOfficial"target="_blank"><i class="icons-fb"></i><strong>facebook</strong></a></span><span class="tw"><a href="https://twitter.com/nasscom"target="_blank"><i class="icons-tw"></i><strong>twitter</strong></a></span><span class="slideshare"><a href="http://www.slideshare.net/nasscom"target="_blank"><i class="icons-slideshare"></i><strong>slidehere</strong></a></span><span class="youTube"><a href="http://www.youtube.com/NasscomVideos"target="_blank"><i class="icons-youtube"></i><strong>youtube</strong></a></span>
+</div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--home-page-banner-block.tpl.php
+   * block--views.tpl.php
+   * block--highlighted.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-home-page-banner-block" class="block block-views last even">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-home-page-banner view-id-home_page_banner view-display-id-block view-dom-id-324f8022772c9fa28ac116e1a8ac62f9">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('flexslider_views') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/flexslider/flexslider_views/theme/flexslider-views.tpl.php' -->
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('flexslider') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
+<div  id="flexslider-1" class="flexslider">
+  <ul class="slides"><li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+          <a href="http://www.nasscom.in/hrsummit
+ "><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/HR_Summit_2017_Home.jpg" width="1300" height="433" alt="NASSCOM HR Summit 2017" title="NASSCOM HR Summit 2017" /></a>  
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+          <a href="http://www.nasscom.in/events/nasscom-partnership-program-israel
+ "><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/Delegation_to_Israel_Home.jpg" width="1300" height="433" alt="Business Delegation to Israel - July - August" title="Business Delegation to Israel - July - August" /></a>  
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+          <a href="http://www.nasscom.in/knowledge-center/publications/it-bpm-industry-india-2017-strategic-review
+ "><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/Strategic_Review_2017.jpg" width="1300" height="433" alt="Strategic Review 2017" title="Strategic Review 2017" /></a>  
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+          <a href="http://product.nasscom.in/emerge50.php
+ "><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/EMERGE50_2017.jpg" width="1300" height="433" alt="EMERGE 50 2017" title="EMERGE 50 2017" /></a>  
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+          <a href="http://www.nasscom.in/npc-kolkata
+ "><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/NPC_2017_Kolkata_New_Site.jpg" width="1300" height="433" alt="NPC 2017 - Kolkata" title="NPC 2017 - Kolkata" /></a>  
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/modules/flexslider/flexslider_views/theme/flexslider-views.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+      <!--      <a id="main-content"></a>-->
+            <!--        <h1 class="page__title title" id="page-title"></h1>-->
+                  
+                        
+        
+
+    
+
+    
+    
+
+
+  
+  <!--Start for nasscom_home -->
+      <div class="nasscom-home">
+         
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--nasscom-home.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-nasscom-home">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--4.tpl.php
+   * block--block.tpl.php
+   * block--nasscom-home.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-block-4" class="block block-block first odd">
+
+        <h2 class="block__title block-title">About Us</h2>
+    
+  <div class="nasscom-left-box">
+<div class="half-width"> </div>
+<h3>NASSCOM, a not-for-profit industry association, is the apex body for the 154 billion dollar Indian IT BPM industry.</h3>
+<p><strong>Prime Minister Shri Narendra Modi, referred to NASSCOM as a “revolution”, beyond its time-tested role as an association.</strong></p>
+<p>Established in 1988, NASSCOM has relentlessly catalysed the Indian IT BPM industry in its journey towards building an innovation led growth sector, with transformative business models, expanding its value proposition and becoming a partner of choice for global businesses.</p>
+</div>
+<p> </p>
+<div class="home-read-more"><a href="/about-us">READ MORE</a></div>
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--latest-in-nasscom-block.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-latest-in-nasscom-block" class="block block-views last even">
+
+        <h2 class="block__title block-title">Latest At NASSCOM</h2>
+    
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-latest-in-nasscom view-id-latest_in_nasscom view-display-id-block view-dom-id-f537d1f184dfd584e59ebd26141a3111">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('flexslider_views') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/flexslider/flexslider_views/theme/flexslider-views.tpl.php' -->
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('flexslider') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
+<div  id="flexslider-2" class="flexslider">
+  <ul class="slides"><li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/field/image/ransomware_crisis.jpg" width="177" height="208" alt="Petya / GoldenEye / ExPetr Ransomware Crisis" /></figure>
+<div class="latest-nasscom"><h3>Petya / GoldenEye / ExPetr Ransomware Crisis</h3><p><p>Another wave of ransomware attacks have resulted in outbreak globally, impacting organizations across different sectors. DSCI team has been constantly engaging with Security Leaders across organizations on this, coordinating information and resources as exchanged in global community.</p>
+</p></div></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/Ransomware_Crisis_DSCI_28062017.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/field/image/sustaining_growth_thumb.jpg" width="177" height="208" alt="" /></figure>
+<div class="latest-nasscom"><h3>NASSCOM Industry Outlook for the Year</h3><p><p>NASSCOM published its annual industry outlook for the year that takes a look at key trends that defined industry performance in the past year, what were the growth drivers and headwinds and how the industry is making the evolution to being a digital partner.</p>
+</p></div></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/NASSCOM_Annual_Guidance_Final_22062017.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/field/image/digital_skills_award_2017.jpg" width="177" height="208" alt="NASSCOM Digital Skills Award 2017" /></figure>
+<div class="latest-nasscom"><h3>NASSCOM Digital Skills Award 2017</h3><p><p>Inviting case studies from firms that showcase their digital skill development initiatives for their employees or with academia. The best case studies will be published in the NASSCOM Digital Skills Showcase report and recognized at the NASSCOM HR Summit. Leverage this opportunity and showcase how your organization is</div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/NASSCOM_Digital_Skills_Awards_2017_Final_v1.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/field/image/safe_harbour_rules.jpg" width="177" height="208" alt="" /></figure>
+<div class="latest-nasscom"><h3>Safe Harbour Rules for Transfer Pricing</h3><p><p>Amended Safe Harbour rules for transfer pricing were announced by the Government today. Read NASSCOM’s  analysis on the amendments with respect to  Software development services,  Information technology enabled services, Knowledge processing outsourcing services; and Contract research &amp; development services.</p>
+</p></div></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/NASSCOM_Policy_update_safe_harbour_rules_june_2017_0.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/field/image/NASSCOM-Delegation-to-China.jpg" width="177" height="208" alt="" /></figure>
+<div class="latest-nasscom"><h3>NASSCOM Delegation to China</h3><p><p>NASSCOM hosted a delegation to China (May 2017) to visit Beijing and Guizhou. The delegation met with different business leaders, new age companies and also visited the Big Data Expo at Guizhou.</p>
+</p></div></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/NASSCOM_delegation_to_China.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/field/image/NASSCOM-C-Summit-at-New-York.jpg" width="177" height="208" alt="" /></figure>
+<div class="latest-nasscom"><h3>NASSCOM C Summit at New York</h3><p><p>On 1-2 June 2017, NASSCOM organised its first mega event in the event on the theme of `Collaborating for a Digital Tomorrow’ at New York. Attended by over 200 CXOs, the event covered niche themes and discussions on the future of technology.</p>
+</p></div></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/NASSCOM-C-Summit-at-New-York.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/field/image/jobs_skills.jpg" width="177" height="208" alt="Jobs and Skills" /></figure>
+<div class="latest-nasscom"><h3>Jobs and Skills</h3><p><p>Read NASSCOM’s analysis of the current debate on jobs, the skills in demand and the reskilling platform being put together by NASSCOM in partnership with its members. The research highlights that hiring models are shifting from scale to skill – technical competencies, new soft skills and new technologies are the in-demand skills.</p>
+</p></div></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/Jobs_and_Skills.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div>        <div><figure><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/styles/latest_in_nasscom_home-page/public/knowledge_center_image/Newsline_May_2017_177x208.jpg?itok=myFvPj2r" width="177" height="208" alt="NASSCOM Newsline May 2017" title="NASSCOM Newsline May 2017" /></figure>
+<div class="latest-nasscom"><h3>Getting ready for GST and building skills for the DT opportunity</h3><p><p>There are significant changes - both business related and technological - that are sweeping the world and the Indian subcontinent, greatly impacting the Indian IT-BPM industry. In India, for instance,</div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a class="views-more-link" href="http://nasscom.in/sites/default/files/newsline_pdf/NASSCOM_NEWSLINE_May_2017.pdf" target="_blank">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/modules/flexslider/flexslider_views/theme/flexslider-views.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div class="view-all-btn"> <a href="/knowledge-centre/newsline" class="">View All</a></div>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+<!--       <div class="container">  
+               </div>-->
+    </div>
+    <!--End  for nasscom_home -->
+
+
+  <!--Start for nasscom_home_our_initiatives -->
+      <div class="nasscom-home-our-initiatives">
+      <div class="clearfix">   
+       
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--nasscom-home-our-initiatives.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-nasscom-home-our-initiatives">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--our-initiatives-block.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home-our-initiatives.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-our-initiatives-block" class="block block-views first odd">
+
+        <h2 class="block__title block-title">Our Initiatives</h2>
+    
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-our-initiatives view-id-our_initiatives view-display-id-block view-dom-id-0439ad9418cdcd78e735fe991a1052ce">
+            <div class="view-header">
+      <p>"NASSCOM works with diverse stakeholders to build focused initiatives that enable the growth of the sector through policy advocacy, skill building, research, startup programs, facilitate business and increase industry outreach."</p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_views') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick_views/templates/slick-views.tpl.php' -->
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick.tpl.php' -->
+<div class="slick slick--view--our-initiatives slick--view--our-initiatives--block slick--optionset--our-initiatives slick--carousel slick--float slick--ondemand" id="slick-views-our-initiatives-1">
+      <div id="slick-views-our-initiatives-1-slider" class="slick__slider" data-slick="{&quot;infinite&quot;:false,&quot;initialSlide&quot;:2,&quot;slidesPerRow&quot;:2,&quot;slidesToShow&quot;:2,&quot;swipeToSlide&quot;:true,&quot;touchThreshold&quot;:2,&quot;responsive&quot;:[{&quot;breakpoint&quot;:767,&quot;settings&quot;:[]}]}">
+  
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--0">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/CoE-IoT.PNG" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">CoE – IoT</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>To jump start the ecosystem by converging hardware &amp; software capabilities.</p>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--1">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/policy_advocacy.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Policy Advocacy</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Liaisons with government and industry to influence a favourable policy framework.</p>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--2">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/research.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Research</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Industry insights on growth opportunities to enhance competitiveness and strategic decision-</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--3">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/security.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Security</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Renders a safe &amp; secure cyberspace, and evangelizes a proactive approach in stakeholders.</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--4">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/csr.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">CSR</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Social arm - builds and sustains inclusivity through IT BPM industry’s competitiveness.</p>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--5">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/diversity_and_inclusion.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Diversity and Inclusion</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Facilitates diversity &amp; inclusivity best practices w.r.t gender, generation &amp; PwD.</p>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--6">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/startups.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Startups</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Fosters the ecosystem to scale up the number of startups by 10X.</p>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--7">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/development_0.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Industry Development</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Through our Verticals (7 Councils) and Horizontal Services, we facilitate industry growth.</p>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--8">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/skill.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Sector Skills Council</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Enables continued skill building to sustain industry competitiveness, and leverage demographic</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--9">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-initiative-icon">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/development.png" width="58" height="58" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-initiative-name">        <div class="field-content">Global Trade Development</div>  </div>  
+  <div class="views-field views-field-field-small-description">        <div class="field-content"><p>Safeguards industry’s interests, addresses policy challenges and facilitates global outreach.</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+    
+      </div>
+    <nav class="slick__arrow">
+      <button type="button" data-role="none" class="slick-prev" aria-label="previous">Previous</button>            <button type="button" data-role="none" class="slick-next" aria-label="next">Next</button>    </nav>
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick.tpl.php' -->
+
+  
+<!-- END OUTPUT from 'sites/all/modules/slick_views/templates/slick-views.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div class="view-all-btn"> <a href="/about-us/what-we-do" class="">View All</a></div>
+
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--92.tpl.php
+   * block--block.tpl.php
+   * block--nasscom-home-our-initiatives.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-block-92" class="block block-block even">
+
+      
+  <ul class="homepage-video-footer"><li><a class="active" href="https://community.nasscom.in" target="_blank"><i class="icons-member"> </i><strong>Community</strong></a></li>
+<li><a href="http://emarketplace.nasscom.in" target="_blank"><i class="icons-casestudies"> </i><strong>eMarketPlace</strong></a></li>
+</ul>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--home-page-video-block.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home-our-initiatives.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-home-page-video-block" class="block block-views last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-home-page-video view-id-home_page_video view-display-id-block view-dom-id-9ded5f95e54dcf0158c80d4eed8f0336">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_unformatted') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view-unformatted.tpl.php' -->
+  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-youtube-video">        <div class="field-content"><iframe id="youtube-field-player" class="youtube-field-player"
+    width="420" height="315"
+    src="https://www.youtube.com/embed/IT-E7c74p5Y?wmode=opaque" title="Embedded video for video" frameborder="0"
+    allowfullscreen><a href="https://www.youtube.com/embed/IT-E7c74p5Y?wmode=opaque">Embedded video for video</a></iframe></div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view-unformatted.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+      </div>
+    </div>
+    <!--End  for nasscom_home_our_initiatives -->
+
+  <!--Start for nasscom_home_knowledge -->
+      <div class="nasscom-knowledge-center">
+      <div class="container"> 
+        <h2>Knowledge Centre</h2>
+        
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--nasscom-home-knowledge.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-nasscom-home-knowledge">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--latest-publications-block.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home-knowledge.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-latest-publications-block" class="block block-views first odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-latest-publications view-id-latest_publications view-display-id-block view-dom-id-b0f934c1483e2ac56c045e0098397f81">
+            <div class="view-header">
+      <h3><i class="icons-publication"></i>Latest Publications</h3>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_views') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick_views/templates/slick-views.tpl.php' -->
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick.tpl.php' -->
+<div class="slick slick--view--latest-publications slick--view--latest-publications--block slick--optionset--default slick--slider slick--float slick--ondemand" id="slick-views-latest-publications-2">
+      <div id="slick-views-latest-publications-2-slider" class="slick__slider">
+  
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--0">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-image">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/knowledge_center_image/Enterprise_Digital_Transformation_small.jpg" width="197" height="230" alt="NASSCOM-Frost-Enterprise Digital Transformation" title="NASSCOM-Frost-Enterprise Digital Transformation" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/knowledge-center/publications/nasscom-frost-enterprise-digital-transformation">NASSCOM-Frost-Enterprise Digital Transformation</a></span>  </div>  
+  <div class="views-field views-field-field-knwlz-center-key-highlight">        <div class="field-content">The aim of this study is to research, analyze, and forecast the digital transformation strategies of Indian enterprises and assess value proposition from the supply side that address expectations of the enterprises transforming their business processes.</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--1">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-image">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/knowledge_center_image/gics_in_india_future_197x230.jpg" width="197" height="230" alt="Global In-house Centers: Get Ready for the Future" title="Global In-house Centers: Get Ready for the Future" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/knowledge-centre/publications/global-house-centers-get-ready-future">Global In-house Centers: Get Ready for the Future</a></span>  </div>  
+  <div class="views-field views-field-field-knwlz-center-key-highlight">        <div class="field-content">The report examines the changing role of Indian GICs — specifically, to define the key priorities that will enable them to become GICs of the future.</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--2">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-image">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/knowledge_center_image/incubators_accelerators_197x230.jpg" width="197" height="230" alt="Incubators / Accelerators Driving Growth of Indian Start-up Ecosystem - 2017" title="Incubators / Accelerators Driving Growth of Indian Start-up Ecosystem - 2017" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/knowledge-centre/publications/incubators-accelerators-driving-growth-indian-start-ecosystem-2017">Incubators / Accelerators Driving Growth of Indian Start-up Ecosystem - 2017</a></span>  </div>  
+  <div class="views-field views-field-field-knwlz-center-key-highlight">        <div class="field-content">The first edition of NASSCOM-Zinnov report titled “Incubators/Accelerators (I/As) Driving the Growth of Indian Start-up Ecosystem – 2017” throws light on the critical role that I/As play in the start-up landscape.</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--3">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-image">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/knowledge_center_image/iot_revolution_in_the_making_197x230.jpg" width="197" height="230" alt="IoT: Revolution in the Making" title="IoT: Revolution in the Making" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/knowledge-center/publications/iot-revolution-making">IoT: Revolution in the Making</a></span>  </div>  
+  <div class="views-field views-field-field-knwlz-center-key-highlight">        <div class="field-content">This report highlights the global and India market size (current &amp; 2020), show cases opportunity by verticals with use cases, highlights challenges to be overcome, and the roadmap to higher adoption.</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--4">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-image">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/knowledge_center_image/strategic_review_2017_197x230.jpg" width="197" height="230" alt="The IT-BPM Industry in India 2017: Strategic Review" title="The IT-BPM Industry in India 2017: Strategic Review" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/knowledge-center/publications/it-bpm-industry-india-2017-strategic-review">The IT-BPM Industry in India 2017: Strategic Review</a></span>  </div>  
+  <div class="views-field views-field-field-knwlz-center-key-highlight">        <div class="field-content">This report analyses the IT-BPM market size by segments (IT services, BPM, ER&amp;D, Software Products and eCommerce). More importantly, the report traces India’s digital journey both from the user perspective (how firms in India are digitally transforming themselves)... <a href="/knowledge-center/publications/it-bpm-industry-india-2017-strategic-review" class="views-more-link">[Read More]</a></div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+    
+      </div>
+    <nav class="slick__arrow">
+      <button type="button" data-role="none" class="slick-prev" aria-label="previous">Previous</button>            <button type="button" data-role="none" class="slick-next" aria-label="next">Next</button>    </nav>
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick.tpl.php' -->
+
+  
+<!-- END OUTPUT from 'sites/all/modules/slick_views/templates/slick-views.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div class="view-all-btn"> <a href="/knowledge-centre/publications" class="">View All</a></div>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--face-to-face-block.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home-knowledge.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-face-to-face-block" class="block block-views even">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-face-to-face view-id-face_to_face view-display-id-block view-dom-id-1eb520d9ad527840b385efc0104adf32">
+            <div class="view-header">
+      <h3><i class="icons-FTF"></i>Face To Face</h3>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_unformatted') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view-unformatted.tpl.php' -->
+  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-face-to-face-image">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/styles/facetoface227x170x/public/aloknath_de.jpg?itok=bvca2q3S" width="227" height="170" alt="Dr. Aloknath De" title="Dr. Aloknath De" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/interviews/dr-aloknath-de">Dr. Aloknath De</a></span>  </div>  
+  <div class="views-field views-field-field-designation">        <div class="field-content">Corporate Vice President,</div>  </div>  
+  <div class="views-field views-field-field-company-name">        <div class="field-content">Samsung Electronics</div>  </div>  
+  <div class="views-field views-field-php">        <span class="field-content"><a href="/interviews/dr-aloknath-de" class="views-more-link">Read more</a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view-unformatted.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <br/>
+<div class="view-all-btn"> <a href="/knowledge-centre/interviews" class="">View All</a></div>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--our-blogs-block.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home-knowledge.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-our-blogs-block" class="block block-views last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-our-blogs view-id-our_blogs view-display-id-block view-dom-id-cdfb7b4011b02eb6af12b57a2b3cd2bf">
+            <div class="view-header">
+      <h3><i class="icons-ftf"></i>Our Blogs</h3>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_list') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view-list.tpl.php' -->
+<div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="https://community.nasscom.in/people/ramanarcweb/blog/2017/06/30/is-ics-cybersecurity-common-across-sectors">Is ICS Cybersecurity Common Across Sectors?</a></span>  </div>  
+  <div class="views-field views-field-author">        <span class="field-content">Posted On - Fri, 2017-06-30 14:37,  Posted By - communityadmin@nasscom.in</span>  </div>  
+  <div class="views-field views-field-description">        <span class="field-content">Industrial control systems have been essential components of the critical infrastructure for decades. Securing these systems is essential to protect their integrity and availability of the equipment under control and the associated information. The</span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+      </ul></div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view-list.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <br/><br/><div class="view-all-btn"> <a href="/knowledge-centre" class="">View All</a></div>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+      </div>  
+    </div>
+    <!--End  for nasscom_home_knowledge -->
+  <!--Start for nasscom_home_advertise -->
+      <div class="nasscom-home-advertise">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--nasscom-home-advertise.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-nasscom-home-advertise">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--show-advertisement-block.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home-advertise.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-show-advertisement-block" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-show-advertisement view-id-show_advertisement view-display-id-block view-dom-id-5599a81ba23b1b436005f46cc57364c4">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+    </div>
+    <!--End  for nasscom_home_advertise -->
+
+
+  <!--Start for nasscom_home_upcomming_events -->
+      <div class="nasscom-home-upcomming-events">
+     <div class="container clearfix">   
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--nasscom-home-upcomming-events.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-nasscom-home-upcomming-events">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--9.tpl.php
+   * block--block.tpl.php
+   * block--nasscom-home-upcomming-events.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-block-9" class="block block-block first odd">
+
+      
+  <ul class="event-list">
+	<li><a href="events?qt-events_search=1#qt-events_search">PAST EVENTS</a></li>
+	<li><a href="events?qt-events_search=0#qt-events_search">EVENT CALENDER</a></li>
+</ul>
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--quicktabs--events-home-page.tpl.php
+   * block--quicktabs.tpl.php
+   * block--nasscom-home-upcomming-events.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-quicktabs-events-home-page" class="block block-quicktabs last even">
+
+        <h2 class="block__title block-title">Upcoming Events</h2>
+    
+  <div  id="quicktabs-events_home_page" class="quicktabs-wrapper quicktabs-style-nostyle"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-nostyle"><li class="active first"><a href="/nasscom-0?qt-events_home_page=0#qt-events_home_page" id="quicktabs-tab-events_home_page-0" class="active">National</a></li>
+<li><a href="/nasscom-0?qt-events_home_page=1#qt-events_home_page" id="quicktabs-tab-events_home_page-1" class="active">Regional </a></li>
+<li class="last"><a href="/nasscom-0?qt-events_home_page=2#qt-events_home_page" id="quicktabs-tab-events_home_page-2" class="active">International</a></li>
+</ul></div><div id="quicktabs-container-events_home_page" class="quicktabs_main quicktabs-style-nostyle"><div  id="quicktabs-tabpage-events_home_page-0" class="quicktabs-tabpage ">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--jcarousel-events-block-1.tpl.php
+   * block--views.tpl.php
+   * block--quicktabs-tabpage.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-jcarousel-events-block-1" class="block block-views first odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-jcarousel-events view-id-jcarousel_events view-display-id-block_1 view-dom-id-f2e3c42e1e052eb1aa0deb6193261636">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_views') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick_views/templates/slick-views.tpl.php' -->
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick.tpl.php' -->
+<div class="slick slick--view--jcarousel-events slick--view--jcarousel-events--block-1 slick--optionset--upcoming-events slick--carousel slick--float slick--ondemand" id="slick-views-jcarousel-events-3">
+      <div id="slick-views-jcarousel-events-3-slider" class="slick__slider" data-slick="{&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;slidesToShow&quot;:3,&quot;responsive&quot;:[{&quot;breakpoint&quot;:767,&quot;settings&quot;:{&quot;slidesToShow&quot;:2}},{&quot;breakpoint&quot;:639,&quot;settings&quot;:[]}]}">
+  
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--0">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-event-thumbnail">        <div class="field-content"><a href="http://www.nasscom.in/npc-kolkata"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/npc_kolkata_357x171.jpg" width="357" height="171" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-field-events-type">        <div class="field-content"><div class="date-national"><span><i class="icons-date"></i><span class="date-display-single">07th Jul, 2017</span></span> <span><i class="icons-national"></i> National</span><div class="views-field views-field-title">NASSCOM Product Conclave 2017 - Kolkata</div><div class="location"><i class="icons-location"></i><div><span>Kolkata, India</span></div></div></div></div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/events/nasscom-product-conclave-2017-kolkata"><a href="http://www.nasscom.in/npc-kolkata">Event Details</a></a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--1">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-event-thumbnail">        <div class="field-content"><a href="http://www.nasscom.in/hrsummit"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/hr-summit_0.jpg" width="357" height="171" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-field-events-type">        <div class="field-content"><div class="date-national"><span><i class="icons-date"></i><span class="date-display-single">20th </span>-<span class="date-display-single"> 21st Jul, 2017</span></span> <span><i class="icons-national"></i> National</span><div class="views-field views-field-title">NASSCOM HR Summit</div><div class="location"><i class="icons-location"></i><div><span>Chennai, India</span></div></div></div></div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/events/nasscom-hr-summit"><a href="http://www.nasscom.in/hrsummit">Event Details</a></a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--2">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-event-thumbnail">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/design-engeineering.jpg" width="357" height="171" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-events-type">        <div class="field-content"><div class="date-national"><span><i class="icons-date"></i><span class="date-display-single">21st </span>-<span class="date-display-single"> 22nd Sep, 2017</span></span> <span><i class="icons-national"></i> National</span><div class="views-field views-field-title">9th NASSCOM Design &amp; Engineering Summit</div><div class="location"><i class="icons-location"></i><div><span>Bangalore, </span></div></div></div></div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/events/9th-nasscom-design-engineering-summit"><a href="">Event Details</a></a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--3">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-event-thumbnail">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/bpm-summit.jpg" width="357" height="171" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-events-type">        <div class="field-content"><div class="date-national"><span><i class="icons-date"></i><span class="date-display-single">13th </span>-<span class="date-display-single"> 14th Oct, 2017</span></span> <span><i class="icons-national"></i> National</span><div class="views-field views-field-title">19th NASSCOM BPM Strategy Summit</div><div class="location"><i class="icons-location"></i><div><span>Bengaluru, </span></div></div></div></div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/events/19th-nasscom-bpm-strategy-summit"><a href="">Event Details</a></a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('slick_item') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+<div class="slick__slide slide slide--4">      <div class="slide__content">            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-event-thumbnail">        <div class="field-content"><img typeof="foaf:Image" src="http://nasscom.in/sites/default/files/GIC_Conclave.jpg" width="357" height="171" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-events-type">        <div class="field-content"><div class="date-national"><span><i class="icons-date"></i><span class="date-display-single">19th </span>-<span class="date-display-single"> 20th Apr, 2018</span></span> <span><i class="icons-national"></i> National</span><div class="views-field views-field-title">8th NASSCOM GIC Conclave</div><div class="location"><i class="icons-location"></i><div><span>Mumbai, </span></div></div></div></div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/events/8th-nasscom-gic-conclave"><a href="">Event Details</a></a></span>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+            
+                </div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick-item.tpl.php' -->
+
+    
+      </div>
+    <nav class="slick__arrow">
+      <button type="button" data-role="none" class="slick-prev" aria-label="previous">Previous</button>            <button type="button" data-role="none" class="slick-next" aria-label="next">Next</button>    </nav>
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/slick/templates/slick.tpl.php' -->
+
+  
+<!-- END OUTPUT from 'sites/all/modules/slick_views/templates/slick-views.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+</div></div></div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+     </div>    
+    </div>
+    <!--End  for nasscom_home_upcomming_events -->
+
+
+
+  <!--Start for nasscom_home_media -->
+      <div class="nasscom-home-media">
+      <div class="container clearfix">    
+       
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--nasscom-home-media.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-nasscom-home-media">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--press-release-listing-block-1.tpl.php
+   * block--views.tpl.php
+   * block--nasscom-home-media.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-press-release-listing-block-1" class="block block-views first odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-press-release-listing view-id-press_release_listing view-display-id-block_1 view-dom-id-f99d8ec7631eb3a37b90d7d02cff8ad4">
+            <div class="view-header">
+      <h2>Media Centre <span>Press Releases</span></h2>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('flexslider_views') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/flexslider/flexslider_views/theme/flexslider-views.tpl.php' -->
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('flexslider') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
+<div  id="flexslider-3" class="flexslider">
+  <ul class="slides"><li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-title">        <span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__title') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--title.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+NASSCOM identifies key job roles in Big Data Analytics Domain
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+
+</span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__block_1__body') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--block-1--body.tpl.php
+   * views-view-field--press-release-listing--block-1.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+<p>Hyderabad: Bringing some of the finest minds in the Indian big data and analytics industry together, the National Association of Software and Services Companies (NASSCOM) today concluded its 5th annual Big Data &amp; Analytics Summit. Themed ‘AI...&nbsp;<a href="http://nasscom.in/sites/default/files/media_pdf/NASSCOM_identifies_key_job_roles_in_Big_Data_Analytics_Domain_23062017.pdf">View Details</a>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-title">        <span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__title') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--title.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+IT-BPM Industry on a sustained growth path in FY 2017-18;  Digital solutions and niche segments key growth drivers
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+
+</span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__block_1__body') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--block-1--body.tpl.php
+   * views-view-field--press-release-listing--block-1.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+<p><strong>Hyderabad:</strong> The National Association of Software and Services Companies (NASSCOM) today announced that the growth outlook for the IT industry in FY18 at 10-11% for domestic market and 7-8% for exports, citing improvements in financial...&nbsp;<a href="http://nasscom.in/sites/default/files/media_pdf/IT_BPM_Industry_on_sustained_growth_path_22062017_0.pdf">View Details</a>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-title">        <span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__title') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--title.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+NASSCOM Hosts C Summit To Promote Us-india Digital Collaboration In IT
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+
+</span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__block_1__body') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--block-1--body.tpl.php
+   * views-view-field--press-release-listing--block-1.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+<p>The National Association of Software and Services Companies (NASSCOM) ​ will be hosting the first edition of ​ ‘The NASSCOM C Summit’ on ​ 1-2 June, 2017, ​ at the ​ InterContinental Times Square, New York​ . The summit, the first of...&nbsp;<a href="http://nasscom.in/sites/default/files/media_pdf/NASSCOM_Hosts_C_Summit_To_Promote_Us_india_Digital_Collaboration_In_IT.pdf">View Details</a>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-title">        <span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__title') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--title.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+Industry a net hirer, skills the key imperative in the digital economy
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+
+</span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__block_1__body') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--block-1--body.tpl.php
+   * views-view-field--press-release-listing--block-1.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+<p>New Delhi, May 18, 2017: ​ Amidst conversations around the increasing layoffs and the need for the technology workforce to reskill themselves with the evolving times, the ​ National Association of Software and Services Companies (NASSCOM) today...&nbsp;<a href="http://nasscom.in/sites/default/files/media_pdf/Industry_a_net_hirer_skills_the_key_imperative_in_the_digital_economy.pdf">View Details</a>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+<li>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-title">        <span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__title') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--title.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+NASSCOM-DSCI has alerted members on cyber outbreak  WannaCry Ransomware
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--title.tpl.php' -->
+
+</span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_field__press_release_listing__block_1__body') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-field--press-release-listing--block-1--body.tpl.php
+   * views-view-field--press-release-listing--block-1.tpl.php
+   * views-view-field--press-release-listing.tpl.php
+   * views-view-field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+<p>15 May, 2017, Delhi: NASSCOM &amp; DSCI, acknowledging the global outbreak on a new Ransomware named ‘WannaCry’, has alerted the industry and issued a compilation of best practices to counter this challenge. DSCI has worked with leaders (CISOs/...&nbsp;<a href="http://nasscom.in/sites/default/files/media_pdf/NASSCOM-DSCI_has_alerted_members_on_cyber_outbreak_WannaCry_Ransomware.pdf">View Details</a>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-field--press-release-listing--block-1--body.tpl.php' -->
+
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+</li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/modules/flexslider/flexslider_views/theme/flexslider-views.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div class="view-all-btn">  
+<a href="/media" class="">View All</a></div>
+            
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--sharethis--sharethis-block.tpl.php
+   * block--sharethis.tpl.php
+   * block---1.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-sharethis-sharethis-block" class="block block-sharethis first odd">
+
+      
+  <div class="sharethis-wrapper"><span st_url="http://nasscom.in/" st_title="NASSCOM" class="st_sharethis_button" displayText="sharethis"></span>
+</div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--quicktabs---none-.tpl.php
+   * block--quicktabs.tpl.php
+   * block--nasscom-home-media.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-quicktabs-none-" class="block block-quicktabs last even">
+
+      
+  <div  id="quicktabs-_none_" class="quicktabs-wrapper quicktabs-style-nostyle"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-nostyle"><li class="active first"><a href="/nasscom-0?qt-_none_=0#qt-_none_" id="quicktabs-tab-_none_-0" class="active">Twitter</a></li>
+<li><a href="/nasscom-0?qt-_none_=1#qt-_none_" id="quicktabs-tab-_none_-1" class="active">YouTube</a></li>
+<li class="last"><a href="/nasscom-0?qt-_none_=2#qt-_none_" id="quicktabs-tab-_none_-2" class="active">Slideshare</a></li>
+</ul></div><div id="quicktabs-container-_none_" class="quicktabs_main quicktabs-style-nostyle"><div  id="quicktabs-tabpage-_none_-0" class="quicktabs-tabpage ">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--homepage-socialfeed--home-page-feed-twi.tpl.php
+   * block--homepage-socialfeed.tpl.php
+   * block--quicktabs-tabpage.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-homepage-socialfeed-home-page-feed-twi" class="block block-homepage-socialfeed even">
+
+      
+  <a class="twitter-timeline" href="https://twitter.com/nasscom" data-widget-id="734657738412851201">Tweets by @nasscom</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+</div></div></div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+      </div>    
+    </div>
+    <!--End  for nasscom_home_media` -->
+   </div>
+ </div>
+ <div class="footer-outer">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--bottom.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+  <div class="region region-bottom">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--footer-sitemap--footer-sitemap.tpl.php
+   * block--footer-sitemap.tpl.php
+   * block--bottom.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-footer-sitemap-footer-sitemap" class="block block-footer-sitemap first odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('footer_site_map') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/footer_sitemap/footer-site-map.tpl.php' -->
+<div id="footer-sitemap" class="clearfix">
+  <div class="fs-block-content">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('footer_menu') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/footer_sitemap/footer-menu.tpl.php' -->
+<div class="menu-main-menu"><ul class="footer_links_menu-main-menu total-items-6 parent-items-0 single-items-0"><li class="menu-1812 depth-1 total-children-6 parent-children-3 single-children-3  first"><a href="/about-us" class="fs-root-link">About Us</a><ul class="footer_links_menu-main-menu total-items-6 parent-items-0 single-items-0"><li class="menu-1813 depth-1 fs-no-children  first"><a href="/who-we-are">Who We Are</a></li>
+<li class="menu-1814 depth-1 total-children-10 parent-children-1 single-children-9"><a href="/about-us/what-we-do">What We Do</a></li>
+<li class="menu-1815 depth-1 total-children-1 parent-children-0 single-children-1"><a href="/about-us/Our-People">Our People</a></li>
+<li class="menu-1816 depth-1 total-children-4 parent-children-1 single-children-3"><a href="/about-us#block-views-our-councils-views-block">Our Council</a></li>
+<li class="menu-1817 depth-1 fs-no-children"><a href="/about-us/career">Careers @ NASSCOM</a></li>
+<li class="menu-1818 depth-1 fs-no-children  last"><a href="/about-us/contact-us">Contact Us</a></li>
+</ul></li>
+<li class="menu-605 depth-1 total-children-1 parent-children-1 single-children-0"><a href="/membership-landing" class="fs-root-link">Membership</a><ul class="footer_links_menu-main-menu total-items-1 parent-items-0 single-items-0"><li class="menu-606 depth-1 total-children-4 parent-children-0 single-children-4  first  last"><a href="/nasscom-membership">Become a member</a></li>
+</ul></li>
+<li class="menu-613 depth-1 total-children-6 parent-children-0 single-children-6"><a href="/knowledge-centre" class="fs-root-link">Knowledge Center</a><ul class="footer_links_menu-main-menu total-items-6 parent-items-0 single-items-0"><li class="menu-614 depth-1 fs-no-children  first"><a href="/knowledge-centre/publications" title="">Publications </a></li>
+<li class="menu-615 depth-1 fs-no-children"><a href="/knowledge-centre/show-cases">Showcase</a></li>
+<li class="menu-616 depth-1 fs-no-children"><a href="/knowledge-centre/facts-figures">Facts and Figures</a></li>
+<li class="menu-617 depth-1 fs-no-children"><a href="http://blogs.nasscom.in/" target="_blank">Blogs</a></li>
+<li class="menu-618 depth-1 fs-no-children"><a href="/knowledge-centre/interviews">  Interviews</a></li>
+<li class="menu-619 depth-1 fs-no-children  last"><a href="/knowledge-centre/newsline">Newsline</a></li>
+</ul></li>
+<li class="menu-620 depth-1 total-children-4 parent-children-0 single-children-4"><a href="/media" class="fs-root-link">Media Centre</a><ul class="footer_links_menu-main-menu total-items-4 parent-items-0 single-items-0"><li class="menu-622 depth-1 fs-no-children  first"><a href="/media#block-views-nasscom-in-news-block">Nasscom in News</a></li>
+<li class="menu-621 depth-1 fs-no-children"><a href="/media#block-views-press-release-listing-block">Press Releases</a></li>
+<li class="menu-624 depth-1 fs-no-children"><a href="/media#block-views-nasscom-leadership-block">Media Kit</a></li>
+<li class="menu-625 depth-1 fs-no-children  last"><a href="/media#block-block-65">Media Contacts</a></li>
+</ul></li>
+<li class="menu-608 depth-1 total-children-0 parent-children-0 single-children-0"><a href="/events" class="fs-root-link">Events</a></li>
+<li class="menu-1797 depth-1 fs-no-children  last"><a href="mailto:webmaster@nasscom.in" class="fs-root-link">Advertise With Us</a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/footer_sitemap/footer-menu.tpl.php' -->
+
+</div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/modules/footer_sitemap/footer-site-map.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--90.tpl.php
+   * block--block.tpl.php
+   * block--bottom.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-block-90" class="block block-block affliated-organizations even">
+
+      
+  <h5>Affiliated Organizations</h5>
+<ul><li><a href="http://www.nasscomfoundation.org" target="_blank"><img alt="" height="54" src="/sites/default/files/nasscom-logo_2_0.jpg" width="80" /></a></li>
+<li><a href="http://www.nisg.org" target="_blank"><img alt="" height="54" src="/sites/default/files/nis-logo_0.jpg" width="80" /></a></li>
+<li><a href="http://www.dsci.in" target="_blank"><img alt="" height="54" src="/sites/default/files/dsci-logo_1.jpg" width="80" /></a></li>
+<li><a href="http://www.sscnasscom.com" target="_blank"><img alt="" height="54" src="/sites/default/files/skill_1.png" width="80" /></a></li>
+</ul>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--show-advertisement-block-1.tpl.php
+   * block--views.tpl.php
+   * block--bottom.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-views-show-advertisement-block-1" class="block block-views footer-advertisement odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+<div class="view view-show-advertisement view-id-show_advertisement view-display-id-block_1 view-dom-id-be5b9e9b18c7d505bbe47b4eaae8e873">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_unformatted') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/views/theme/views-view-unformatted.tpl.php' -->
+  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-attach-new-file">        <div class="field-content"></div>  </div>
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/views-view-fields.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view-unformatted.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--6.tpl.php
+   * block--block.tpl.php
+   * block--bottom.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+<div id="block-block-6" class="block block-block copyright-footer last even">
+
+      
+  <div class="footer-bottom">
+<p>Copyright © 2017, NASSCOM<a href="/sitemap">Sitemap</a> | <a href="privacy-policy">Privacy Policy </a> | <a href="/node/776">Terms of Use and Disclaimer</a></p>
+<p>Website Developed by:<a href="http://www.kelltontech.com/" target="_blank">Kellton Tech</a></p>
+</div>
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+     <div class="advertisment-footer">
+<!--Iframe Tag  -->
+<!-- begin ZEDO for channel:  Nasscom , publisher: Nasscom , Ad Dimension: Slider - 1 x 1 -->
+<iframe  src="http://xp2.zedo.com/jsc/xp2/ff2.html?n=2558;c=49;s=13;d=94;w=1;h=1;l=[INSERT_CLICK_TRACKER_MACRO]" frameborder=0 marginheight=0 marginwidth=0 scrolling="no" allowTransparency="true" width=1 height=1></iframe>
+<!-- end ZEDO for channel:  Nasscom , publisher: Nasscom , Ad Dimension: Slider - 1 x 1 -->
+
+<!-- Javascript tag  -->
+<!-- begin ZEDO for channel:  Nasscom , publisher: Nasscom , Ad Dimension: Slider - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="2558"; var zflag_cid="49"; var zflag_sid="13"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="94"; var zflag_click="[INSERT_CLICK_TRACKER_MACRO]"; 
+</script>
+<script language="JavaScript" src="http://xp2.zedo.com/jsc/xp2/fo.js"></script>
+<!-- end ZEDO for channel:  Nasscom , publisher: Nasscom , Ad Dimension: Slider - 1 x 1 --></div>
+  </div>
+
+
+
+
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/page--front.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--page-bottom.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/region.tpl.php' -->
+
+<script>Drupal.behaviors.customevent = {
+    attach: function (context, settings) {
+    $=jQuery;
+    //jQuery('#views-exposed-form-event-search-page-block #edit-reset').prop('type', 'reset');
+    $( '#views-exposed-form-event-search-page-block #edit-reset' ).click(function(event) {
+    event.preventDefault();   
+  $( '#views-exposed-form-event-search-page-block #edit-title' ).val('');
+  $( '#views-exposed-form-event-search-page-block #edit-date-filter-value-date' ).val('');
+  $( '#views-exposed-form-event-search-page-block #edit-field-event-end-date-value-value-date' ).val('');
+  });  
+  $( '#views-exposed-form-event-search-page-block-2 #edit-reset--2' ).click(function(event) {
+    event.preventDefault();   
+  $( '#views-exposed-form-event-search-page-block-2 #edit-title--2' ).val('');
+  $( '#views-exposed-form-event-search-page-block-2 #edit-date-filter-value-date--2' ).val('');
+  $( '#views-exposed-form-event-search-page-block-2 #edit-date-filter-1-value-date' ).val('');
+  });
+  }};</script>
+<script>Drupal.behaviors.customevent = {
+    attach: function (context, settings) {
+    $=jQuery;
+    //jQuery('#views-exposed-form-event-search-page-block #edit-reset').prop('type', 'reset');
+    $( '#views-exposed-form-event-search-page-block #edit-reset' ).click(function(event) {
+    event.preventDefault();   
+  $( '#views-exposed-form-event-search-page-block #edit-title' ).val('');
+  $( '#views-exposed-form-event-search-page-block #edit-date-filter-value-date' ).val('');
+  $( '#views-exposed-form-event-search-page-block #edit-field-event-end-date-value-value-date' ).val('');
+  });  
+  $( '#views-exposed-form-event-search-page-block-2 #edit-reset--2' ).click(function(event) {
+    event.preventDefault();   
+  $( '#views-exposed-form-event-search-page-block-2 #edit-title--2' ).val('');
+  $( '#views-exposed-form-event-search-page-block-2 #edit-date-filter-value-date--2' ).val('');
+  $( '#views-exposed-form-event-search-page-block-2 #edit-date-filter-1-value-date' ).val('');
+  });
+  }};</script>
+<script>Drupal.behaviors.customevent = {
+    attach: function (context, settings) {
+    $=jQuery;
+    //jQuery('#views-exposed-form-event-search-page-block #edit-reset').prop('type', 'reset');
+    $( '#views-exposed-form-event-search-page-block #edit-reset' ).click(function(event) {
+    event.preventDefault();   
+  $( '#views-exposed-form-event-search-page-block #edit-title' ).val('');
+  $( '#views-exposed-form-event-search-page-block #edit-date-filter-value-date' ).val('');
+  $( '#views-exposed-form-event-search-page-block #edit-field-event-end-date-value-value-date' ).val('');
+  });  
+  $( '#views-exposed-form-event-search-page-block-2 #edit-reset--2' ).click(function(event) {
+    event.preventDefault();   
+  $( '#views-exposed-form-event-search-page-block-2 #edit-title--2' ).val('');
+  $( '#views-exposed-form-event-search-page-block-2 #edit-date-filter-value-date--2' ).val('');
+  $( '#views-exposed-form-event-search-page-block-2 #edit-date-filter-1-value-date' ).val('');
+  });
+  }};</script>
+<script src="http://nasscom.in/sites/all/modules/flexslider/assets/js/flexslider.load.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/clientside_validation/clientside_validation.ie8.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/clientside_validation/clientside_validation_html5/clientside_validation_html5.js?osauhf"></script>
+<script src="http://nasscom.in/sites/all/modules/clientside_validation/clientside_validation.js?osauhf"></script>
+</body>
+</html>
+
+<!-- END OUTPUT from 'sites/all/themes/nasscom/templates/html.tpl.php' -->
+

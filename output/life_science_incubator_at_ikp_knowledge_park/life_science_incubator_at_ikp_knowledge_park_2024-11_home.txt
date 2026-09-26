@@ -1,0 +1,327 @@
+LSI: Accelerating Biotech Innovation in Genome Valley
+Home
+IKMC 2024
+Science Park
+Innovation Services
+Infrastructure
+A-LABS
+Growth Labs
+EDEN (Bangalore)
+BioNest
+K-Tech Innovation Hub (CIF)
+Funding
+Grant Funding
+Grand Challenges Funding
+Investment
+Incubation and Acceleration Services
+IKP Global Regulatory Forum
+IP and Technology Transfer Office
+Innovation Programs
+AgGC
+GCE – India
+International One Health Incubator (IOHI)
+AGC JanCare
+IKP Fellows
+PRAYAS
+Biotechnology Ignition Grant (BIG)
+LEAP
+SEED
+Digital Health Accelerator
+Life Sciences
+Incubator
+Innovation Programs
+AgGC
+AGC JanCare
+Biotechnology Ignition Grant (BIG)
+Digital Health Accelerator
+GCE – India
+IKP Fellows
+LEAP
+Life Sciences Incubator
+International One Health Incubator (IOHI)
+PRAYAS
+SEED
+About Us
+Who We Are
+Annual Conference (IKMC)
+Awards and Recognition
+Locations
+Newsletters
+Knowledge Treasure
+Corporate Disclosures
+Career
+Partner with us
+Contact us
+Home
+IKMC 2024
+Science Park
+Innovation Services
+Infrastructure
+A-LABS
+Growth Labs
+EDEN (Bangalore)
+BioNest
+K-Tech Innovation Hub (CIF)
+Funding
+Grant Funding
+Grand Challenges Funding
+Investment
+Incubation and Acceleration Services
+IKP Global Regulatory Forum
+IP and Technology Transfer Office
+Innovation Programs
+AgGC
+GCE – India
+International One Health Incubator (IOHI)
+AGC JanCare
+IKP Fellows
+PRAYAS
+Biotechnology Ignition Grant (BIG)
+LEAP
+SEED
+Digital Health Accelerator
+Life Sciences
+Incubator
+Innovation Programs
+AgGC
+AGC JanCare
+Biotechnology Ignition Grant (BIG)
+Digital Health Accelerator
+GCE – India
+IKP Fellows
+LEAP
+Life Sciences Incubator
+International One Health Incubator (IOHI)
+PRAYAS
+SEED
+About Us
+Who We Are
+Annual Conference (IKMC)
+Awards and Recognition
+Locations
+Newsletters
+Knowledge Treasure
+Corporate Disclosures
+Career
+Partner with us
+Contact us
+CONTACT US
+Careers
+Partner with Us
+Life Science Incubator (LSI)
+Fostering biotech innovation and entrepreneurship in the heart of Genome Valley
+Cultivating life sciences excellence
+Lorem ipsum dolor
+Nestled in the innovation-rich Genome Valley of Hyderabad, the IKP Life Sciences Incubator (LSI) stands as a beacon of support and growth for the life sciences sector. Operated by us and backed by the Department of Science and Technology (DST), Government of India, since 2006, IKP-LSI is more than just an incubator—it’s a catalyst for transforming visionary ideas into groundbreaking realities.
+With its expansive 20,000 sq ft. modular wet-lab space, the “A-Labs” analytical powerhouse, and a tailored suite of incubation and acceleration services, IKP-LSI is dedicated to nurturing startups and early-stage companies. Here, innovation meets infrastructure, guidance, and the crucial support needed to leap from concept to market, making it a cornerstone of life sciences entrepreneurship in India.
+Who can benefit from our program?
+We aim to partner with the following entities globally to propel the advancement of life sciences
+Who can benefit from our program?
+Life sciences startups
+Innovators
+SMEs
+Researchers
+Our current beneficiaries
+13
+present participants
+135
+innovators till date
+Fostering growth
+Join the innovation wave
+For more information, write to [email protected]
+Quick Links
+Careers
+Partner With Us
+Privacy Policy
+Company
+About Us
+Innovation Services
+Innovation Programs
+Contact Us
+Contact
+Email: [email protected]
+Phone: +91 (40) 4201 8081 / 83
+Twitter
+Facebook-square
+Linkedin-in
+© IKP Knowledge Park, all rights reserved.
+239 - Page visitors in the last 133 days
+var charLimit = 720;
+function truncate(el) {
+var clone = el.children().first(),
+originalContent = el.html(),
+text = clone.text();
+if (clone[0].innerHTML.trim().length > charLimit) {
+el.attr("data-originalContent", originalContent);
+el.addClass("hasHidden");
+clone.text(text.substring(0, charLimit) + "...");
+el.empty().append(clone);
+el.append(
+jQuery(" View all ")
+);
+}
+}
+jQuery("body").on("click", "a.more", function (e) {
+e.preventDefault();
+var truncateElement = jQuery(this).parent().parent();
+if (truncateElement.hasClass("hasHidden")) {
+jQuery(truncateElement).html(truncateElement.attr("data-originalContent"));
+jQuery(truncateElement).append(
+jQuery(" View Less ")
+);
+truncateElement.removeClass("hasHidden").slow;
+} else {
+jQuery(".read-more", truncateElement).remove();
+truncate(truncateElement);
+}
+});
+jQuery(".truncate").each(function () {
+truncate(jQuery(this));
+});
+function myCallback() {
+setTimeout(function () {
+jQuery("truncate").removeClass("hasHidden");
+}, 3000);
+}
+Launch demo modal
+Event Registration
+×
+Sign up
+×
+×
+Ms. Deepanwita Chattopadhyay
+Deepanwita Chattopadhyay has played a pivotal role in advancing the life sciences and innovation ecosystem in India. She spearheaded the development of IKP Knowledge Park, Hyderabad’s premier Life Science Research Park, and launched IKP EDEN in Bangalore, a trailblazing Hardware Product Incubator and Makerspace. Her efforts extend globally, collaborating with partners to foster and finance groundbreaking innovations and startups.
+Her contributions have been widely recognized, earning prestigious accolades such as the Rotary Vocational Excellence Award in 2024, a Lifetime Achievement Award from the Golden Jubilee Biotech Park for Women Society in 2023, and the FICCI FLO Influential Women Award in 2021. Her leadership and commitment to innovation have also led her to serve as Treasurer of the International Association of Science Parks (IASP) twice, and she continues to contribute as a member of the IASP Advisory Council.
+Her achievements have been celebrated internationally, with awards including “Top Women Achievers of the Year 2017 in Asia” by AsiaOne Business Magazine and “Women of the Decade in Life Sciences & Innovation” by the Women Economic Forum.
+Her influence extends through her involvement with several key organizations and committees. She holds positions on the Research Council of the Centre for Cellular & Molecular Biology (CSIR-CCMB), Executive Council of AGNIi (Accelerating Growth of New India’s Innovations), and the Board of Governors of the Society for Technology Management (STEM). She is also an integral part of the Governing Council for numerous incubators across India and serves on national committees including the S&T Cluster Apex Committee, Prime Minister’s Fellowship for Doctoral Research Committee, and others within the framework of the Government of India.
+As the Chairman of Support Elders Pvt Ltd, a startup dedicated to at-home elder care, President of IKP EDEN, and a Director in both IKP Trust and IKP Ventures, as well as roles in Suven Pharma, RICH, and various government committees, she continues to shape the future of innovation and science in India and beyond.
+×
+Mr. Sivaram Krishna Bandhakavi
+Sivaram Bandhakavi is a Director on the Board of IKP. Earlier, as the CEO of IKP Trust, Sivaram’s work included managing IKP Ventures, an early-stage venture capital fund manager, and IKP Health, which focuses on the design of primary care health systems and solutions. IKP Health has developed the SughaVazhvu model of comprehensive primary healthcare delivery including an operating model for chronic disease management, a technology platform for primary care delivery, and a unique capacity-building model for primary care in low-resource community settings.
+Sivaram’s prior experience involves consulting and program design spanning business and public domains in India and the USA. In the public sector, he worked with Aadhaar, the Ministry of Education, and the Home Ministry, Government of India. earlier, he worked with Cognizant and Infosys in the IT sector. He was also an adjunct at IIT Madras for four years.
+Sivaram holds an MPA in Economics and Public Policy from Harvard Kennedy School, an MBA from IIM Lucknow, and a B.Tech. from IIT Madras.
+×
+Mr. Sharad Sharma
+Sharad Sharma is a co-founder of the iSPIRT Foundation, a non-profit technology think tank known for conceptualizing India Stack, Health Stack, and other digital public goods. Additionally, he co-founded Teltier Technologies, a wireless infrastructure start-up now part of CISCO.
+He actively engages in angel investing and has made over two dozen investments. He played a crucial role in the success of India’s first IP-focused fund, the India Innovation Fund. Sharad is actively involved in several key advisory positions, serving as a member of the National Start-up Advisory Council and SEBI’s Financial and Regulatory Technology Committee. He chairs the IFSCA’s Expert Committee on Asset Tokenization and the Taskforce on DPI within the ThinkTank20 (T20) group of G20.
+Sharad is an alumnus of Delhi College of Engineering and has held leadership positions in R&D at various prominent companies including Yahoo, VERITAS, Symantec, Lucent, and AT&T.
+×
+Dr Tanjore S Balganesh
+Dr. Balganesh has three decades of experience in the area of infectious diseases, particularly in antibacterial drug discovery. As the Head of Research at AstraZeneca, Bangalore, he led the unit to deliver AstraZeneca’s first anti-tuberculosis molecule for clinical development. Before that, he led the diarrheal diseases and broad-spectrum anti-bacterial project teams at AstraZeneca, Bangalore. In his capacity as Distinguished Scientist, he mentored drug discovery programs in various Indian National Laboratories under the Government of India’s Council for Scientific and Industrial Research (CSIR). He has more than 30 publications and 10 patents to his name.
+Dr. Balganesh is trained as a Medical Microbiologist at the University of Calcutta. He gained his post-doctoral experience at Brookhaven National Laboratory, New York, and the Max Planck Institute for Molecular Genetics, Berlin. Dr. Balganesh has been awarded an Honorary Doctorate from the University of Uppsala in recognition of his work in tuberculosis and malaria. He is on the review panel of drug discovery programs like the ‘Innovative Medicines Initiative’; an EU program seeking novel treatments for Gram-negative bacterial pathogens. He continues to guide research programs in several National Laboratories in India. He is also a mentor and reviewer of programs initiated by the Wellcome Trust and the Gates Foundation in India.
+×
+Mr. Shakthi Nagappan
+Shakthi Nagappan is the Government of Telangana’s nominee on the Board of IKP. He serves as the Director (Life Sciences and Pharma) for the State Government of Telangana and is in charge of the Hyderabad Pharma City initiative of the Government, which is one of the biggest Greenfield projects of its nature in Asia, being developed at an area of 19000 acres at international standards. He also serves as the Chief Executive Officer of BioAsia, the flagship international initiative of the Telangana Government.
+Before this role, he was working with the biotech division of the International Crop Research Institute (ICRISAT), an organization established by the United Nations. His focus was on building strategic partnerships and stakeholder engagement, project management, regulatory compliance besides operations.
+He is a recipient of the Young Scientist Award, the Award of Merit from His Excellency the Governor of Tamil Nadu, the National Children Science Congress Award, and the All India Biotech Association Award for Excellence in Life Sciences Promotion.
+×
+Mr. VVSN Raju
+VVSN Raju is the Founder and Managing Partner of Juris Prime Law Services.
+Raju has 29 years of experience in Banking, Corporate, Civil, Commercial, Criminal, Economic, Industrial, Insolvency and Bankruptcy, Intellectual Property, Labour, Litigation, and Real Estate laws; he is a go-to lawyer for start-ups for all their legal requirements. He is also a Qualified Insolvency Professional.
+Before setting up his practice, he worked as an in-house counsel for around nine years with IDBI and ICICI Bank as in-house counsel.
+Over the last few years, Raju has negotiated and structured a range of commercial transactions for domestic and multinational corporations, including, amongst others, concerning infrastructure and Project finance, securitization, due diligence of title of property and funding documentation, venture capital and private equity, real estate, and construction, land acquisition, company incorporation, joint venture, mergers and acquisitions, foreign investments, setting up of businesses, contracts, labor laws, employment, legal audit, franchising, and agency. Mr. Raju also handles and appears regularly before various Courts/ NCLT/ NCLAT/ High Courts
+Raju obtained his LLM from OP Jindal University, LLB from Osmania University, ICSI (CS Intermediate), and BSc from Andhra University.
+×
+Dr. Uday B. Desai
+Dr. Desai completed a B. Tech. from the Indian Institute of Technology Kanpur, in 1974, an M.S. from the State University of New York, Buffalo, in 1976, and a Ph.D. from The Johns Hopkins University, Baltimore, U.S.A., in 1979, all in Electrical Engineering.
+Since June 2009, he has served as the Director of IIT Hyderabad. He was the Mentor Director for IIT Bhilai and IIIT Chittoor. He was the Assistant and then Associate Professor at Washington State University and Professor at IIT Bombay. He has held Visiting Associate Professor positions at Arizona State University, Purdue University, and Stanford University. He was a visiting Professor at EPFL, Lausanne. He was also the Director of HP-IITM R and D Lab. at IIT-Madras.
+His research interests lie in Cyber-physical systems, AI, the Internet of Things, digital fabrication, wireless communication, cognitive radio, wireless sensor networks, and statistical signal processing. He has been a co-author of 9 research monographs and author of nearly 300 peer-reviewed papers in international journals and conferences. Dr. Desai is a Fellow of the Indian National Science Academy & a Fellow of the Indian National Academy of Engineering.
+He is the recipient of the JC Bose Fellowship. He is also the recipient of the Excellence in Teaching Award from IIT-Bombay. In 2015, he received the Outstanding Alumni Award from the University of Buffalo, and in 2016, he received the Distinguished Alumni Award from IIT Kanpur.
+×
+Mr. Utkarsh Palnitkar
+Mr. Utkarsh Palnitkar is a Senior management professional with over 30 years of experience across a wide gamut of industries – specializing in Life Sciences, Investment promotion, and policy advisory.
+He is a Chartered accountant and also completed an advanced management program at Harvard Business School. Utkarsh has extensive experience in infrastructure, government, and the life sciences sector to policy development and India entry strategy for some of the leading global life sciences entities, apart from funding, human resources development, and investment promotion. He is on the board of many life sciences-related trade bodies and has chaired several committees on policy-making in India. He has been associated with pioneering initiatives, such as the country’s first and largest biotech cluster – Genome Valley, the creation of the Biotechnology Industry Research Assistance Council (BIRAC) under the Department of Biotechnology (DBT), and the country’s first biotech incubator.
+×
+(Late) Mr Narayanan Vaghul
+Mr Vaghul was the Chairman of ICICI Bank, which is the second largest bank in the country, until April 2009. He has nearly 50 years of experience in the banking industry and has held assignments in several other banks before assuming the office of the Chairman of ICICI Bank in 1985. He also served on the Boards of several leading corporations in India and the UK such as Arcelor Mittal, Wipro, Mahindra and Mahindra Limited, Piramal Healthcare Limited and Apollo Hospitals & Enterprise Limited. Mr Vaghul was actively involved in promoting several public causes, notably the universalization of elementary education in the country, and was the Director of Pratham India Education Initiative which is primarily engaged in serving the underprivileged children.
+Mr Vaghul is the recipient of numerous awards and honors. He was chosen as the Business Man of the Year by Business India in 1992. He was given Lifetime Achievement Award by the Economic Times in 2006. He was given an award for the contribution to the Corporate Governance by the Institute of Company Secretaries in 2007. He was given the Lifetime Achievement Award by the “Ernst & Young Entrepreneur of the Year Award Program” in 2009. He was awarded Padma Bhushan by the Government of India in 2009.
+×
+Dr. Ashok S Ganguly
+Dr Ashok Ganguly was most recently the Chairman of ABP Pvt Ltd (Ananda Bazar Patrika Group). He also served as a non-executive Director of Wipro Limited and Dr Reddy’s Laboratories Limited, and was on the Board of Vidhi Centre for Legal Policy. He is a former Member of the Board of British Airways Plc (1996-2005) and Unilever Plc/NV (1990-1997). He was formerly the Chairman of Hindustan Unilever Limited (1980-1990) and was on the Central Board of Directors of the Reserve Bank of India (2000-2009).
+Dr Ganguly is a former Member of the Rajya Sabha Member (2009-2015). In 2006, he was awarded the CBE (Hon) by the United Kingdom. In 2008, Dr Ganguly received the Economic Times Lifetime Achievement Award. Dr Ganguly received the Padma Bhushan award from the Government of India in January 1987 and the Padma Vibhushan award in January 2009.
+×
+Dr Bala S Manian
+Dr. Bala S. Manian, Ph.D., has been a part of the Silicon Valley entrepreneurial community for more than three decades. Bala Manian founded ReaMetrix in May 2003. ReaMetrix is the first company to produce the reagents for the CD4/CD8 assay in high HIV prevalence country.
+Dr. Manian is also a co-founder and director Quantum Dot Corporation and a co-founder of SurroMed Corporation. He was the founder and Chairman of Biometric Imaging Inc., until Becton Dickinson acquired it. Prior to that, Dr. Manian founded both Lumisys and Molecular Dynamics in June 1987 and was their founder chairman and CTO. Lumisys went public in 1995 and later was acquired by Eastman Kodak in December of 2000. Molecular Dynamics went public in 1993, and subsequently was acquired by Amersham in 1998.
+Dr. Manian founded Digital Optics Corporation in 1980, an optical instrumentation and systems development company that was acquired by Matrix Corporation, an already public company in 1984. An expert in the design of electro-optical systems, Dr. Manian holds more than 30 patents, many of which have resulted in successful commercial products. Additionally, Dr. Manian has authored more than 30 peer-reviewed scientific publications. In February 1999, the Academy of Motion Picture Arts and Sciences awarded a Technical Academy Award to Dr. Manian for advances in digital cinematography. Bala Manian served both as a science advisor, business advisor and a mentor for a number of entrepreneurial companies viz. IKP Knowledge Park, Galileo Labs, Biocon India, and APIDC-VC).
+×
+Dr. R A Mashelkar
+Dr. R.A. Mashelkar, National Research Professor, has been the Director General of Council of Scientific and Industrial Research, Chairman of National Innovation Foundation as also the President of Indian National Science Academy, Global Research Alliance and Institute of Chemical Engineers (UK).
+In recognition of his pioneering research contributions in polymer science & Engineering, he has been honoured as a Fellow of Royal Society, Foreign Fellow of US National Academy of Science as also Engineering, Foreign Associate of American Academy of Arts and Science & Fellow of US National Academy of Inventors.
+42 universities from around the world have honoured him with honorary doctorates.
+The sixty plus awards won by him include the prestigious TWAS-Lenovo Science Prize, Business Week (USA) award of `Stars of Asia’& JRD Tata Corporate Leadership Award.
+Dr. Mashelkar, who was a member of the Scientific Advisory Council to the Prime Minister for over thirty years, has been honoured with Padmashri, Padmabhushan, and Padma Vibhushan, three of the highest civilian honours.
+×
+(Late) Dr. MK Bhan
+(Late) Dr. MK Bhan was a Former Secretary to the Government of India, Department of Biotechnology, Ministry of Science & Technology and the Founder Chairman of Biotechnology Industry Research Assistance Council (BIRAC). He also served as a National Science Professor at the Indian Institute of Technology, Delhi, Government of India, President of Jawaharlal Institute of Postgraduate Medical Education and Research, Puducherry, an Advisor to the World Health Organization, and President of National Capital Region Biotech Cluster, Faridabad.
+He was MBBS, MD Pediatrics, DSc. (Honorary), Fellow of the Indian National Science Academy (FNA), Fellow of the Academy of Sciences (FASc), Fellow of the Academy of Medical Sciences (FAMS), and Fellow of the Third World Academy of Science (TWAS).
+He had about two hundred research publications in International, peer-reviewed journals. Some of his contributions to research that impacted health programs included the development of a rotavirus vaccine now in use in India, zinc for the treatment of childhood diarrhea, low osmolarity ORS, treatment of persistent childhood diarrhea, and Integrated Management of Neonatal and Childhood Illness.
+As Secretary, Department of Biotechnology, Government of India, for about a decade, he established many new Institutes, clusters, and innovation support agencies to attempt a transformation of the biotechnology sector in the country.
+In recognition of his services to the country, Dr. Bhan was conferred the Padma Bhushan by the Government of India.
+×
+Professor Seyed E. Hasnain
+Professor Dr Seyed Ehtesham Hasnain, Ph.D., D.Sc. (h.c.), D.Med.Sc. (h.c.) is a National Science Chair at the Indian Institute of Technology, New Delhi and is a Distinguished Professor at Sharda University, Greater Noida. He served as Vice-Chancellor of Jamia Hamdard (2016-2021) and University of Hyderabad (2005-2011). He was the first Director (1999-2005) of Centre for DNA Fingerprinting and Diagnostics (CDFD), Hyderabad. He received the Order of Merit (Das Verdienstkreuz, 1.Klasse) from the President of Germany and Padma Shri from the President of India. Professor Hasnain has also served as Visiting Professor at IIT-Delhi (2016-2021), as Lecturer at Delhi University (1981-1983) and as a Staff Scientist at National Institute of Immunology (1987-2001).
+Prof. Hasnain’s lab works on molecular pathogenesis of infectious organisms, functional molecular infection epidemiology and designing novel intervention strategies for intervention against pathogenic bacterium. Studying the dissemination dynamics, using genetic typing of Mycobacterium tuberculosis ( M.tb ) isolates from India, he showed the presence of ancestral isolates as the predominant form circulating in India which could explain the lack of concordance between bacterial load and disease burden in the Indian population. Functional characterization of M.tb hypothetical PE/PPE protein family revealed their importance as diagnostics, vaccine candidates and drug targets. He earlier contributed extensively to our understanding of the transcriptional regulation and high-level expression of heterologous genes in the baculovirus insect cell system. His earlier collaborative work on HBV generated some novel findings with clinical applications. He has >300 publications in peer-reviewed journals of high impact, and >2 dozen patents. He has mentored >150 PhD, MD and Post-Doc students, four of whom received the prestigious INSA Young Scientist Medal.
+×
+Mr Rajiv C Lochan
+Mr Rajiv Lochan is the Managing Director & Chief Executive Officer of Sundaram Finance Limited. Earlier, he was MD and CEO of The Hindu Group. Mr Lochan is an alumnus Partner of McKinsey’s India practice. He is a Trustee Board member of IKP Trust and is an independent director on the Board of Life Style International Private Limited.
+He was the founding location manager of McKinsey’s third location in India in Chennai set up in 2008. Rajiv joined the Firm in Boston and subsequently spent a decade based in India, where he served over 30 institutions, including 25 banks and financial institutions. He was a leader of McKinsey’s Financial Institutions practice as well as its Social Sector practice in India. Prior to McKinsey & Company, Rajiv worked for American Express Company in New York, where he was most recently Director – Risk Management, responsible for credit/fraud authorizations policy formulation. Rajiv has also worked with US Airways in Arlington, VA in the schedule-planning group.
+He holds an undergraduate degree from I.I.T., Madras, an MS from M.I.T., Cambridge, MA and an M.B.A. from the Columbia Business School in New York, NY.
+×
+Aaqib Jameel
+×
+Akshatha K
+×
+Apoorva Bhatnagar
+×
+Bharath Kumar K R
+×
+Dr. Bindu Nishal
+×
+Chandragiri Venkatesh
+×
+Dala Sangeetha
+×
+Deekshitha M
+×
+R Deepak Shenoy
+×
+Harshada Wadkar
+×
+Hemalatha S
+×
+Kartheek Konatham
+×
+Lekha V
+×
+Manish Kumar
+×
+Mohan Raj
+×
+Nikhil.A.Talebailkar
+×
+Dr. Priyankana Mukherjee
+×
+Rajeswari Sepana
+×
+Ravindra Y
+×
+Rohika
+×
+Dr. Sangita Sen Majee
+×
+Dr. Sridhar Ramanathan
+×
+Sudarshan Bhat
+×
+Dr. B.Sudha Kalyani
+×
+Suhruth G Ujjni
+×
+Venugopal N
+×
+Vishaka Sawan
+×
+Dr. Viswanadham Duppatla
+×
+Vithal Kumar L

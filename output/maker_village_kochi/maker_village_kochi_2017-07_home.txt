@@ -1,0 +1,132 @@
+Maker Village Cochin
+Home
+About Us
+Facilities
+Events
+Incubation
+People
+Startups
+FAQ
+Contact Us
+Home
+About Us
+Facilities
+Events
+Incubation
+People
+Startups
+FAQ
+Contact Us
+Home
+About Us
+Facilities
+Events
+Incubation
+People
+Startups
+FAQ
+Contact Us
+Let's make to transform our future and be the source of disruptive innovation
+Do you have a revolutionary idea? Let us build to make the dream come true.
+Register Now
+Electronics Incubator
+The Electronics Incubator is a joint initiative between, Ministry of Electronics and Information Technology(MeitY) and Indian Institute of Information Technology and Management Kerala (IIITM K), the nodal agency of the project, Kerala Startup Mission and Govt of Kerala to promote consumer electronics based innovation and set up labs and innovation centers that focus on the current trend and emerging technologies of disruptive nature to bring India to the forefront of innovation in the electronics space.
+Read More
+A 25000 sq ft facility has been developed at the Technology Innovation Zone, KINFRA Hitech Park, Kochi for the Electronics Incubator by Kerala Startup Mission
+An area of focus would be smart wearables that have recently grown to a billion dollar industry and it is proposed to have a facility that would assist innovators design and develop sophisticated wearable tech using the latest rapid prototyping equipment, in the belief that the best of this technology would come from India.
+The Do It Yourself (DIY) Innovation center will cater mainly to emerging areas in the maker culture. The Microprocessor and Microcontroller area will have all the latest trailblazers of Do It Yourself (DIY) proponents like Arduino and Raspberry PI aimed at inspiring the startup community to create innovative electronic products
+Robotics is an area where India is behind global peers and the Robotics area is instituted to address this gap by developing facilities with robotic actuators and kits that would enable innovator for fast paced development of prototypes
+The Internet of Things (IOT) is the future of the world where every object is equipped with sensors and connected to the internet which would create limitless new opportunities for individuals and businesses. Its potential is so significant as to spawn the next Facebook or Google, in the form of a visionary company that successfully combines hardware and software to provide a global platform for IOT objects and the innovation centre will be at the forefront of this change by making use of the synergy between the different labs and the multitude of talent among the startups
+It is envisaged to set up a Fab Labs, a MIT initiative will be a part of the electronics incubator and house equipment that will complement the ones existing at the Technology innovation Zone and run by kerala Startup Mission that will help in the fabrication of any type of design.
+-->
+Electronics Workbench
+The incubatees will be provided soldering stations, Multimeters , function generators, DSO etc for the development of their product and all types of tinkering.
+Testing and Measuring Equipments, workstations, 3D printers
+The incubator will house advanced equipments for measurement and testing like
+Mixed Domain Oscilloscope, LCR meter, Bench top Multimeter etc , high-end workstations for product
+design and 3D printers for prototype development
+PCB Assembly line
+A 25000 CPH assembly line for SMT boards will be developed with the aim of assembly of PCB so that startups can develop their final products of the highest quality
+DIY innovation centre
+The centre will have all major opensource boards like Arduino, Raspberry pi, Beagle Bone , Intel edison, IOT boards , actuators, robotic kits , sensors etc
+that would enable rapid protoyping for the startups
+Annexe
+An annexe is being inaugurated at IIITMK’s IoT lab inside the IIITMK Campus,
+Technopark for the benefit of local startups who can be incubated in the Trivandrum Region.
+Listen from our Startups
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+"Satisfied Clients!"
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+Bruce Holt
+Manager at TechDream
+"Easy & Fun."
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+Angela Roy
+Architect at CUBE
+"Remarkable Style."
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+Bert Baldwin
+PR at CTA
+"Super support!"
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+Jack Jones
+Manager at TechDream
+"Awesome design."
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+Melissa James
+CEO at SNAP
+"Great flexibility."
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+Mark Levine
+PR at CTA
+Incubation
+A 25000 sq ft facility has been developed at the Technology Innovation Zone, KINFRA Hitech Park, Kochi, by Kerala Startup Mission for the Electronics Incubator.
+Pre-incubation Stage
+1-3 months
+Pre incubation stage mainly focuses on ideation stage, where technologist having a potential innovative idea
+can be provided with a co working space and limited access to equipments and allied facilities.
+Incubation stage
+6-12 months
+Companies start product development to build a market viable prototype and prepare themselves
+for marketing. The Electronics Incubator at this stage will allot
+them specific seats/modules along with funds in the range of 1 to 2 Lakhs INR
+for promising incubatees with right mentorship.
+Accelerator stage and graduation
+3-6 months
+Accelerator stage will be a business tools box and a holistic business advisory service, for the startups. . The startups shall be presented to VC’s and investors and the electronics incubator arrange an investment in ten companies in a year upto a maximum of 40 Lakhs
+INR depending on market viability and innovativeness of the product
+FAQ
+What does your agency do?
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+How much do your services cost?
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+How long does it take to make a design?
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+What does your agency do?
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+How much do your services cost?
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+How long does it take to make a design?
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+What Are You Waiting For?
+Take your first step towards your Dream.
+Register Now
+140
+Applicants
+4
+Preincubation
+5
+Incubates
+0
+Graduates
+Contact Us
+Dr Asharaf.S
+Associate Professor
+IIIT-MK, Technopark,
+Trivandrum - 695581
+E-mail: asharaf.s@iiitmk.ac.in
+Rohan Kalani, Director-Operations,
+Maker Village, Kerala Technology Innovation Zone,
+Kinfra Hi-Tech Park, Kalamassery, Kochi, Kerala 683503
+E-mail: rohan.kalani@iiitmk.ac.in
+Copyright © 2016 -2017 | Developed by Cocoalabs

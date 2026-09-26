@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>T-HUB</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/popup_page.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="/css/animate.min.css" rel="stylesheet">
+        <link href="/lib/gallery/css/blueimp-gallery.min.css" rel="stylesheet">
+        <link href="/css/agency.css" rel="stylesheet">
+        <link href="/css/custom.css?v=1.3" rel="stylesheet">
+        <link href="/styles/app.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+              type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+              type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- jQuery -->
+        <script src="/js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/js/bootstrap.min.js"></script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+<body id="page-top" class="index">
+<div
+             class="wrapper ">
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="/"><img
+                                src="/img/t-hub-logo.png" alt="logo" width="65px"></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li >
+                                <a href="/about-us">ABOUT</a>
+                            </li>
+                            <li >
+                                <a href="/lab">LAB/32</a>
+                            </li>
+                            <li >
+                                <a href="/network">OUR NETWORK</a>
+                            </li>
+                            <li >
+                                <a href="/directory/investors">INVESTORS</a>
+                            </li>
+                            <li >
+                                <a href="/directory/accelerators">ACCELERATORS</a>
+                            </li>
+                            <li >
+                                <a href="/directory/others">OTHERS</a>
+                            </li>
+                            <li >
+                                <a href="/news">NEWS</a>
+                            </li>
+                            <li >
+                                <a href="/events">EVENTS</a>
+                            </li>
+                            <li >
+                                <a href="/contact">CONTACT</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll navbar-right" href=/catalyst>CATALYST</a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                    <!-- /.navbar-collapse -->
+
+                    <div class="navbar-sharing" >
+                        <a href="https://www.youtube.com/channel/UCx3-nAxbesZcemtLftckP9Q/videos"
+                           target="_blank"
+                           class="page-scroll sharing youtube"></a>
+                        <a href="https://www.linkedin.com/company/t-hub-hyderabad" target="_blank"
+                           class="page-scroll sharing linkedin"></a>
+                        <a href="https://twitter.com/THubHyd" target="_blank"
+                           class="page-scroll sharing twitter"></a>
+                        <a href="https://www.facebook.com/THubHyd/" target="_blank"
+                           class="page-scroll sharing facebook"></a>
+                    </div>
+
+                </div>
+                
+                <!-- /.container-fluid -->
+                <button data-toggle="modal" id="popup_button" class="btn btn-default btn-small" data-target="#modal"><img style="" class="eventUpadte" src="/img/Evevts Updates_Button.png"></button>
+
+                <div class="modal" id="modal" align="center" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <hr style="visibility:hidden;">
+                            <div class="modal-body">
+                                <p style="font-size: 18px;color:#f46e34;">Please enter your mobile and email ID <br> to register for our newsletter. </p>
+                                <hr  width="10%">
+                                <form role="form" id ="form_popup" method="POST">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-8  col-sm-offset-2 col-md-8 col-md-offset-2">
+                                            <div class="form-group">
+                                                <p>Mobile number:</p>
+                                                <input  class="form-control input-medium bfh-phone" name="number" type="number" id="number" required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8  col-sm-offset-2 col-md-8 col-md-offset-2">
+                                            <div class="form-group">
+                                                <p>Email ID:</p>
+                                                <input type="email"  class="form-control" id="email" name ="email"  required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2" >
+                                            <input type="submit" id = "submit" name="Submit" class="btn btn-primary" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        <hr style="visibility:hidden;">
+                        </div>
+                    </div>
+                </div>
+                <div class ='modal' id="thankyou_popup" align="center" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <button type="button" class="close"  id = "closety" data-dismiss="modal" data-toggle = "thankyou_popup" aria-hidden="true">&times;</button>
+                            <hr style="visibility:hidden;">
+                            <div class="modal-body" align="center">
+                                <p style="font-size: 40px;color:#f46e34;">ThankYou</p>
+                                <p style="font-size: 18px;color:#767676;">You'll never miss the excitement at T-Hub</p>
+                                <hr  width="10%">
+                            </div>
+                            <hr style="visibility:hidden;">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section>
+                <div class="container">
+                                                        </div>
+            </section>
+            
+            
+
+            <!-- Header -->
+<style>
+    .fill {
+        height: 712px;
+    }
+    header .intro-text .title-head {
+        font-size: 6vh;
+        font-weight: normal;
+        line-height: 60px;
+    }
+    
+    header .responive-banner {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #popup_button {
+      position:fixed;
+      right:0;
+      bottom: 200px;
+    }
+    @media (min-width: 768px) {
+        header .intro-text {
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
+    }    
+    
+    @media only screen and (min-width:960px){
+        /* styles for browsers larger than 960px; */
+    }
+    @media only screen and (min-width:1440px){
+        /* styles for browsers larger than 1440px; */
+    }
+    @media only screen and (min-width:2000px){
+        /* for sumo sized (mac) screens */
+    }
+    @media only screen and (max-device-width:480px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+    @media only screen and (device-width:768px){
+       /* default iPad screens */
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    }
+    
+    
+</style>
+
+<header id="myCarousel" class="carousel slide" style="display:none">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+        <!--<div class="item active">
+            <a href="/slush">
+                <div class="fill" style="background-image:url('/img/slush/slush_banner.png');">
+                </div>
+            </a>
+        </div>-->
+        <div class="item active">
+            <div class="fill" style="background-image:url('/img/slider.jpg');">
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-lead-in title-head">Hyderabad. Where great startups start up!</div>
+                        <div class="intro-lead-in sub-txt">A unique partnership between the Govt. of Telangana and key stakeholders in the startup ecosystem, T-Hub’s mission is to catalyze the creation of one of the tightest, most successful and vibrant entrepreneur communities in the world, and make Hyderabad the place to be.</div>
+                        <div class="intro-lead-in"><img src="/img/arrow_go.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item ">
+            <div  class="fill" style="background-image:url('/img/slider2.jpg');">
+                <div class="container">
+                    <div class="row intro-text tl">
+                        <div class="col-md-6">
+                            <div class="intro-lead-in title-head">Hyderabad. Where great startups start up!</div>
+                            <div class="intro-lead-in sub-txt">T-Hub is the heart of the Telangana startup and technology ecosystem. We put you at the centre of a close community of startups, accelerators, investors, workspaces and other resources in the city and beyond.</div>
+                            <div class="intro-lead-in"><img src="/img/arrow_go.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div  class="fill" style="background-image:url('/img/slider1.jpg');">
+                <div class="container">
+                    <div class="row intro-text tl">
+                         <div class="col-md-6">
+                            <div class="intro-lead-in title-head">Hyderabad. Where great startups start up!</div>
+                            <div class="intro-lead-in sub-txt">The world class Catalyst building is the anchor for Telangana’s thriving start-up ecosystem. It is the largest building in India dedicated entirely to entrepreneurship, and home to a dynamic community of thriving start-ups, investors and support organizations.</div>
+                            <div class="intro-lead-in"><img src="/img/arrow_go.png"></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</header>
+<header class="news1">
+  <a href="http://yesfintech.com/" target="_blank">
+    <img src="/img/yfa.jpg" class="responive-banner" alt="">
+  </a>
+  
+  <h3 class="post-title"><a href="http://signup.t-hub.co/apply">Be a part of Catalyst, T-Hub's Startup incubator - click here for more details</a></h3>
+</header>
+
+<section id="featured">
+    <div class="container">
+        <div class="row">
+            <!--sxbox starts-->
+            <div class="col-md-4">
+                <div class="fd-box">
+                    <div class="fd-box-cnt">
+                        <h4>Featured Investors</h4>
+                        <ul>
+                                                            <li>
+                                    <span><img src="/img/directory/NirvanaHoldings.jpg" width="50px" height="50px" alt="Nirvana Holdings" title="Nirvana Holdings"></span>
+                                    <span>Nirvana Holdings</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/MumbaiAngels.jpg" width="50px" height="50px" alt="Mumbai Angels" title="Mumbai Angels"></span>
+                                    <span>Mumbai Angels</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/VentureGiant.jpg" width="50px" height="50px" alt="VentureGiant" title="VentureGiant"></span>
+                                    <span>VentureGiant</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/UnitusSeedFund.jpg" width="50px" height="50px" alt="Unitus Seed Fund" title="Unitus Seed Fund"></span>
+                                    <span>Unitus Seed Fund</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/UnLtdHyderabad.jpg" width="50px" height="50px" alt="UnLtd Hyderabad" title="UnLtd Hyderabad"></span>
+                                    <span>UnLtd Hyderabad</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/50KVentures.jpg" width="50px" height="50px" alt="50K Ventures" title="50K Ventures"></span>
+                                    <span>50K Ventures</span>
+                                </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                <div><a href="/directory/investors" class="sx-more" title="Show the complete list of investors">+</a></div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="fd-box">
+                    <div class="fd-box-cnt">
+                        <h4>Featured Accelerators</h4>
+                        <ul>
+                                                            <li>
+                                    <span><img src="/img/directory/LVPEI.jpg" width="50px" height="50px" alt="Srujana Innovation Center (LVPEI)" title="Srujana Innovation Center (LVPEI)"></span>
+                                    <span>Srujana Innovation Center (...</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/HyderabadAngels.jpg" width="50px" height="50px" alt="Hyderabad Angels" title="Hyderabad Angels"></span>
+                                    <span>Hyderabad Angels</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/UPTECIdealabs.jpg" width="50px" height="50px" alt="Uptec Idealabs" title="Uptec Idealabs"></span>
+                                    <span>Uptec Idealabs</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/91Springboard.jpg" width="50px" height="50px" alt="91Springboard" title="91Springboard"></span>
+                                    <span>91Springboard</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/IIIT-H.png" width="50px" height="50px" alt="IIIT-H Foundation - CIE" title="IIIT-H Foundation - CIE"></span>
+                                    <span>IIIT-H Foundation - CIE</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/UnLtdHyderabad.jpg" width="50px" height="50px" alt="UnLtd Hyderabad" title="UnLtd Hyderabad"></span>
+                                    <span>UnLtd Hyderabad</span>
+                                </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                <div><a href="/directory/accelerators" class="sx-more" title="Show the complete list of accelerators">+</a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="fd-box">
+                    <div class="fd-box-cnt">
+                        <h4>Featured Support Orgs</h4>
+                        <ul>
+                                                            <li>
+                                    <span><img src="/img/directory/TheAugustFest.jpg" width="50px" height="50px" alt="The August Fest" title="The August Fest"></span>
+                                    <span>The August Fest</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/" width="50px" height="50px" alt="Global Networking Idea" title="Global Networking Idea"></span>
+                                    <span>Global Networking Idea</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/" width="50px" height="50px" alt="100Craft" title="100Craft"></span>
+                                    <span>100Craft</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/5.jpg" width="50px" height="50px" alt="Samanyu Software Solutions (paisavasul.com)" title="Samanyu Software Solutions (paisavasul.com)"></span>
+                                    <span>Samanyu Software Solutions ...</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/" width="50px" height="50px" alt="Ex10sion Technologies" title="Ex10sion Technologies"></span>
+                                    <span>Ex10sion Technologies</span>
+                                </li>
+                                                            <li>
+                                    <span><img src="/img/directory/30.jpeg" width="50px" height="50px" alt="Gokhelo" title="Gokhelo"></span>
+                                    <span>Gokhelo</span>
+                                </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                <div><a href="/directory/others" class="sx-more" title="Show the complete list of suuport orgs">+</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- courosel -->
+<section id="benifits">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-heading">OUR NETWORK</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class='embed-container maps'>
+        <iframe src="http://beta.mappr.io/play/auth/Hyderabad4Innovation" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+</section>
+
+
+<!-- Pricing Section -->
+<section id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-heading">NEWS & EVENTS</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg news1">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-9 tl">
+                <div class="brd12 clearfix">
+                    <div class="pull-left">Latest News</div>
+                    <div class=" clearfix">
+                        <div class="pull-right"><a href="/news">More &raquo;</a></div>
+                    </div>
+                </div>
+                                    <div style="" class="col-md-4">
+                        <div class="post-row news">
+                            <h3 class="post-title"><a target="_blank" href="http://news.google.com/news/url?sa=t&fd=R&ct2=in&usg=AFQjCNFYc4zIkLa1wgoxLI7zBtS9OfrhsQ&clid=c3a7d30bb8a4878e06b80cf16b898331&cid=52779128123731&ei=vGFVV6iwMYvu4QKy5qjoBw&url=http://techcircle.vccircle.com/2016/06/06/meet-the-five-startups-selected-for-oracles-accelerator-programme/">Meet the five startups selected for Oracle's ac...</a></h3>
+                                                        <div class="thumb"><img src="//t1.gstatic.com/images?q=tbn:ANd9GcQXRuePU3BzZDzinJcieaxh-chFzdzgukaDKz2V7cyHUYSBZWCoRZZHR-sN__Gl8qlxlygN3fQ"></div>
+                                                        <div class="post-content">
+                                <p class="dayt">VCCircle</p>
+                                <p>Likewise, the nine incubation centres located in Bangalore, Chennai, Gurgaon, Hyderabad, Mumbai, Noida, Pune, Thiruvananthapuram and Vijayawada will support entrepreneurship and development of star...</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div style="" class="col-md-4">
+                        <div class="post-row news">
+                            <h3 class="post-title"><a target="_blank" href="http://news.google.com/news/url?sa=t&fd=R&ct2=in&usg=AFQjCNGcLyPWpqipKOOY35WjbuPL7p_bZQ&clid=c3a7d30bb8a4878e06b80cf16b898331&cid=52779128007187&ei=vGFVV6iwMYvu4QKy5qjoBw&url=http://yourstory.com/2016/06/sillymonks-funding/">Multi-channel network SillyMonks raises Rs 3cr ...</a></h3>
+                                                        <div class="thumb"><img src="//t0.gstatic.com/images?q=tbn:ANd9GcRisVKS-PH2VfysSxf3te_niGnBkqeFZQ4g96cnJH4V9Aq2Uvsq7Z8tsvPj1QzoWB_C365bXood"></div>
+                                                        <div class="post-content">
+                                <p class="dayt">YourStory.com</p>
+                                <p>Hyderabad-based multi-channel network (MSN) SillyMonks raised Rs 3 crore from HNI Sreenivasa Reddy Musani, CMD EKTHA Group. With this new influx of funds, SillyMonks plans to introduce six new digi...</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div style="" class="col-md-4">
+                        <div class="post-row news">
+                            <h3 class="post-title"><a target="_blank" href="http://news.google.com/news/url?sa=t&fd=R&ct2=in&usg=AFQjCNHEcSQ3Vuvkn5VPYkKF5DGQJkTO3Q&clid=c3a7d30bb8a4878e06b80cf16b898331&cid=52779127929316&ei=vGFVV6iwMYvu4QKy5qjoBw&url=http://www.iamwire.com/2016/06/marketwire-1-250-startup-india-applications-cleared/137551">#MarketWire: Only 1 Out of 250 Startup India Ap...</a></h3>
+                                                        <div class="thumb"><img src="//t2.gstatic.com/images?q=tbn:ANd9GcTgFDaalDeYWpWQwdCdi7SXByWhv4dqKBoP8PTsv0LfkVzzCXDekF7WVsXx9Wr-6WB-fzh5suI"></div>
+                                                        <div class="post-content">
+                                <p class="dayt">iamWire</p>
+                                <p>The sole startup which has been selected is Hyderabad based renewal energy firm, Cygni. The portal was set up to enable startups avail the tax benefits, provide them with a real-time recognition ce...</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div style="" class="col-md-4">
+                        <div class="post-row news">
+                            <h3 class="post-title"><a target="_blank" href="http://news.google.com/news/url?sa=t&fd=R&ct2=in&usg=AFQjCNHAsGXVqLQf28T1ch2I95TYcuxmNA&clid=c3a7d30bb8a4878e06b80cf16b898331&ei=vGFVV6iwMYvu4QKy5qjoBw&url=http://www.newindianexpress.com/states/telangana/KTR-evinces-interest-in-Clean-Tech-Incubator/2016/06/06/article3468350.ece">KTR evinces interest in Clean Tech Incubator</a></h3>
+                                                        <div class="thumb"><img src="//t1.gstatic.com/images?q=tbn:ANd9GcTBUXe09N2PrFq_aLcshZEDVKSJi5t3h7EJexSIDAc3uTR1WJV49MXgad9dawLr_-BDImRwLIY"></div>
+                                                        <div class="post-content">
+                                <p class="dayt">The New Indian Express</p>
+                                <p>HYDERABAD: IT minister KT Rama Rao, who is touring the United States (US), visited Clean Tech Incubator iHub in California State. iHub houses startups working in the field of clean technology and n...</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div style="" class="col-md-4">
+                        <div class="post-row news">
+                            <h3 class="post-title"><a target="_blank" href="http://news.google.com/news/url?sa=t&fd=R&ct2=in&usg=AFQjCNHsvxqdTuFrGLk03QsqMSVfuEwzAA&clid=c3a7d30bb8a4878e06b80cf16b898331&cid=52779125370285&ei=vWFVV8jtJ4vu4QKy5qjoBw&url=http://www.vccircle.com/news/technology/2016/06/02/home-salon-services-startup-pamperazi-merge-hyderabad-based-rival-zapluk">Home salon services startup Pamperazi to merge ...</a></h3>
+                                                        <div class="thumb"><img src="//t1.gstatic.com/images?q=tbn:ANd9GcRp1xHhq44PUxnPRT7sC2ul91QthpoQLbnP5ezdElENxRigF667RybgZ-qDKiQ6S6hJAYEAX6w"></div>
+                                                        <div class="post-content">
+                                <p class="dayt">VCCircle</p>
+                                <p>... Hong Kong-based Swastika Company Ltd. StayGlad, a mobile marketplace for on-demand beauty services, raised an undisclosed amount in Series A funding from Silicon Valley-based venture capital fi...</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div style="" class="col-md-4">
+                        <div class="post-row news">
+                            <h3 class="post-title"><a target="_blank" href="http://news.google.com/news/url?sa=t&fd=R&ct2=in&usg=AFQjCNEjS4_YlJ_yc_FFmKfbDsx9x_w4Jg&clid=c3a7d30bb8a4878e06b80cf16b898331&cid=52779122907167&ei=vGFVV6iwMYvu4QKy5qjoBw&url=http://yourstory.com/2016/05/hyderabad-angels-investments/">Hyderabad Angels invested Rs 15cr in 12 startup...</a></h3>
+                                                        <div class="thumb"><img src="//t1.gstatic.com/images?q=tbn:ANd9GcQvJcLcCXLWxQq7X9qd6gh5VJKuZ1GWqCVg2pi0juEjgEw-2Ymqdn89-Y-DWcjY_sppeCnexv4"></div>
+                                                        <div class="post-content">
+                                <p class="dayt">YourStory.com</p>
+                                <p>On Monday, Hyderabad Angels (HA) announced adding 12 startups this year to its current portfolio. The angel investor network has already invested Rs 15 crore in 12 others over the last one year (20...</p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="col-md-3 tl">
+                <div class="brd12 clearfix"><div class="pull-left">Upcoming Events</div>
+                    <div class=" clearfix">
+                        <div class="pull-right"><a href="/events">More &raquo;</a></div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="height:65px"></div>
+</section>
+
+<section id="cat">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-heading">CATALYST</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="catalyst">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in title-head">Catalyst Building</div>
+            <div class="intro-lead-in sub-txt"><a href="/catalyst">TAKE A TOUR<img src="img/arrow_go2.png"></a></div>
+
+        </div>
+    </div>
+
+</section>
+
+<script type="text/javascript">
+
+// Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function (event) {
+        var that = $(this);
+
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+
+    var onMapClickHandler = function (event) {
+        var that = $(this);
+
+        // Disable the click handler until the user leaves the map area
+        that.off('click', onMapClickHandler);
+
+        // Enable scrolling zoom
+        that.find('iframe').css("pointer-events", "auto");
+
+        // Handle the mouse leave event
+        that.on('mouseleave', onMapMouseleaveHandler);
+    }
+
+    // Enable map zooming with mouse scroll when the user clicks the map
+    $('.maps.embed-container').on('click', onMapClickHandler);
+
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+
+</script>
+            <a href="#page-top" class="gototop page-scroll"><i class="fa fa-arrow-circle-up  fa-3x"></i></a>
+
+            <div class="push"></div>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <!--<ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>-->
+                        <div>
+                            <span class="copyright">Copyright 2015 T-Hub. All rights reserved.</span>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Plugin JavaScript -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-63629129-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script>
+                document.getElementById('closety').addEventListener('click',function () {
+                    document.getElementById('thankyou_popup').style.display='none';
+                }); 
+                document.getElementById('thankyou_popup').addEventListener("click",function() {
+                    document.getElementById('thankyou_popup').style.display='none';
+                });
+        </script>
+        <script> var path = "/index/subscription" ;</script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="/js/classie.js"></script>
+        <script src="/js/cbpAnimatedHeader.js"></script>
+        <script src="/lib/gallery/js/blueimp-gallery.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="/js/agency.js"></script>
+        <script src="/js/jquery.nicescroll.js"></script>
+        <script src="/js/dataLoader.js"></script>
+        <script src="/js/subscription.js"></script>
+        <script src="/js/jquery.validate.js"></script>
+    </body>
+</html>
