@@ -24,24 +24,6 @@ this date." That's what this script uses.
 | `output/<org_slug>/*.html` | Raw archived HTML for each successful snapshot |
 | `output/<org_slug>/*.txt` | Cleaned, readable plain text extracted from that HTML |
 
-## ⚠️ Before you run this for real
-
-1. **Verify the URLs in `config.py`.** They were filled in from general
-   knowledge of these organizations, not individually re-checked against the
-   live sites (this was written in a sandboxed environment with no internet
-   access to archive.org or the target sites). Open each `homepage` and
-   `about` URL in a browser and fix any that are wrong, especially the
-   `about` URLs — these vary a lot site to site (`/about`, `/about-us`,
-   `/who-we-are`, `/team`, etc.).
-2. Some of these organizations' current URL may not be the URL they used in
-   2017 (domains change, sites get redesigned/relaunched, some may not have
-   existed yet in 2017). The script doesn't try to guess historical
-   redirects — it looks up whatever URL you give it and returns whatever
-   Wayback snapshots exist for *that exact URL*. If an org's `about` page
-   moved from `/about` to `/about-us` in 2021, you may need to run the
-   script twice with two different URLs and merge the results (see "Handling
-   URL changes over time" below).
-
 ## Requirements
 
 - Python 3.8+
