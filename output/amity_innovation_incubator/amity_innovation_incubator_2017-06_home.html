@@ -1,0 +1,544 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::.AMITY INCUBATOR.::</title>
+<link rel="stylesheet" type="text/css" href="http://www.amity.edu/aii/css/mainstyle.css"  />
+<script type="text/javascript" src="http://www.amity.edu/aii/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.amity.edu/aii/js/animatedcollapse.js"></script>
+<script type="text/javascript">
+animatedcollapse.addDiv('jason', 'fade=1,height=44px')
+animatedcollapse.addDiv('kelly', 'fade=1,height=100px')
+animatedcollapse.addDiv('michael', 'fade=1,height=120px')
+animatedcollapse.addDiv('cat', 'fade=0,speed=400,group=pets')
+animatedcollapse.addDiv('dog', 'fade=0,speed=400,group=pets,persist=1,hide=1')
+animatedcollapse.addDiv('rabbit', 'fade=0,speed=400,group=pets,hide=1')
+animatedcollapse.ontoggle=function($, divobj, state){ 
+}
+animatedcollapse.init()
+
+</script>
+
+<link href="http://www.amity.edu/aii/CSS/Login.css" rel="stylesheet" type="text/css" />
+     <style type="text/css">
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color:#000;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=80);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 5%;
+            left: 10%;           
+            padding: 16px;
+            border: 8px solid gray;
+            background-color: #fff;
+            z-index:1002;
+            overflow: auto; width:1000px; height:600px; overflow:auto;
+		
+        }
+    </style> 
+    <link href="CSS/Login.css" rel="stylesheet" type="text/css" />
+    <link href="AIIAdmin/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="AIIAdmin/css/navbar_techandall.css" rel="stylesheet" type="text/css" /> 
+    
+    <link rel="stylesheet" href="slider/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slider/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slider/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slider/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slider/nivo-slider.css" type="text/css" media="screen" />
+    
+	<script type="text/javascript" src="slider/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>
+</head>
+<body>
+<form name="form1" method="post" action="./" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzAzNDUxOTYwD2QWAgIBD2QWCAIFD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIDFgZmD2QWAmYPFQIwSW5jdWJhdGVlQ29tcGFuaWVzLmFzcHg/VHlwZT1SZXNpZGVudCBJbmN1YmF0ZWVzE1Jlc2lkZW50IEluY3ViYXRlZXNkAgEPZBYCZg8VAi9JbmN1YmF0ZWVDb21wYW5pZXMuYXNweD9UeXBlPVZpcnR1YWwgSW5jdWJhdGVlcxJWaXJ0dWFsIEluY3ViYXRlZXNkAgIPZBYCZg8VAiZJbmN1YmF0ZWVDb21wYW5pZXMuYXNweD9UeXBlPUdyYWR1YXRlZAlHcmFkdWF0ZWRkAgcPFgIfAAIDFgZmD2QWAgIDDw8WAh4ISW1hZ2VVcmwFL2h0dHA6Ly9hbWl0eS5lZHUvVXNlckZpbGVzL2FpaS9VcGxvYWRzLzE3MDMuanBnZGQCAQ9kFgICAw8PFgIfAQUvaHR0cDovL2FtaXR5LmVkdS9Vc2VyRmlsZXMvYWlpL1VwbG9hZHMvMTkwMi5qcGdkZAICD2QWAgIDDw8WAh8BBS9odHRwOi8vYW1pdHkuZWR1L1VzZXJGaWxlcy9haWkvVXBsb2Fkcy8yMDA0LmpwZ2RkAgkPPCsACQEADxYEHghEYXRhS2V5cxYAHwACBGQWCGYPZBYCZg8VATdodHRwOi8vYW1pdHkuZWR1L1VzZXJGaWxlcy9haWkvVXBsb2Fkcy8xNWd2YzI5OXgxMDAuanBnZAIBD2QWAmYPFQE7aHR0cDovL2FtaXR5LmVkdS9Vc2VyRmlsZXMvYWlpL1VwbG9hZHMvN2xvMG9nby1tYXJrc21hbi5wbmdkAgIPZBYCZg8VAUhodHRwOi8vYW1pdHkuZWR1L1VzZXJGaWxlcy9haWkvVXBsb2Fkcy8xMEFwbmFDaXJjbGUuY29tX0xvZ28gKGZpbmFsKS5qcGdkAgMPZBYCZg8VATpodHRwOi8vYW1pdHkuZWR1L1VzZXJGaWxlcy9haWkvVXBsb2Fkcy8xMUNpcmN1aXQgU3V0cmEuanBnZAILDxYCHwACChYUZg9kFgJmDxUEFUV2ZW50UGFnZS5hc3B4P0lkPTEwNXxBbWl0eSBJbmN1YmF0b3IgaW4gYXNzb2NpYXRpb24gd2l0aCBJQk0gb3JnYW5pc2VzIGEgd29ya3Nob3Agb24gJ0tub3cgSG93IFRoZSBCbG9ja2NoYWluIFRlY2hub2xvZ3kgY2FuIFBvd2VyIHlvdXIgQnVzaW5lc3MnCjA0LzA1LzIwMTdaQW1pdHkgSW5ub3ZhdGlvbiBJbmN1YmF0b3IgRS0zLCAxc3QgRmxvb3IsIEFtaXR5IFVuaXZlcnNpdHksIFNlY3RvciDigJMgMTI1LCBOb2lkYSAyMDEgMzAxZAIBD2QWAmYPFQQVRXZlbnRQYWdlLmFzcHg/SWQ9MTA0MEZyaWRheUZvcnRuaWdodHMgLSBDdXN0b21lciBJbnNwaXJlZCBJbm5vdmF0aW9uIAoyMS8wNC8yMDE3GUFtaXR5IFVuaXZlcnNpdHksIEd1cmdhb25kAgIPZBYCZg8VBBVFdmVudFBhZ2UuYXNweD9JZD0xMDMSRnJpZGF5IEZvcnRuaWdodHMgCjMxLzAzLzIwMTcjQW1pdHkgSW5ub3ZhdGlvbiBJbmN1YmF0b3IsIE1hbmVzYXJkAgMPZBYCZg8VBBVFdmVudFBhZ2UuYXNweD9JZD0xMDI3RnJpZGF5IEZvcnRuaWdodHMgLSBBIFdvcmtzaG9wIG9uIEFudGkgRW50cmVwcmVuZXVyc2hpcAoyNC8wMy8yMDE3IkFtaXR5IElubm92YXRpb24gSW5jdWJhdG9yLCBKYWlwdXJkAgQPZBYCZg8VBBVFdmVudFBhZ2UuYXNweD9JZD0xMDEtRnJpZGF5IEZvcnRuaWdodHMgLSBBIFdvcmtzaG9wIG9uIFN0YXJ0aW5nIFVwCjE3LzAzLzIwMTcjQW1pdHkgSW5ub3ZhdGlvbiBJbmN1YmF0b3IsIEx1Y2tub3dkAgUPZBYCZg8VBBRFdmVudFBhZ2UuYXNweD9JZD05NTBNZW50b3JpbmcgJiBTdHJhdGVneSBUaG91Z2h0IExlYWRlcnNoaXAgU2Vzc2lvbiAKMjMvMDIvMjAxN1pBbWl0eSBJbm5vdmF0aW9uIEluY3ViYXRvciBFLTMsIDFzdCBGbG9vciwgQW1pdHkgVW5pdmVyc2l0eSwgU2VjdG9yIOKAkyAxMjUsIE5vaWRhIDIwMSAzMDFkAgYPZBYCZg8VBBRFdmVudFBhZ2UuYXNweD9JZD05NmxBbWl0eSBJbm5vdmF0aW9uIEluY3ViYXRvciBpbiBBc3NvY2lhdGlvbiB3aXRoIFJCTCBCYW5rIFByZXNlbnRzIFNlbWluYXIgb24gSG93IEludmVzdG9ycyBFdmFsdWF0ZSBTdGFydHVwcyAKMjIvMDIvMjAxN1pBbWl0eSBJbm5vdmF0aW9uIEluY3ViYXRvciBFLTMsIDFzdCBGbG9vciwgQW1pdHkgVW5pdmVyc2l0eSwgU2VjdG9yIOKAkyAxMjUsIE5vaWRhIDIwMSAzMDFkAgcPZBYCZg8VBBRFdmVudFBhZ2UuYXNweD9JZD05OTVGcmlkYXkgRm9ydG5pZ2h0cyAtIFJlYWwgRW50cmVwcmVuZXVycywgUmVhbCBTdG9yaWVzIAoxMC8wMi8yMDE3Z0FtaXR5IElubm92YXRpb24gSW5jdWJhdG9yLCBMdWNrbm93IENhbXB1cywgTWFuZXNhciBDYW1wdXMsIEphaXB1ciBDYW1wdXMsIE11bWJhaSBDYW1wdXMsIFJhaXB1ciBDYW1wdXNkAggPZBYCZg8VBBRFdmVudFBhZ2UuYXNweD9JZD05OERGcmlkYXkgRm9ydG5pZ2h0cyAtIFJlYWwgU3RvcmllcyBPZiBFbnRyZXByZW5ldXJzIGZvciBFbnRyZXByZW5ldXJzIAoxMy8wMS8yMDE3OkFtaXR5IEluY3ViYXRvciwgSmFpcHVyLCBUQkMgQXVkaXRvcml1bSBhbmQgTHVja25vdyBDYW1wdXNkAgkPZBYCZg8VBBRFdmVudFBhZ2UuYXNweD9JZD05N0RGcmlkYXkgRm9ydG5pZ2h0cyAtIFJlYWwgU3RvcmllcyBvZiBFbnRyZXByZW5ldXJzIGZvciBFbnRyZXByZW5ldXJzIAoxMi8wMS8yMDE3JUFtaXR5IEluY3ViYXRvciwgTHVja25vdywgQXVkaXRvcml1bSBkZNl7uOFnunCpQTiy0WEW1OoYaKrY" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4E658D8A" />
+<div id="light" style="display: none;" class="white_content" align="center">
+
+  <table align="right">
+   <tr>
+    <td align="right">
+	 <a href="javascript:void(0)" style="text-align:right; width:1000px; padding-left:98%;" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="close gray">
+	 <strong style="float:right; position:absolute; top:0px;"><img src="http://www.amity.edu/aii/images/CloseButton.png" alt="close" align="right"/></strong></a>
+  	</td>
+   </tr>
+  </table>
+</div>
+
+<div style="display: none;" id="fade" class="black_overlay"></div>
+<!--top header-->
+<div id="header">
+<div id="logo">
+  <a href="Index.aspx"><img alt="Amity Innovation Incubator"src="http://www.amity.edu/aii/images/amity-logo.png" /></a>
+</div>
+
+<link rel="stylesheet" href="AIIAdmin/css/font-awesome.min.css" type="text/css" />
+<div id="toplinks">
+<ul>
+<li class="toplinksleftbg"></li>
+<li class="toplinksmiddlebg" style="padding-top:3px;width:500px;margin-top:-30px;margin-left:-70px;">
+<span class="toptext">
+<a href="index.aspx">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="Patent.aspx">Patent</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="Events.aspx">Events</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="PressRelease.aspx">Media & Gallery</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="JoinOurNetwork.aspx">Jobs at Amity Innovation Incubator &nbsp;</a>&nbsp;|&nbsp;&nbsp;
+<a href="ContactUs.aspx">Contact us</a>
+</span></li>
+<li class="toplinksrightbg"></li>
+</ul>
+</div>
+</div>
+<!--top header end-->
+<!--header-->
+
+
+<link rel="stylesheet" href="css/navbar_techandall.css" type="text/css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+
+<div class="navcontainer" >
+<ul class="nav">
+<li><a href="AboutUs.aspx" >About Us&nbsp;&nbsp;</a></li>
+<li><a href="ServiceModal.aspx" >Service Model</a></li>
+<li><a href="Investment.aspx" >Investment</a></li>
+<li><a href="#">StartupIndia</a>
+ 
+<div class="fulldrop">
+                              
+<div class="column">
+                                   
+<ul>
+                                      
+<li><a href="Startupindia-Introduction.aspx">Introduction</a></li>
+                                       
+<li><a href="Startupindia.aspx">Register your Startup</a></li>
+                                      
+<li><a href="Startupindia-Validate.aspx">Validate your Startup</a></li>
+                                  
+</ul>
+                              
+</div>
+                           
+</div>
+                         
+                      
+</li>
+
+<li><a href="Student_Entrepreneurship.aspx">Student Entrepreneurship</a></li>
+<li><a href="#">Incubatee Companies</a>
+                        
+
+<div class="fulldrop">
+  
+<div class="column">
+      
+<ul>
+          
+
+ 	 <li>
+ 	 <a href="IncubateeCompanies.aspx?Type=Resident Incubatees" >Resident Incubatees</a>
+     </li>
+     
+ 	 <li>
+ 	 <a href="IncubateeCompanies.aspx?Type=Virtual Incubatees" >Virtual Incubatees</a>
+     </li>
+     
+ 	 <li>
+ 	 <a href="IncubateeCompanies.aspx?Type=Graduated" >Graduated</a>
+     </li>
+     
+          
+</ul>
+      
+</div>
+  
+</div>
+
+
+</li>
+       
+<li><a href="ShowCase.aspx" >Showcase</a></li>
+
+<li><a href="#">Media & Gallery</a>
+                      
+<div class="fulldrop" style="min-height: 50px;">                            
+<div class="column">                            
+<ul>                                      
+<li><a href="PressRelease.aspx">Press Release</a></li>                                  
+<li><a href="PEVCNewsLetter.aspx">PEVC News Letter</a></li>                              
+</ul>                           
+</div>                        
+</div>
+                         
+                     
+</li>
+   
+<li><a href="JoinOurNetwork.aspx" style="border-right: none;">Mentors Network</a></li>
+
+</ul>
+</div>
+
+<!--header end-->
+<!--banner -->
+<div id="banner">
+<div id="bannerpic">
+<div class="carousel master-slider setabsolute" style="z-index: 1" data-role="carousel"
+    data-height="300" data-control-next="<span class='mif-chevron-right'></span>"
+    data-control-prev="<span class='mif-chevron-left'></span>" data-controls="true"
+    data-markers="false">
+     <div id="wrapper" style="float:left;">
+         <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+            
+                    <div class="slide">
+                        <input type="hidden" name="Repeater1$ctl00$HiddenField1" id="Repeater1_ctl00_HiddenField1" value="http://amity.edu/UserFiles/aii/Uploads/1703.jpg" />
+                        <img id="Repeater1_ctl00_Image1" data-role="fitImage" data-format="fill" src="http://amity.edu/UserFiles/aii/Uploads/1703.jpg" border="0" style="height:275px;width:679px;" />
+                    </div>
+                
+                    <div class="slide">
+                        <input type="hidden" name="Repeater1$ctl01$HiddenField1" id="Repeater1_ctl01_HiddenField1" value="http://amity.edu/UserFiles/aii/Uploads/1902.jpg" />
+                        <img id="Repeater1_ctl01_Image1" data-role="fitImage" data-format="fill" src="http://amity.edu/UserFiles/aii/Uploads/1902.jpg" border="0" style="height:275px;width:679px;" />
+                    </div>
+                
+                    <div class="slide">
+                        <input type="hidden" name="Repeater1$ctl02$HiddenField1" id="Repeater1_ctl02_HiddenField1" value="http://amity.edu/UserFiles/aii/Uploads/2004.jpg" />
+                        <img id="Repeater1_ctl02_Image1" data-role="fitImage" data-format="fill" src="http://amity.edu/UserFiles/aii/Uploads/2004.jpg" border="0" style="height:275px;width:679px;" />
+                    </div>
+                
+       </div>
+     </div>
+   </div>
+</div>
+</div>
+
+<div id="righttext">
+<div style="width:290px;">
+<a href="#" rel="toggle[cat]" data-openimage="http://www.amity.edu/aii/images/join-amity-rol.jpg" data-closedimage="http://www.amity.edu/aii/images/join-amity.jpg"><img alt="Join Amity Innovator" src="http://www.amity.edu/aii/images/join-amity-rol.jpg" border="0" /></a> 
+<div id="cat" style="width: 287px; background: #ffffff; border-left:1px #c6c1bd solid; border-right:1px #c6c1bd solid;  margin:0; padding:0;">
+<div class="bluedetails" style="text-align:justify;">Join Amity's incubation programme in which you will be provided full support to raise funds, interact with Venture Capitalist, establish your business,<br />
+write your business plans, recruit talent, network with peers and get training among many other services that will help you attain success in your business venture.
+</div>
+<div class="bluereadmore" align="right"><img alt="Arrow"  src="http://www.amity.edu/aii/images/arrow.gif" />&nbsp;<a href="AboutUs.aspx">read more</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+</div>
+
+<div style="width:290px;">
+<a href="#" rel="toggle[dog]" data-openimage="http://www.amity.edu/aii/images/join-executive-rol.jpg" data-closedimage="http://www.amity.edu/aii/images/join-executive.jpg"><img alt="Join Executive in Residence"  src="http://www.amity.edu/aii/images/join-executive-rol.jpg" border="0" /></a>
+<div id="dog" style="width: 287px; background: #ffffff; border-left:1px #c6c1bd solid; border-right:1px #c6c1bd solid;">
+<div class="bluedetails" style="text-align:justify;">Amity in its endeavors to mentor different start-ups and budding entrepreneurs towards successful business ventures introduces experts from different industry domains with those who need advisory support to scale up. We are privileged to have an esteemed network of global CEOs and CXOs from renowned business houses extending mentoring support and guidance to the entrepreneurs
+</div>
+<div class="bluereadmore" align="right"><img alt="Arrow"  src="http://www.amity.edu/aii/images/arrow.gif" />&nbsp;<a href="executiveinresidence.asp">read more</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+</div>
+
+<div style="width:290px;">
+<a href="#" rel="toggle[rabbit]" data-openimage="http://www.amity.edu/aii/images/join-tech-rol.jpg" data-closedimage="http://www.amity.edu/aii/images/join-tech.jpg"><img alt="Join Tech. Comm. Program"  src="http://www.amity.edu/aii/images/join-tech-rol.jpg" border="0" /></a> 
+<div id="rabbit" style="width: 287px; background: #ffffff; border-left:1px #c6c1bd solid; border-right:1px #c6c1bd solid;">
+<div class="bluedetails" style="text-align:justify;">Amity Innovation Incubator along with its dedicated Intellectual Property and Tech.Commercialization team has filed more than 210 patents during the last 18+ months .
+</div>
+<div class="bluereadmore" align="right">
+<img alt="Arrow"  src="http://www.amity.edu/aii/images/arrow.gif" />&nbsp;
+<a href="http://www.amity.edu/aii/jointechprogram.html">read more</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+</div>
+<span class="size"></span>
+</div>
+
+</div>
+<!--banner end -->
+<!--Middle -->
+<div id="middlearea">
+<div id="leftline">
+</div>
+<div id="middletext">
+<h1>AMITY<span class="h1part">&nbsp;INNOVATION INCUBATOR</span></h1>
+<br />
+<span class="text">Amity Innovation Incubator which is a registered 'not for profit' society supported by an advisory body consisting of industrialists, venture capitalists, technical specialists and managers established to help entrepreneurs realize their dreams through a range of infrastructure, business advisory, mentoring and financial services.<br /><br />
+
+The Core team of Amity Innovation Incubator  has decades of experience in assisting entrepreneurs through Incubation and Venture Capital Funding. Amity Innovation Incubator  offers a range of incubation services to nourish entrepreneurial talent such as - Business Planning, Company formation, Legal &amp; IPR assistance, Managerial Support, Technology Support,....</span><br />
+<br />
+<span class="readmre"><a href="http://www.amity.edu/aii/AboutUs.aspx">+ read more</a></span>
+<div id="middleline">
+</div>
+<br /><h1>INCUBATEE<span class="h1part">&nbsp;COMPANIES</span></h1>
+<br />
+ <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #336699">
+   <tr>
+     <td valign="top" align="center">
+      <table id="DataList1" cellspacing="0" border="0">
+	<tr>
+		<td>
+          <img src='http://amity.edu/UserFiles/aii/Uploads/15gvc299x100.jpg' width="180" height="50"  alt="" style="padding:10px;" />
+        </td><td>
+          <img src='http://amity.edu/UserFiles/aii/Uploads/7lo0ogo-marksman.png' width="180" height="50"  alt="" style="padding:10px;" />
+        </td>
+	</tr><tr>
+		<td>
+          <img src='http://amity.edu/UserFiles/aii/Uploads/10ApnaCircle.com_Logo (final).jpg' width="180" height="50"  alt="" style="padding:10px;" />
+        </td><td>
+          <img src='http://amity.edu/UserFiles/aii/Uploads/11Circuit Sutra.jpg' width="180" height="50"  alt="" style="padding:10px;" />
+        </td>
+	</tr>
+</table> 
+       </td>
+      </tr>
+      <tr><td align="center" style="padding-top:10px;padding-bottom:10px;">
+      <a href="http://www.amity.edu/aii/Incubatee_Companies.html"><img alt="View More"  src="http://www.amity.edu/aii/images/view-more.gif" border="0"/></a>
+      </td></tr>
+     
+   </table>
+ 	
+
+<br clear="all" />
+</div>
+<div id="navigation">
+<div style="padding-top:20px; padding-left:25px; padding-bottom:10px;"><h2>OUR<span class="h2part">&nbsp;NAVIGATION</span></h2></div>
+<ul>
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/joinamitycircle.asp">Join Amity Innovation Incubator </a></span> </li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/executiveinresidence.asp">Join Our Network of Mentors</a></span></li>
+<!-- <li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/techcommprogram.asp">Join Tech. Commercialization Program</a></span> </li> -->
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/amityinnovationfund.html">Amity Innovation Fund </a></span></li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/downloads.html">Downloads</a></span> </li>
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/Student_Entrepreneurship.aspx">Student Entrepreneurship </a></span></li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/events.html">Events </a></span> </li>
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/showcase.aspx">Showcase</a> </span></li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/Investment.aspx">Investment</a> </span> </li>
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/PressRelease.aspx">Media</a> </span></li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/IncubateeCompanies.aspx?Type=Virtual Incubates">Virtual Incubation</a> </span> </li>
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/PressRelease.aspx">Picture Gallery</a> </span></li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/servicemodal.aspx">Services Model</a> </span> </li>
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/IncubateeCompanies.aspx?Type=Resident%20Incubatees">Incubatee Companies</a> </span></li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/jobsataii.html">Jobs at Amity Innovation Incubator  </a></span> </li>
+<!-- <li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/amitycircle.html">Join the AII community </a></span></li> -->
+<li class="grey"><span class="navitext"><a href="http://www.amity.edu/aii/contactus.aspx">Contact us</a> </span> </li>
+<li class="lightgrey"><span class="navitext"><a href="http://www.amity.edu/aii/CSRForIncubators.aspx">CSR for Incubators </a></span></li> 
+</ul>
+</div>
+<div id="upcmingevents">
+
+<div style="padding-top:20px; padding-left:25px;">
+  <h2>EVENTS &amp;<span class="h2part">&nbsp;UPDATES</span></h2>
+</div>
+
+<div style="padding-left:25px; padding-top:8px;">
+
+
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=105" target="_blank">Amity Incubator in association with IBM organises a workshop on 'Know How The Blockchain Technology can Power your Business' </a>
+           </span><br />
+           <span class="date">04/05/2017</span><br />
+           <span class="details">Amity Innovation Incubator E-3, 1st Floor, Amity University, Sector – 125, Noida 201 301</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=104" target="_blank">FridayFortnights - Customer Inspired Innovation  </a>
+           </span><br />
+           <span class="date">21/04/2017</span><br />
+           <span class="details">Amity University, Gurgaon</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=103" target="_blank">Friday Fortnights  </a>
+           </span><br />
+           <span class="date">31/03/2017</span><br />
+           <span class="details">Amity Innovation Incubator, Manesar</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=102" target="_blank">Friday Fortnights - A Workshop on Anti Entrepreneurship </a>
+           </span><br />
+           <span class="date">24/03/2017</span><br />
+           <span class="details">Amity Innovation Incubator, Jaipur</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=101" target="_blank">Friday Fortnights - A Workshop on Starting Up </a>
+           </span><br />
+           <span class="date">17/03/2017</span><br />
+           <span class="details">Amity Innovation Incubator, Lucknow</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=95" target="_blank">Mentoring & Strategy Thought Leadership Session  </a>
+           </span><br />
+           <span class="date">23/02/2017</span><br />
+           <span class="details">Amity Innovation Incubator E-3, 1st Floor, Amity University, Sector – 125, Noida 201 301</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=96" target="_blank">Amity Innovation Incubator in Association with RBL Bank Presents Seminar on How Investors Evaluate Startups  </a>
+           </span><br />
+           <span class="date">22/02/2017</span><br />
+           <span class="details">Amity Innovation Incubator E-3, 1st Floor, Amity University, Sector – 125, Noida 201 301</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=99" target="_blank">Friday Fortnights - Real Entrepreneurs, Real Stories  </a>
+           </span><br />
+           <span class="date">10/02/2017</span><br />
+           <span class="details">Amity Innovation Incubator, Lucknow Campus, Manesar Campus, Jaipur Campus, Mumbai Campus, Raipur Campus</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=98" target="_blank">Friday Fortnights - Real Stories Of Entrepreneurs for Entrepreneurs  </a>
+           </span><br />
+           <span class="date">13/01/2017</span><br />
+           <span class="details">Amity Incubator, Jaipur, TBC Auditorium and Lucknow Campus</span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+    <table  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  valign="top">
+         <div id="event" style="width:210px; padding-top:8px;padding-bottom:8px;border-bottom: 1px dotted #c6c6c6;"> 
+           <span class="heading">
+             <a href="EventPage.aspx?Id=97" target="_blank">Friday Fortnights - Real Stories of Entrepreneurs for Entrepreneurs  </a>
+           </span><br />
+           <span class="date">12/01/2017</span><br />
+           <span class="details">Amity Incubator, Lucknow, Auditorium </span> 
+		  </div>
+		</td>
+      </tr>
+    </table>
+    
+
+<a href="http://www.amity.edu/aii/Events.aspx"><img alt="Read More"  src="http://www.amity.edu/aii/images/read-more.gif" vspace="5" border="0" /></a>
+
+</div>
+</div>
+
+<div id="rightline"></div>
+
+</div>
+<br clear="all" /><br clear="all" />
+<!--Middle end-->
+<!--Footer -->
+
+<div id="footer">
+<div id="footerarea">
+<div id="footermainlinks" style="width:365px!important;">
+<span class="fotermainlinkstext">
+<a href="http://www.amity.edu/aii/Index.aspx">Home</a> | 
+<a href="http://www.amity.edu/aii/SiteMap.aspx">Site Map</a> | 
+<a href="http://www.amity.edu/aii/Disclaimer.aspx">Disclaimer</a> | 
+<a href="http://www.amity.edu/aii/PrivacyPolicy.aspx">Privacy Policy</a>. © Copyright 2017 Amity.
+</span>
+</div>
+<div id="footerlogo"><img alt="Amity Innovation Incubator"  src="http://www.amity.edu/aii/images/amity-footer-logo.gif" vspace="3"/><br /><span class="footerlogolink"><strong>For any queries reach us at</strong><br />
+<b>Tel No.:</b> 0120-4659000, 4392243
+<b>FaxNo.:</b> 0120-4659009<br />
+<b>Email:</b> <a href="mailto:info@aii.amity.edu">info@aii.amity.edu </a></span>
+</div>
+<div id="footerleftlinks">
+<span class="footerleftlinkstxt" style="color:white;">
+<a href="https://www.facebook.com/Innovation-Circle-100582500048559/" target="_blank"><b style="color:white;">Facebook / Innovation Circle</b></a>  |
+<a href="https://www.facebook.com/innovation.circle.7/" target="_blank"><b style="color:white;">Facebook / Amity Innovation Circle</b></a>  |
+<a href="https://twitter.com/" target="_blank"><b style="color:white;">Twitter</b></a>  |
+<a href="https://www.linkedin.com/groups/3878894" target="_blank"><b style="color:white;">Linked In</b></a>
+
+<!--<a href="http://www.amity.edu/aii/AboutUs.aspx">About us</a> | 
+<a href="http://www.amity.edu/aii/Investment.aspx">Investment</a> | 
+<a href="http://www.amity.edu/aii/Patent.aspx">Patent</a> | 
+<a href="http://www.amity.edu/aii/AmityInnovationFund.aspx">Amity Innovation Fund</a> | 
+<a href="http://www.amity.edu/aii/IncubateeCompanies.aspx?Type=Virtual Incubates">Virtual Incubation</a> | 
+<a href="http://www.amity.edu/aii/JoinOurNetwork.aspx">Join Amity Innovation Incubator</a> | 
+<a href="http://www.amity.edu/aii/JoinOurNetwork.aspx">Join our Network of Mentors</a> |<br />
+<a href="http://www.amity.edu/aii/techcommprogram.asp">Join Tech. Commercialization Program</a> | 
+<a href="http://www.amity.edu/aii/Student_Entrepreneurship.aspx">Student Entrepreneurship</a> |
+<a href="http://www.amity.edu/aii/Events.aspx"> Events</a> | 
+<a href="http://www.amity.edu/aii/ShowCase.aspx">Showcase</a> | 
+<a href="http://www.amity.edu/aii/PressRelease.aspx">Media</a> | 
+<a href="http://www.amity.edu/aii/Gallery.aspx">Picture Gallery</a> | 
+<a href="http://www.amity.edu/aii/ServiceModal.aspx">Services Model</a> | <br />
+<a href="http://www.amity.edu/aii/Incubatee_Companies.aspx">Incubatee Companies</a> | 
+<a href="http://www.amity.edu/aii/jobsataii.aspx">Jobs at Amity Innovation Incubator </a> | 
+<a href="http://www.amity.edu/aii/amitycircle.aspx">Join the Amity Innovation Incubator Community</a> | 
+<a href="http://www.amity.edu/aii/contactus.aspx">Contact us</a>-->
+</span></div>
+</div>
+</div>
+ 
+<!--Footer end -->
+</form>
+</body>
+</html>
